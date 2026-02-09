@@ -17,13 +17,13 @@ function render_header_section($subTitle, $title, $titleAccent, $description)
         <span class="inline-block px-6 py-2 bg-accent-light text-accent-dark text-sm uppercase rounded-full font-medium mb-4 tracking-wider">
             <?= $escapedSubTitle ?>
         </span>
-        <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 max-w-3xl mx-auto leading-tight">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-3xl mx-auto leading-tight">
             <?= $escapedTitle ?>
             <?php if (!empty($escapedTitleAccent)): ?>
                 <span class="text-accent-dark"> <?= $escapedTitleAccent ?></span>
             <?php endif; ?>
         </h1>
-        <p class="md:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             <?= $escapedDescription ?>
         </p>
     </div>

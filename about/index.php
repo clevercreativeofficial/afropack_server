@@ -17,19 +17,15 @@ require_once ROOT_PATH . '/components/button.php';
     <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
         <div class="max-w-5xl mx-auto">
             <!-- Section Header -->
-            <div class="text-center mb-16 md:mb-20">
-                <span
-                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
-                    OUR PURPOSE
-                </span>
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-3xl mx-auto leading-tight">
-                    Our <span class="text-accent-dark">Mission</span>
-                </h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                    AFROPACK Group is a Euro-African bridge specializing in the design, supply, and after-sales service of
-                    automatic and semi-automatic machines for processing, packaging, and industrial automation.
-                </p>
-            </div>
+            <?php
+                render_header_section(
+                    "Our Purpose",
+                    "Our",
+                    "Mission",
+                    "AFROPACK Group is a Euro-African bridge specializing in the design, supply, and after-sales service of
+                    automatic and semi-automatic machines for processing, packaging, and industrial automation."
+                );
+            ?>
 
             <div class="bg-white grid lg:grid-cols-2 gap-8 shadow-2xl shadow-gray-100 overflow-hidden">
                 <!-- Mission Column -->
@@ -88,19 +84,16 @@ require_once ROOT_PATH . '/components/button.php';
     <!-- Expertise Section - Premium Layout -->
     <section class="section-padding">
         <div class="max-w-5xl mx-auto">
+
             <!-- Section Header -->
-            <div class="text-center mb-16 md:mb-20">
-                <span
-                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
-                   INDUSTRY LEADERS
-                </span>
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-3xl mx-auto leading-tight">
-                    Our <span class="text-accent-dark">Expertise</span>
-                </h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                    Food & Industrial Processing Equipment Specialists with comprehensive solutions across 18+ industry sectors
-                </p>
-            </div>
+            <?php
+                render_header_section(
+                    "Industry leaders",
+                    "Our",
+                    "Expertise",
+                    "Food & Industrial Processing Equipment Specialists with comprehensive solutions across 18+ industry sectors."
+                );
+            ?>
 
             <div class="grid lg:grid-cols-2 gap-12">
                 <!-- Main Expertise Content -->
