@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AFROPACK - Packaging, Filling & Labelling Equipment and Complete Lines">
+    <meta name="keywords"
+        content="Packaging Equipment, Filling Machines, Labelling Systems, Form Fill Seal, Bottling Lines, Packaging Solutions">
+    <meta name="author" content="AFROPACK- Food Processing and Packaging Company">
+
+    <title>Packaging, Filling & Labelling Equipment - AFROPACK</title>
+
+    <meta name="theme-color" content="#CE0B10">
+
+    <!-- favicon -->
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        .slick-dots {
+            bottom: 20px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: #fff;
+            opacity: 0.5;
+            transition: color 0.3s, opacity 0.3s;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #CE0B10;
+            opacity: 1;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+
+        /* Consistent spacing classes */
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 5rem 1rem;
+            }
+        }
+
+        .content-padding {
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-padding {
+                padding: 3rem;
+            }
+        }
+
+        .card-padding {
+            padding: 2.5rem;
+        }
+
+        .content-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .process-icon {
+            @apply w-16 h-16 flex items-center justify-center rounded-xl mb-6;
+            @apply bg-gradient-to-br from-green-50 to-green-100 text-accent;
+        }
+
+        .feature-list li {
+            @apply flex items-start gap-3 mb-3;
+        }
+
+        .feature-list li i {
+            @apply text-accent mt-1 flex-shrink-0;
+        }
+
+        .packaging-card {
+            @apply h-full transition-all duration-300 hover:shadow-xl;
+        }
+
+        .packaging-badge {
+            @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+            @apply bg-red-50 text-accent-dark;
+        }
+
+        .packaging-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .packaging-grid {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            }
+        }
+
+        .industry-icon {
+            @apply w-12 h-12 flex items-center justify-center rounded-lg mb-4;
+            @apply bg-accent/10 text-accent;
+        }
+    </style>
+
+</head>
+
+<body class="bg-bg-alt">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            Loading...
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-background z-50">
+        <div class="max-w-7xl m-auto px-3 flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="md:w-16 w-10 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- NAV ITEMS -->
+            <ul id="navItems" class="lg:relative fixed top-0 left-0 lg:bg-transparent bg-background
+            lg:w-auto w-full min-h-screen lg:min-h-0 flex lg:flex-row flex-col text-sm text-text-color
+            lg:items-center justify-start lg:px-0 px-10 lg:py-0 py-6 lg:gap-10 gap-6 -translate-x-[1024px] md:-translate-x-0
+            duration-500 z-50">
+
+                <!-- Mobile Logo -->
+                <div class="lg:hidden block w-16 pb-4">
+                    <a href="/">
+                        <img class="w-10" src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- HOME -->
+                <li>
+                    <a href="/" class="hover:text-accent duration-300">Home</a>
+                </li>
+
+                <!-- SOLUTIONS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="md:py-6 py-3 px-3 block hover:text-white hover:bg-accent duration-300">
+                        Solutions
+                    </a>
+
+                    <div
+                        class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div
+                            class="absolute left-8 top-1 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent">
+                        </div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-utensils text-xl"></i>
+                                <a href="/solutions/food" class="py-1 hover:underline">Food Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-cheese text-xl"></i>
+                                <a href="/solutions/dairy" class="py-1 hover:underline">Dairy Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-peach text-xl"></i>
+                                <a href="/solutions/fruit-vegetable" class="py-1 hover:underline">Fruit & Vegetable
+                                    Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-drink-alt text-xl"></i>
+                                <a href="/solutions/beverages" class="py-1 hover:underline">Beverages</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- SOLUTIONS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        Solutions
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-utensils"></i>
+                            <a href="/solutions/food" class="hover:underline">Food Processing</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-cheese"></i>
+                            <a href="/solutions/dairy" class="hover:underline">Dairy Processing</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-peach"></i>
+                            <a href="/solutions/fruit-vegetable" class="hover:underline">Fruit & Vegetable</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 py-2">
+                            <i class="fi fi-rr-drink-alt"></i>
+                            <a href="/solutions/beverages" class="hover:underline">Beverages</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="/about"
+                        class="md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
+                        About Us
+                    </a>
+                </li>
+
+                <!-- NEWS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="py-6 px-3 block hover:text-white hover:bg-accent duration-300">
+                        News & Resources
+                    </a>
+
+                    <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div class="absolute left-8 top-1 w-0 h-0
+                    border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent"></div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-bell"></i>
+                                <a href="/news-and-resources/news" class="hover:underline">News</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-calendar-day"></i>
+                                <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming
+                                    Events</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-play-alt"></i>
+                                <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-book"></i>
+                                <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- NEWS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        News & Resources
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pl-3 pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-bell"></i>
+                            <a href="/news-and-resources/news" class="hover:underline">News</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-calendar-day"></i>
+                            <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-play-alt"></i>
+                            <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                        </li>
+
+                        <li class="flex gap-3 py-2">
+                            <i class="fi fi-rr-book"></i>
+                            <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+                <a href="/contact"
+                    class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                    Contact Us
+                </a>
+            </ul>
+
+            <!-- MOBILE MENU ICON -->
+            <div id="menu-bar"
+                class="hamburger lg:hidden w-8 h-8 flex items-center justify-center bg-accent text-white cursor-pointer z-50">
+                <i class="fi fi-rr-bars text-lg translate-y-0.5"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="w-full h-full overflow-hidden">
+            <img class="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhY2thZ2luZyUyMG1hY2hpbmVyeXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Packaging Machinery">
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    PACKAGING, FILLING & LABELLING EQUIPMENT
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Complete <span class="text-accent-dark">Packaging Solutions</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    AFROPACK offers a comprehensive range of flexible packaging solutions, meeting every form, fill, and seal packaging requirement for diverse industries with precision and reliability.
+                </p>
+            </div>
+
+            <!-- Main Content Card -->
+            <div class="bg-white mb-16 shadow-2xl shadow-gray-200">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="p-6 md:p-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Packaging Solutions Portfolio</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                            From horizontal and vertical form-fill-seal machines to thermoforming and vacuum packaging systems, AFROPACK delivers equipment that combines exceptional quality with competitive pricing.
+                        </p>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                            Our thermoforming machines stand out for their outstanding quality–price ratio, providing maximum packaging safety with fully automatic, fast, reliable, and precise operation.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Form Fill Seal</span>
+                            <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Thermoforming</span>
+                            <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Vacuum Packaging</span>
+                            <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Modified Atmosphere</span>
+                        </div>
+                    </div>
+                    <div class="w-full h-80 overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                            alt="Packaging Equipment">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission Section -->
+            <div class="bg-white mb-16 shadow-2xl shadow-gray-200 p-6 md:p-12">
+                <div class="flex items-center gap-4 mb-8">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Vision & Mission</h3>
+                        <p class="text-gray-600">Partnering for packaging excellence</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <div class="flex items-start gap-4 mb-8">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                                <i class="fi fi-rr-eye text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Our Vision</h4>
+                                <p class="text-gray-700">
+                                    To be your long-term partner for complete flexible packaging solutions, exceeding expectations and providing high added-value equipment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-start gap-4">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                                <i class="fi fi-rr-target text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Our Mission</h4>
+                                <p class="text-gray-700">
+                                    To deliver flexible packaging solutions precisely customized to your needs, highly reliable equipment, and responsive after-sales service and maintenance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-100">
+                    <p class="text-gray-700">
+                        Our R&D department collaborates closely with customers to provide effective and efficient packaging solutions, supporting clients at every stage from initial consultation to post-sales assistance and ongoing machine maintenance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packaging Equipment Section -->
+    <section class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    COMPREHENSIVE EQUIPMENT RANGE
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Packaging <span class="text-accent-dark">Machinery Portfolio</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Specialized equipment for every packaging need across multiple industries
+                </p>
+            </div>
+
+            <!-- Packaging Equipment Grid -->
+            <div class="packaging-grid mb-16">
+                <!-- Flow Wrap HFFS -->
+                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-box-open text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Flow Wrap Machines HFFS</h4>
+                    <p class="text-gray-600 mb-4">Horizontal Form Fill & Seal solutions</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">High-speed horizontal packaging</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Versatile for various product types</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Precise and reliable operation</span>
+                        </div>
+                    </div>
+                    <a href="https://www.laferpack.com/categories" target="_blank" class="mt-4 inline-flex items-center gap-2 text-accent text-sm font-medium">
+                        <span>Learn more</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+
+                <!-- Vertical Baggers VFFS -->
+                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-box-alt text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Vertical Baggers VFFS</h4>
+                    <p class="text-gray-600 mb-4">Vertical Form Fill & Seal systems</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Efficient vertical packaging lines</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Suitable for granular and powdered products</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Compact footprint design</span>
+                        </div>
+                    </div>
+                    <a href="https://www.mielepackaging.it/en/automatic-lines/" target="_blank" class="mt-4 inline-flex items-center gap-2 text-accent text-sm font-medium">
+                        <span>Learn more</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+
+                <!-- Thermoforming Machines -->
+                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-cube text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Thermoforming Machines</h4>
+                    <p class="text-gray-600 mb-4">Exceptional quality–price ratio packaging</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Fully automatic and fast operation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Outstanding packaging safety</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Suitable for vacuum and modified atmosphere</span>
+                        </div>
+                    </div>
+                    <a href="https://bmbpack.com/en/tipologia/thermoforming-machines/" target="_blank" class="mt-4 inline-flex items-center gap-2 text-accent text-sm font-medium">
+                        <span>Learn more</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+
+                <!-- Vacuum & MAP Machines -->
+                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-wind text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Vacuum & MAP Machines</h4>
+                    <p class="text-gray-600 mb-4">Modified Atmosphere Packaging solutions</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Extended product shelf life</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Vacuum chamber and belt systems</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Precise gas flushing technology</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <a href="https://bmbpack.com/en/tipologia/vacuum-machines/" target="_blank" class="block text-accent text-sm font-medium hover:underline">Vacuum Machines</a>
+                        <a href="https://bmbpack.com/en/tipologia/chamber-belt-vacuum-machines/" target="_blank" class="block text-accent text-sm font-medium hover:underline">Chamber Belt Systems</a>
+                    </div>
+                </div>
+
+                <!-- Additional Packaging Solutions -->
+                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-conveyor-belt text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Complete Packaging Lines</h4>
+                    <p class="text-gray-600 mb-4">End-to-end packaging solutions</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Tray sealers and sealing systems</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Shrinking and drying units</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Product handling and automation</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                            <span class="text-sm text-gray-600">Counting and weighing machines</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 space-y-2">
+                        <a href="https://bmbpack.com/en/tipologia/traysealers/" target="_blank" class="block text-accent text-sm font-medium hover:underline">Tray Sealers</a>
+                        <a href="https://bmbpack.com/en/tipologia/shrinking-and-drying-units/" target="_blank" class="block text-accent text-sm font-medium hover:underline">Shrinking Units</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Expertise Section -->
+    <section class="bg-gray-50 section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    INDUSTRY EXPERTISE
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Serving <span class="text-accent-dark">Multiple Industries</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Partner industry managers with years of hands-on experience in specific sectors
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Food Industry -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="industry-icon">
+                        <i class="fi fi-rr-utensils text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">Food Industry</h4>
+                    <p class="text-gray-600 text-sm">
+                        Specialized packaging solutions for perishable and shelf-stable food products with focus on hygiene and preservation.
+                    </p>
+                </div>
+
+                <!-- Pharmaceutical -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="industry-icon">
+                        <i class="fi fi-rr-pills text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">Pharmaceutical</h4>
+                    <p class="text-gray-600 text-sm">
+                        Precision packaging for medical devices and pharmaceutical products meeting strict regulatory standards.
+                    </p>
+                </div>
+
+                <!-- Home & Personal Care -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="industry-icon">
+                        <i class="fi fi-rr-soap text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">Home & Personal Care</h4>
+                    <p class="text-gray-600 text-sm">
+                        Efficient packaging solutions for cosmetics, toiletries, and household products with aesthetic appeal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filling & Bottling Solutions Section -->
+    <section class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white shadow-2xl shadow-gray-200 p-6 md:p-12">
+                <div class="flex items-center gap-4 mb-8">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Filling, Capping & Labelling Technologies</h3>
+                        <p class="text-gray-600">Complete bottling and packaging lines for diverse industries</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-gray-700 mb-6">
+                            AFROPACK provides advanced filling technologies offering versatile solutions for both small artisans and high-volume production facilities.
+                        </p>
+                        
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Bottling & Packaging Lines</h4>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold text-gray-900 mb-3">Beverage Lines</h5>
+                                <ul class="space-y-2 text-gray-600 text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                        <span>Wine & Spirits plants</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                        <span>Beer production facilities</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                        <span>Water & CSD plants</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h5 class="font-semibold text-gray-900 mb-3">Other Industries</h5>
+                                <ul class="space-y-2 text-gray-600 text-sm">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                        <span>Edible Oil & Food</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                        <span>Home & Personal Care</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                        <span>Chemical products</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.ferreromachines.com/en/index.html" target="_blank" class="mt-8 inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark">
+                            <span>Explore Ferrero Machines Technology</span>
+                            <i class="fi fi-rr-external-link"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                                    <i class="fi fi-rr-cog"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Machine Features</h4>
+                                    <p class="text-gray-600">
+                                        Simple and robust mechanics with high-quality commercial components for reliable operation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                                    <i class="fi fi-rr-precision-tool"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">High Precision</h4>
+                                    <p class="text-gray-600">
+                                        Excellent accuracy in filling and closing containers with consistent results.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                                    <i class="fi fi-rr-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Hygiene Standards</h4>
+                                    <p class="text-gray-600">
+                                        Excellent washability ideal for food, chemical, and pharmaceutical industries.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                                    <i class="fi fi-rr-refresh"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Flexible Design</h4>
+                                    <p class="text-gray-600">
+                                        Modular design allowing rapid and repeatable format changes for production flexibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- International Presence -->
+            <div class="mt-16 text-center">
+                <div class="bg-white shadow-2xl shadow-gray-200 p-8 rounded-2xl">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 mb-6 flex items-center justify-center bg-accent/10 text-accent rounded-full">
+                            <i class="fi fi-rr-globe text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">International Presence</h3>
+                        <p class="text-gray-700 mb-6 max-w-2xl">
+                            AFROPACK has established service hubs in 15 African countries, supported by our own network of sales and service subsidiaries and qualified service engineers. This extensive network makes us a key reference in the African packaging market.
+                        </p>
+                        <div class="inline-flex items-center gap-2 text-accent font-semibold">
+                            <i class="fi fi-rr-marker"></i>
+                            <span>15 African Countries Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-dark text-text-light md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="flex justify-evenly md:flex-row flex-col gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-text-light font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Email:
+                        <a href="mailto:afropackgroup@gmail.com" class="hover:text-accent">afropackgroup@gmail.com</a>
+                    </p>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Phone:
+                        <a href="tel:+393429801567" class="hover:text-accent">+393429801567</a>
+                    </p>
+                    <p class="text-sm text-neutral-400">Address: Bujumbura, Burundi</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/solutions/fruit-vegetable"
+                                class="text-sm text-neutral-400 hover:text-accent">Fruit & Vegetable</a></li>
+                        <li><a href="/solutions/food" class="text-sm text-neutral-400 hover:text-accent">Food
+                                Processing</a></li>
+                        <li><a href="/solutions/dairy" class="text-sm text-neutral-400 hover:text-accent">Dairy
+                                Processing</a></li>
+                        <li><a href="/contact" class="text-sm text-neutral-400 hover:text-accent">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:max-w-[315px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Subscribe</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Get updates on packaging innovations and industry trends.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3">
+                        <button type="submit"
+                            class="inline-block py-2 px-4 bg-accent hover:bg-accent/80 text-text-light">
+                            <i class="fi fi-rr-arrow-small-right inline-block mt-1"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="md:max-w-[250px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Follow us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Stay connected for packaging insights and updates.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-linkedin"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-facebook"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-twitter-alt"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">
+                    © <span id="copyright"></span> AFROPACK GROUP — All rights reserved.
+                </p>
+                <div class="flex items-center gap-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/slick_custom.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript" src="../../assets/js/loader.js"></script>
+
+    <!-- Auto year update -->
+    <script type="text/javascript" src="../../assets/js/year_update.js"></script>
+
+    <!-- navbar accordions scripts -->
+    <script type="text/javascript" src="../../assets/js/navbar.js"></script>
+
+</body>
+
+</html>

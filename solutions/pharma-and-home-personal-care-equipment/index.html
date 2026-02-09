@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AFROPACK - Pharma & Home/Personal Care Equipment and Packaging Solutions">
+    <meta name="keywords" content="Pharma Packaging, Detergent Production, Cosmetics Packaging, Soap Technology, Filling Equipment">
+    <meta name="author" content="AFROPACK- Food Processing and Packaging Company">
+
+    <title>Pharma & Home/Personal Care Equipment - AFROPACK</title>
+
+    <meta name="theme-color" content="#CE0B10">
+
+    <!-- favicon -->
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        .slick-dots {
+            bottom: 20px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: #fff;
+            opacity: 0.5;
+            transition: color 0.3s, opacity 0.3s;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #CE0B10;
+            opacity: 1;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+        
+        /* Consistent spacing classes */
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 5rem 1rem;
+            }
+        }
+        
+        .content-padding {
+            padding: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .content-padding {
+                padding: 3rem;
+            }
+        }
+        
+        .card-padding {
+            padding: 2.5rem;
+        }
+        
+        .content-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+        
+        .process-icon {
+            @apply w-16 h-16 flex items-center justify-center rounded-xl mb-6;
+            @apply bg-gradient-to-br from-indigo-50 to-indigo-100 text-accent;
+        }
+        
+        .feature-list li {
+            @apply flex items-start gap-3 mb-3;
+        }
+        
+        .feature-list li i {
+            @apply text-accent mt-1 flex-shrink-0;
+        }
+        
+        .pharma-card {
+            @apply h-full transition-all duration-300 hover:shadow-xl;
+        }
+        
+        .category-badge {
+            @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+        }
+        
+        .pharma-badge {
+            @apply bg-blue-50 text-blue-700;
+        }
+        
+        .detergent-badge {
+            @apply bg-green-50 text-green-700;
+        }
+        
+        .cosmetics-badge {
+            @apply bg-pink-50 text-pink-700;
+        }
+        
+        .soap-badge {
+            @apply bg-yellow-50 text-yellow-700;
+        }
+    </style>
+
+</head>
+
+<body class="bg-bg-alt">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            Loading...
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-background z-50">
+        <div class="max-w-7xl m-auto px-3 flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="md:w-16 w-10 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- NAV ITEMS -->
+            <ul id="navItems" class="lg:relative fixed top-0 left-0 lg:bg-transparent bg-background
+            lg:w-auto w-full min-h-screen lg:min-h-0 flex lg:flex-row flex-col text-sm text-text-color
+            lg:items-center justify-start lg:px-0 px-10 lg:py-0 py-6 lg:gap-10 gap-6 -translate-x-[1024px] md:-translate-x-0
+            duration-500 z-50">
+
+                <!-- Mobile Logo -->
+                <div class="lg:hidden block w-16 pb-4">
+                    <a href="/">
+                        <img class="w-10" src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- HOME -->
+                <li>
+                    <a href="/" class="hover:text-accent duration-300">Home</a>
+                </li>
+
+                <!-- SOLUTIONS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="md:py-6 py-3 px-3 block hover:text-white hover:bg-accent duration-300">
+                        Solutions
+                    </a>
+
+                    <div
+                        class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div
+                            class="absolute left-8 top-1 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent">
+                        </div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-utensils text-xl"></i>
+                                <a href="/solutions/food" class="py-1 hover:underline">Food Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-cheese text-xl"></i>
+                                <a href="/solutions/dairy" class="py-1 hover:underline">Dairy Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-peach text-xl"></i>
+                                <a href="/solutions/fruit-vegetable" class="py-1 hover:underline">Fruit & Vegetable</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-stethoscope text-xl"></i>
+                                <a href="/solutions/pharma-personal-care" class="py-1 hover:underline">Pharma & Personal Care</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- SOLUTIONS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        Solutions
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-utensils"></i>
+                            <a href="/solutions/food" class="hover:underline">Food Processing</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-cheese"></i>
+                            <a href="/solutions/dairy" class="hover:underline">Dairy Processing</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-peach"></i>
+                            <a href="/solutions/fruit-vegetable" class="hover:underline">Fruit & Vegetable</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 py-2">
+                            <i class="fi fi-rr-stethoscope"></i>
+                            <a href="/solutions/pharma-personal-care" class="hover:underline">Pharma & Personal Care</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="/about"
+                        class="md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
+                        About Us
+                    </a>
+                </li>
+
+                <!-- NEWS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="py-6 px-3 block hover:text-white hover:bg-accent duration-300">
+                        News & Resources
+                    </a>
+
+                    <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div class="absolute left-8 top-1 w-0 h-0
+                    border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent"></div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-bell"></i>
+                                <a href="/news-and-resources/news" class="hover:underline">News</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-calendar-day"></i>
+                                <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-play-alt"></i>
+                                <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-book"></i>
+                                <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- NEWS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        News & Resources
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pl-3 pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-bell"></i>
+                            <a href="/news-and-resources/news" class="hover:underline">News</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-calendar-day"></i>
+                            <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-play-alt"></i>
+                            <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                        </li>
+
+                        <li class="flex gap-3 py-2">
+                            <i class="fi fi-rr-book"></i>
+                            <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+                <a href="/contact"
+                    class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                    Contact Us
+                </a>
+            </ul>
+
+            <!-- MOBILE MENU ICON -->
+            <div id="menu-bar"
+                class="hamburger lg:hidden w-8 h-8 flex items-center justify-center bg-accent text-white cursor-pointer z-50">
+                <i class="fi fi-rr-bars text-lg translate-y-0.5"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[50vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent-dark/20 z-10"></div>
+        <div class="w-full h-full overflow-hidden">
+            <img class="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="Pharma & Personal Care Equipment">
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white z-20 px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-6">
+                Pharma & <span class="text-accent">Personal Care</span>
+            </h1>
+            <p class="text-xl text-center max-w-3xl">
+                Complete equipment and packaging solutions for pharmaceutical and home care industries
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    INDUSTRIAL EQUIPMENT SOLUTIONS
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Advanced <span class="text-accent-dark">Processing & Packaging</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    AFROPACK supplies and installs customized machines and complete lines for pharmaceutical 
+                    packaging and home/personal care products, delivering genuine Italian manufacturing quality.
+                </p>
+            </div>
+
+            <!-- Pharma Packaging Section -->
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #e0e7ff, #c7d2fe);">
+                        <i class="fi fi-rr-stethoscope text-2xl text-indigo-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Solutions for Pharma Packaging</h3>
+                        <p class="text-gray-600">Customized machines and complete lines for pharmaceutical packaging</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-gray-700 mb-6">
+                            All machines and systems are built in Italy, guaranteeing genuine Italian manufacturing 
+                            quality with precision engineering and strict quality control standards.
+                        </p>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">African Service Network</h4>
+                            <p class="text-gray-700 mb-4">
+                                AFROPACK maintains close customer relationships across Africa through an extensive 
+                                network of Service Hubs in major countries, ensuring fast and reliable technical support.
+                            </p>
+                            <ul class="feature-list space-y-2">
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Extensive network of Service Hubs across Africa</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Fast and reliable technical support</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Close customer relationship management</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Localized spare parts inventory</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 flex items-center justify-center bg-white text-accent rounded-lg shadow-sm">
+                                    <i class="fi fi-rr-factory"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Italian Manufacturing</h4>
+                                    <p class="text-gray-600">
+                                        All equipment manufactured in Italy with precision engineering and quality control.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 flex items-center justify-center bg-white text-accent rounded-lg shadow-sm">
+                                    <i class="fi fi-rr-customize"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Customized Solutions</h4>
+                                    <p class="text-gray-600">
+                                        Tailored machines and complete lines designed for specific pharmaceutical applications.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 flex items-center justify-center bg-white text-accent rounded-lg shadow-sm">
+                                    <i class="fi fi-rr-globe"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-2">African Presence</h4>
+                                    <p class="text-gray-600">
+                                        Strong service network across major African countries for immediate support.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detergent Production Section -->
+    <section class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <!-- Powder Detergent -->
+            <div class="content-box card-padding mb-12">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #dcfce7, #bbf7d0);">
+                        <i class="fi fi-rr-detergent text-2xl text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Powder Detergent Production Plants</h3>
+                        <p class="text-gray-600">High-performance plants with unmatched efficiency and productivity</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-gray-700 mb-6">
+                            AFROPACK designs and supplies high-performance powder detergent plants, delivering 
+                            unmatched efficiency and productivity with full technical support from product formulation 
+                            to manufacturing optimization.
+                        </p>
+                        
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">Sustainable Design Features</h4>
+                            <ul class="feature-list space-y-2">
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Energy-efficient systems for reduced operational costs</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Zero liquid effluents for environmental protection</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Exhaust gas treatment systems compliant with international standards</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Packaging Solutions</h4>
+                        <p class="text-gray-700 mb-4">
+                            Plants are supplied and installed with VFFS packaging machines specifically engineered 
+                            for detergent powder packaging, featuring:
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 text-sm">High-Speed Production</h5>
+                                <p class="text-gray-600 text-xs">Optimized for maximum throughput</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 text-sm">Powder Control</h5>
+                                <p class="text-gray-600 text-xs">Aspiration systems at sealing</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 text-sm">Film Management</h5>
+                                <p class="text-gray-600 text-xs">Electrostatic control solutions</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 text-sm">Quality Control</h5>
+                                <p class="text-gray-600 text-xs">Density variation monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <a href="https://www.mielepackaging.it/en/solutions-for-detergent-powder/" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark">
+                        <span>Explore Miele Packaging Technology</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Liquid Detergent -->
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #f0fdf4, #dcfce7);">
+                        <i class="fi fi-rr-liquid-soap text-2xl text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Liquid Detergent Production Plants</h3>
+                        <p class="text-gray-600">Custom-designed plants for household and personal care products</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Production Capabilities</h4>
+                        <p class="text-gray-700 mb-6">
+                            Plants are designed for the production of household cleaning products (dishwashing liquids, 
+                            light-duty detergents) and personal care liquid products (shampoos, bath foams), with both 
+                            product types producible within the same manufacturing plant.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white text-accent rounded-lg">
+                                    <i class="fi fi-rr-house-chimney"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Household Products</h5>
+                                    <p class="text-gray-600 text-sm">Dishwashing liquids, light-duty detergents</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white text-accent rounded-lg">
+                                    <i class="fi fi-rr-bath"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Personal Care</h5>
+                                    <p class="text-gray-600 text-sm">Shampoos, bath foams, and body washes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Plant Features</h4>
+                        <div class="space-y-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2">Compact Layout</h5>
+                                <p class="text-gray-600 text-sm">Optimized space utilization for efficient operations</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2">Easy Operation</h5>
+                                <p class="text-gray-600 text-sm">User-friendly interfaces and controls</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2">Product Stability</h5>
+                                <p class="text-gray-600 text-sm">Ensuring consistent product quality and homogeneity</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2">High Performance</h5>
+                                <p class="text-gray-600 text-sm">Maximum operational efficiency and output</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="font-semibold text-gray-900 mb-3">Filling Solutions</h5>
+                            <p class="text-gray-600 text-sm">
+                                Complete semi-automatic or fully automatic filling lines supplied, with special attention 
+                                to material selection for aggressive or corrosive products.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://www.telm.it/en/filling-machines-chemical/detergents-washing-liquids" 
+                               target="_blank" 
+                               class="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark">
+                                <span>Explore TELM Detergent Technology</span>
+                                <i class="fi fi-rr-external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packaging Technology Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
+                        <i class="fi fi-rr-package text-2xl text-yellow-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Packaging Technology Solutions</h3>
+                        <p class="text-gray-600">Complete packaging systems for pharmaceutical and personal care products</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Filling & Closing -->
+                    <div class="pharma-card p-6">
+                        <div class="w-14 h-14 mb-4 flex items-center justify-center bg-yellow-50 text-accent rounded-lg">
+                            <i class="fi fi-rr-bottle text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Filling & Closing</h4>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-600">• Easy-to-clean machines</li>
+                            <li class="text-sm text-gray-600">• Bottom-up filling systems</li>
+                            <li class="text-sm text-gray-600">• Adjustable filling speed</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://www.ferreromachines.com/en/index.html" 
+                               target="_blank" 
+                               class="text-sm text-accent font-semibold hover:text-accent-dark inline-flex items-center gap-1">
+                                <span>Ferrero Machines</span>
+                                <i class="fi fi-rr-external-link text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Labelling -->
+                    <div class="pharma-card p-6">
+                        <div class="w-14 h-14 mb-4 flex items-center justify-center bg-blue-50 text-accent rounded-lg">
+                            <i class="fi fi-rr-label text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Labelling</h4>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-600">• Double-sided labels</li>
+                            <li class="text-sm text-gray-600">• Full-wrap labelling</li>
+                            <li class="text-sm text-gray-600">• Inkjet/TT printer integration</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://www.makrolabelling.com/" 
+                               target="_blank" 
+                               class="text-sm text-accent font-semibold hover:text-accent-dark inline-flex items-center gap-1">
+                                <span>Makro Labelling</span>
+                                <i class="fi fi-rr-external-link text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Packaging -->
+                    <div class="pharma-card p-6">
+                        <div class="w-14 h-14 mb-4 flex items-center justify-center bg-green-50 text-accent rounded-lg">
+                            <i class="fi fi-rr-boxes text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Secondary Packaging</h4>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-600">• Carton or shrink wrap</li>
+                            <li class="text-sm text-gray-600">• End-of-line processes</li>
+                            <li class="text-sm text-gray-600">• Palletising solutions</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://www.selematic.tech/en/" 
+                               target="_blank" 
+                               class="text-sm text-accent font-semibold hover:text-accent-dark inline-flex items-center gap-1">
+                                <span>Selematic Tech</span>
+                                <i class="fi fi-rr-external-link text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Soap Technologies -->
+                    <div class="pharma-card p-6">
+                        <div class="w-14 h-14 mb-4 flex items-center justify-center bg-orange-50 text-accent rounded-lg">
+                            <i class="fi fi-rr-soap text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Soap Technologies</h4>
+                        <ul class="space-y-2">
+                            <li class="text-sm text-gray-600">• Soap manufacturing plants</li>
+                            <li class="text-sm text-gray-600">• Glycerin production</li>
+                            <li class="text-sm text-gray-600">• Complete processing lines</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://laferpack.com/home-care" 
+                               target="_blank" 
+                               class="text-sm text-accent font-semibold hover:text-accent-dark inline-flex items-center gap-1">
+                                <span>Lafer Pack Solutions</span>
+                                <i class="fi fi-rr-external-link text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cosmetics Packaging Section -->
+    <section class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="content-box card-padding">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #fce7f3, #fbcfe8);">
+                        <i class="fi fi-rr-lipstick text-2xl text-pink-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Solutions for Cosmetics Packaging</h3>
+                        <p class="text-gray-600">Complete packaging lines for the cosmetic industry</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Comprehensive Solutions</h4>
+                        <p class="text-gray-700 mb-6">
+                            AFROPACK supplies and installs a wide range of machines and complete packaging lines 
+                            for the cosmetic industry, capable of meeting all requirements—from standard applications 
+                            to complex, fully customized projects.
+                        </p>
+                        
+                        <div class="bg-pink-50 p-6 rounded-lg">
+                            <h5 class="text-lg font-semibold text-gray-900 mb-4">Application Versatility</h5>
+                            <ul class="feature-list space-y-2">
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Standard cosmetic packaging solutions</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Complex, fully customized projects</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Wide range of packaging formats</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Integration with existing production lines</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Cosmetic Product Range</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="category-badge cosmetics-badge">Skincare</span>
+                                    <span class="category-badge cosmetics-badge">Makeup</span>
+                                    <span class="category-badge cosmetics-badge">Fragrances</span>
+                                    <span class="category-badge cosmetics-badge">Hair Care</span>
+                                    <span class="category-badge cosmetics-badge">Body Care</span>
+                                    <span class="category-badge cosmetics-badge">Spa Products</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Packaging Capabilities</h4>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-bottle"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Bottle Filling</h5>
+                                    </div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-tube"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Tube Filling</h5>
+                                    </div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-jar"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Jar Filling</h5>
+                                    </div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-pump"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Pump Systems</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 pt-10 border-t border-gray-200">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h5 class="font-semibold text-gray-900">TELM Cosmetic Technology</h5>
+                            <p class="text-gray-600 text-sm">Advanced filling machines for cosmetic applications</p>
+                        </div>
+                        <a href="https://www.telm.it/en/filling-machines-cosmetic" 
+                           target="_blank" 
+                           class="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark">
+                            <span>Explore TELM Cosmetic Technology</span>
+                            <i class="fi fi-rr-external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="bg-gradient-to-r from-accent-dark to-accent section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Transform Your Pharma & Personal Care Production
+                </h2>
+                <p class="text-white/90 text-lg max-w-2xl mx-auto mb-8">
+                    Contact our equipment experts to discuss customized solutions for your pharmaceutical, 
+                    detergent, or cosmetics production requirements.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact" 
+                       class="bg-white text-accent px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 
+                              transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Contact Equipment Experts</span>
+                        <i class="fi fi-rr-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="/solutions" 
+                       class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold 
+                              hover:bg-white hover:text-accent transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>View All Solutions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-dark text-text-light md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="flex justify-evenly md:flex-row flex-col gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-text-light font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Email:
+                        <a href="mailto:afropackgroup@gmail.com"
+                            class="hover:text-accent">afropackgroup@gmail.com</a>
+                    </p>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Phone:
+                        <a href="tel:+393429801567" class="hover:text-accent">+393429801567</a>
+                    </p>
+                    <p class="text-sm text-neutral-400">Address: Bujumbura, Burundi</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/solutions/pharma-personal-care" class="text-sm text-neutral-400 hover:text-accent">Pharma & Personal Care</a></li>
+                        <li><a href="/solutions/food" class="text-sm text-neutral-400 hover:text-accent">Food Processing</a></li>
+                        <li><a href="/solutions/dairy" class="text-sm text-neutral-400 hover:text-accent">Dairy Processing</a></li>
+                        <li><a href="/contact" class="text-sm text-neutral-400 hover:text-accent">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:max-w-[315px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Subscribe</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Get updates on pharmaceutical and personal care equipment innovations.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3">
+                        <button type="submit"
+                            class="inline-block py-2 px-4 bg-accent hover:bg-accent/80 text-text-light">
+                            <i class="fi fi-rr-arrow-small-right inline-block mt-1"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="md:max-w-[250px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Follow us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Stay connected for industry insights and equipment updates.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-linkedin"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-facebook"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-twitter-alt"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">
+                    © <span id="copyright"></span> AFROPACK GROUP — All rights reserved.
+                </p>
+                <div class="flex items-center gap-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/slick_custom.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript" src="../../assets/js/loader.js"></script>
+
+    <!-- Auto year update -->
+    <script type="text/javascript" src="../../assets/js/year_update.js"></script>
+
+    <!-- navbar accordions scripts -->
+    <script type="text/javascript" src="../../assets/js/navbar.js"></script>
+
+</body>
+
+</html>

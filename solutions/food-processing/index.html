@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AFROPACK GROUP - Food Processing and Packaging Company.">
+    <meta name="keywords" content="Afropack Group, packaging, food processing,">
+    <meta name="author" content="AFROPACK- Food Processing and Packaging Company">
+
+    <title>AFROPACK - Food Processing and Packaging Company</title>
+
+    <meta name="theme-color" content="#CE0B10">
+
+    <!-- favicon -->
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        .slick-dots {
+            bottom: 20px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: #fff;
+            opacity: 0.5;
+            transition: color 0.3s, opacity 0.3s;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #CE0B10;
+            opacity: 1;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+
+        /* Consistent spacing classes */
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 5rem 1rem;
+            }
+        }
+
+        .content-padding {
+            padding: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .content-padding {
+                padding: 3rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-bg-alt">
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            Loading...
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Top Info Bar -->
+    <div class="lg:block hidden bg-surface text-text-light text-sm">
+        <div class="max-w-[1200px] mx-auto py-2 px-3 flex justify-end items-center gap-6">
+            <div class="flex items-center space-x-10">
+                <div class="hidden md:flex items-center gap-2 space-x-2">
+                    Call:
+                    <p>+393429801567</p>
+                </div>
+                <div class="hidden md:flex items-center gap-2 space-x-2">
+                    Email:
+                    <p>afropackgroup@gmail.com</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <i class="fi fi-rr-search text-xs text-accent translate-y-0.5"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-background z-50">
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="md:w-16 w-10 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- NAV ITEMS -->
+            <ul id="navItems" class="lg:relative fixed top-0 left-0 lg:bg-transparent bg-background
+            lg:w-auto w-full min-h-screen lg:min-h-0 flex lg:flex-row flex-col text-sm text-text-color
+            lg:items-center justify-start lg:px-0 px-10 lg:py-0 py-6 lg:gap-10 gap-6 -translate-x-[1024px] md:-translate-x-0
+            duration-500 z-50">
+
+                <!-- Mobile Logo -->
+                <div class="lg:hidden block w-16 pb-4">
+                    <a href="/">
+                        <img class="w-10" src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- HOME -->
+                <li>
+                    <a href="/" class="hover:text-accent text-accent duration-300">Home</a>
+                </li>
+
+                <!-- SOLUTIONS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="md:py-6 py-3 px-3 block hover:text-white hover:bg-accent duration-300">
+                        Solutions
+                    </a>
+
+                    <div
+                        class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div
+                            class="absolute left-8 top-1 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent">
+                        </div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-utensils text-xl"></i>
+                                <a href="/solutions/food" class="py-1 hover:underline">Food</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-drink-alt text-xl"></i>
+                                <a href="/solutions/beverages" class="py-1 hover:underline">Beverages</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-hand-holding-heart text-xl"></i>
+                                <a href="/solutions/home-and-personal-care" class="py-1 hover:underline">Home &
+                                    Personal Care</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-stethoscope text-xl"></i>
+                                <a href="/solutions/pharma-industries" class="py-1 hover:underline">Pharma
+                                    Industries</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- SOLUTIONS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        Solutions
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-utensils"></i>
+                            <a href="/solutions/food" class="hover:underline">Food</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-drink-alt"></i>
+                            <a href="/solutions/beverages" class="hover:underline">Beverages</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-hand-holding-heart"></i>
+                            <a href="/solutions/home-and-personal-care" class="hover:underline">Home & Personal
+                                Care</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 py-2">
+                            <i class="fi fi-rr-stethoscope"></i>
+                            <a href="/solutions/pharma-industries" class="hover:underline">Pharma Industries</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="/about"
+                        class="md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
+                        About Us
+                    </a>
+                </li>
+
+                <!-- NEWS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="py-6 px-3 block hover:text-white hover:bg-accent duration-300">
+                        News & Resources
+                    </a>
+
+                    <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div class="absolute left-8 top-1 w-0 h-0
+                    border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent"></div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-bell"></i>
+                                <a href="/news-and-resources/news" class="hover:underline">News</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-calendar-day"></i>
+                                <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming
+                                    Events</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-play-alt"></i>
+                                <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-book"></i>
+                                <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- NEWS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        News & Resources
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pl-3 pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-bell"></i>
+                            <a href="/news-and-resources/news" class="hover:underline">News</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-calendar-day"></i>
+                            <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-play-alt"></i>
+                            <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                        </li>
+
+                        <li class="flex gap-3 py-2">
+                            <i class="fi fi-rr-book"></i>
+                            <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+                <a href="/contact"
+                    class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                    Contact Us
+                </a>
+            </ul>
+
+            <!-- MOBILE MENU ICON -->
+            <div id="menu-bar"
+                class="hamburger lg:hidden w-8 h-8 flex items-center justify-center bg-accent text-white cursor-pointer z-50">
+                <i class="fi fi-rr-bars text-lg translate-y-0.5"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="w-full h-full overflow-hidden">
+            <img class="w-full h-full object-cover"
+                src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-website-Food-Processing-scaled.jpg"
+                alt="">
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Section Header -->
+            <div class="text-center mb-12 md:mb-16">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    FOOD PROCESSING EXCELLENCE
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Comprehensive <span class="text-accent-dark">Food Industry</span> Solutions
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    AFROPACK delivers advanced machinery and automatic/semi-automatic systems for the production
+                    of high-quality food products across multiple categories.
+                </p>
+            </div>
+
+            <!-- Main Content Card -->
+            <div class="bg-white mb-16 shadow-2xl shadow-gray-200">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="p-6 md:p-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Food Industry Equipment</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                            We provide comprehensive machinery and automated systems for the production of food
+                            products, partnering with industry leaders like Navatta Group to deliver cutting-edge
+                            solutions.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <a href="https://www.navattagroup.com/" target="_blank"
+                                class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                                <span>Explore Partner Solutions</span>
+                                <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
+                        <img class="w-full h-full object-cover shadow-lg"
+                            src="https://images.unsplash.com/photo-1675647699232-76b8f533b006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZCUyMHByb2Nlc3Npbmd8ZW58MHx8MHx8fDA%3D"
+                            alt="Food Processing Equipment">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Pasta Category -->
+                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-flatbread text-xl mt-1"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Pasta Production</h4>
+                    <p class="text-gray-600 text-sm">
+                        Complete systems for all pasta types with highest quality standards
+                    </p>
+                </div>
+
+                <!-- Snacks Category -->
+                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-pot text-xl mt- 1"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Snacks Processing</h4>
+                    <p class="text-gray-600 text-sm">
+                        Advanced systems for pellets, chips, and fabricated snacks
+                    </p>
+                </div>
+
+                <!-- Cereals Category -->
+                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-wheat-awn text-xl mt-1"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Cereal Processing</h4>
+                    <p class="text-gray-600 text-sm">
+                        Complete lines for breakfast cereals and instant products
+                    </p>
+                </div>
+
+                <!-- Coffee Category -->
+                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                        <i class="fi fi-rr-coffee text-xl mt-1"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Coffee Processing</h4>
+                    <p class="text-gray-600 text-sm">
+                        Comprehensive roasting, grinding, and packaging solutions
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pasta Production Section -->
+    <section class="section-padding">
+        <div class="max-w-5xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2">Pasta Production Systems</h3>
+                        <p class="text-gray-600">Ensuring the highest quality standards in pasta manufacturing</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Process Lines</h4>
+                        <ul class="feature-list space-y-3">
+                            <li>
+                                <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                <span>Process lines for long pasta, short pasta, nests, lasagna, cannelloni</span>
+                            </li>
+                            <li>
+                                <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                <span>Special pasta and couscous production systems</span>
+                            </li>
+                            <li>
+                                <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                <span>Technologies for filled pasta, ravioli, and tortellini</span>
+                            </li>
+                            <li>
+                                <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                <span>Snack industry, breakfast cereals, and instant flour lines</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://anselmoitalia.com/en/production-lines" target="_blank"
+                                class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                                <span>View Anselmo Italia Solutions</span>
+                                <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Specialized Pasta Plants</h4>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                                <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                                    <i class="fi fi-rr-flatbread"></i>
+                                </div>
+                                <h5 class="font-semibold text-gray-900 mb-2">Short Pasta</h5>
+                                <p class="text-gray-600 text-sm">Complete plants for various short pasta shapes</p>
+                            </div>
+                            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                                <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                                    <i class="fi fi-rr-flatbread"></i>
+                                </div>
+                                <h5 class="font-semibold text-gray-900 mb-2">Long Pasta</h5>
+                                <p class="text-gray-600 text-sm">Production lines for spaghetti, fettuccine, etc.</p>
+                            </div>
+                            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                                <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                                    <i class="fi fi-rr-wheat-awn"></i>
+                                </div>
+                                <h5 class="font-semibold text-gray-900 mb-2">Couscous</h5>
+                                <p class="text-gray-600 text-sm">Specialized couscous production systems</p>
+                            </div>
+                            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                                <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                                    <i class="fi fi-rr-warehouse-alt"></i>
+                                </div>
+                                <h5 class="font-semibold text-gray-900 mb-2">Storage Systems</h5>
+                                <p class="text-gray-600 text-sm">For short pasta, special pasta, and nests</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snack & Cereal Processing Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-5xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2">Snack & Cereal Processing</h3>
+                        <p class="text-gray-600">Advanced technologies for snack and cereal production</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Snack Pellets</h4>
+                                <p class="text-gray-700">
+                                    Starting from potato and cereal flours, our lines produce die-cut pellets,
+                                    chips, and 3D shapes with perfect consistency and quality.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Fabricated Snacks</h4>
+                                <p class="text-gray-700">
+                                    Utilizing potato and cereal flours, this advanced technology produces
+                                    wet-fried chips with exceptional texture and flavor.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Breakfast Cereals</h4>
+                                <p class="text-gray-700">
+                                    Complete systems for traditional cereal flakes, sugar-coated flakes,
+                                    and cereal-coated flakes to meet diverse market demands.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Direct Expanded Products</h4>
+                                <p class="text-gray-700">
+                                    Advanced technology for direct-expanded products with sweet or savory coating,
+                                    offering versatile snack options.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Instant Powder</h4>
+                                <p class="text-gray-700">
+                                    Specialized systems for the production of instant flours and baby food,
+                                    ensuring nutritional quality and easy preparation.
+                                </p>
+                            </div>
+
+                            <div class="bg-red-50 p-6">
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Partner Technology</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Our solutions are powered by Fenitalia's advanced food processing technology,
+                                    ensuring industry-leading performance and reliability.
+                                </p>
+                                <a href="https://www.fenitalia.com/en/" target="_blank"
+                                    class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                                    <span>Explore Fenitalia Technology</span>
+                                    <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Processing Section -->
+    <section class="section-padding">
+        <div class="max-w-5xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div>
+                        <h3 class="text-4xl font-bold text-gray-900 mb-2">Coffee Processing Systems</h3>
+                        <p class="text-gray-600">Complete solutions from green coffee to packaged products</p>
+                    </div>
+                </div>
+
+                <!-- Coffee Roasting Section -->
+                <div class="mb-12 p-6 bg-white shadow-2xl shadow-gray-200">
+                    <h4 class="text-2xl font-bold text-gray-900 mb-6">Coffee Roasters & Roasting Plants</h4>
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-gray-700 mb-6">
+                                A wide range of coffee roasters for every need, from small-sized models suitable
+                                for specialty coffee shops and small artisan production to industrial models for
+                                medium and large productions.
+                            </p>
+                            <ul class="feature-list space-y-3">
+                                <li>
+                                    <i class="fi fi-rr-check-circle"></i>
+                                    <span>Integrated destoners for foreign body cleaning</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check-circle"></i>
+                                    <span>Continuous chaff extraction systems</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check-circle"></i>
+                                    <span>Optional green coffee loaders</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check-circle"></i>
+                                    <span>Additional cyclones for cooling systems</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
+                            <img class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                                alt="Coffee Roasting Equipment">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Processing Systems -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Green Coffee Plants -->
+                    <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <i class="fi fi-rr-leaf text-lg mt-1"></i>
+                        </div>
+                        <h5 class="text-xl font-bold text-gray-900 mb-4">Green Coffee Plants</h5>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Green coffee reception systems (jute bags, big bags, bulk)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Cleaning and mechanical/optical selection</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Pneumatic transport systems</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Custom storage silos and dosing systems</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Roasted Coffee Plants -->
+                    <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <i class="fi fi-rr-mug-hot text-lg mt-1"></i>
+                        </div>
+                        <h5 class="text-xl font-bold text-gray-900 mb-4">Roasted Coffee Plants</h5>
+                        <p class="text-gray-700 mb-4">
+                            Complete systems including cleaning, transport, storage silos, and mixing solutions
+                            for consistent quality roasted coffee.
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Complete processing systems</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Integrated storage solutions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Advanced mixing technology</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Ground Coffee & Grinders -->
+                    <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <i class="fi fi-rr-coffee-beans text-lg mt-1"></i>
+                        </div>
+                        <h5 class="text-xl font-bold text-gray-900 mb-4">Ground Coffee & Grinders</h5>
+                        <p class="text-gray-700 mb-4">
+                            Storage systems with natural or controlled degassing suitable for capsules, pods,
+                            and vacuum packaging.
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Industrial coffee grinders</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Suitable for capsule and pod packaging</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fi fi-rr-check-circle text-accent mt-1"></i>
+                                <span>Large-scale production capabilities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Partner Reference -->
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 pb-3">Our coffee processing solutions feature IMF's advanced roasting
+                        technology</p>
+                    <a href="https://www.imf-srl.com/en/coffee-roasters/" target="_blank"
+                        class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                        <span>Explore IMF Coffee Roasters</span>
+                        <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-dark text-text-light md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="flex justify-evenly md:flex-row flex-col gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-text-light font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Email:
+                        <a href="mailto:contact@email.info" class="hover:text-accent">contact@email.info</a>
+                    </p>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Phone:
+                        <a href="tel:+257123456789" class="hover:text-accent">+257 123 456 789</a>
+                    </p>
+                    <p class="text-sm text-neutral-400">Address: 123 Green Street, Bujumbura, Burundi</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/solutions" class="text-sm text-neutral-400 hover:text-accent">Solutions</a></li>
+                        <li><a href="/about" class="text-sm text-neutral-400 hover:text-accent">About Us</a></li>
+                        <li><a href="/news-and-resources" class="text-sm text-neutral-400 hover:text-accent">News &
+                                Resources</a></li>
+                        <li><a href="/contact" class="text-sm text-neutral-400 hover:text-accent">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:max-w-[315px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Subscribe</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Get the latest updates on our food processing and packaging innovations.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3">
+                        <button type="submit"
+                            class="inline-block py-2 px-4 bg-accent hover:bg-accent/80 text-text-light">
+                            <i class="fi fi-rr-arrow-small-right inline-block mt-1"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="md:max-w-[250px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Follow us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Join our community for industry insights and updates.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-facebook"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-twitter-alt"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-instagram"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">
+                    © <span id="copyright"></span> AFROPACK GROUP — All rights reserved.
+                </p>
+                <div class="flex items-center gap-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/slick_custom.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript" src="../../assets/js/loader.js"></script>
+
+    <!-- Auto year update -->
+    <script type="text/javascript" src="../../assets/js/year_update.js"></script>
+
+    <!-- navbar accordions scripts -->
+    <script type="text/javascript" src="../../assets/js/navbar.js"></script>
+
+</body>
+
+</html>

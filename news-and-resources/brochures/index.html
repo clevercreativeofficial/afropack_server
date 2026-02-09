@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AFROPACK GROUP - Food Processing and Packaging Company.">
+    <meta name="keywords" content="Afropack Group, packaging, food processing,">
+    <meta name="author" content="AFROPACK- Food Processing and Packaging Company">
+
+    <title>AFROPACK - Food Processing and Packaging Company</title>
+
+    <meta name="theme-color" content="#CE0B10">
+
+    <!-- favicon -->
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        .slick-dots {
+            bottom: 20px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: #fff;
+            opacity: 0.5;
+            transition: color 0.3s, opacity 0.3s;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #CE0B10;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body class="bg-bg-alt">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            Loading...
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Top Info Bar -->
+    <div class="lg:block hidden bg-surface text-text-light text-sm">
+        <div class="max-w-[1200px] mx-auto py-2 px-3 flex justify-end items-center gap-6">
+            <div class="flex items-center space-x-10">
+                <div class="hidden md:flex items-center gap-2 space-x-2">
+                    Call:
+                    <p>+393429801567</p>
+                </div>
+                <div class="hidden md:flex items-center gap-2 space-x-2">
+                    Email:
+                    <p>afropackgroup@gmail.com</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <i class="fi fi-rr-search text-xs text-accent translate-y-0.5"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-background z-50">
+        <div class="max-w-7xl m-auto px-3 flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="md:w-16 w-10 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- NAV ITEMS -->
+            <ul id="navItems" class="lg:relative fixed top-0 left-0 lg:bg-transparent bg-background
+            lg:w-auto w-full min-h-screen lg:min-h-0 flex lg:flex-row flex-col text-sm text-text-color
+            lg:items-center justify-start lg:px-0 px-10 lg:py-0 py-6 lg:gap-10 gap-6 -translate-x-[1024px] md:-translate-x-0
+            duration-500 z-50">
+
+                <!-- Mobile Logo -->
+                <div class="lg:hidden block w-16 pb-4">
+                    <a href="/">
+                        <img class="w-10" src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- HOME -->
+                <li>
+                    <a href="/" class="hover:text-accent text-accent duration-300">Home</a>
+                </li>
+
+                <!-- SOLUTIONS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="md:py-6 py-3 px-3 block hover:text-white hover:bg-accent duration-300">
+                        Solutions
+                    </a>
+
+                    <div
+                        class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div
+                            class="absolute left-8 top-1 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent">
+                        </div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex items-center mt-2 gap-3">
+                                <i class="fi fi-rr-utensils text-xl"></i>
+                                <a href="/solutions/food" class="py-1 hover:underline">Food Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-center mt-2 gap-3">
+                                <i class="fi fi-rr-cheese text-xl"></i>
+                                <a href="/solutions/beverages" class="py-1 hover:underline">Dairy Processing
+                                    Equipment</a>
+                            </li>
+
+                            <li class="text-white flex items-center mt-2 gap-3">
+                                <i class="fi fi-rr-peach text-xl"></i>
+                                <a href="/solutions/beverages" class="py-1 hover:underline">Fruit & Vegetable Processing
+                                    Equipment</a>
+                            </li>
+
+                            <li class="text-white flex items-center mt-2 gap-3">
+                                <i class="fi fi-rr-drink-alt text-xl"></i>
+                                <a href="/solutions/beverages" class="py-1 hover:underline">Beverage Processing &
+                                    Filling Equipment</a>
+                            </li>
+
+                            <li class="text-white flex items-center mt-2 gap-3">
+                                <i class="fi fi-rr-hand-holding-heart text-xl"></i>
+                                <a href="/solutions/home-and-personal-care" class="py-1 hover:underline">Pharma & Home /
+                                    Personal Care Equipment</a>
+                            </li>
+
+                            <li class="text-white flex items-center mt-2 gap-3">
+                                <i class="fi fi-rr-box-open text-xl"></i>
+                                <a href="/solutions/pharma-industries" class="py-1 hover:underline">Packaging, Filling &
+                                    Labelling Equipment</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- SOLUTIONS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        Solutions
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex items-center mt-2 gap-3 border-b py-2">
+                            <i class="fi fi-rr-utensils"></i>
+                            <a href="/solutions/food" class="hover:underline">Food Processing</a>
+                        </li>
+
+                        <li class="flex items-center mt-2 gap-3 border-b py-2">
+                            <i class="fi fi-rr-cheese"></i>
+                            <a href="/solutions/food" class="hover:underline">Dairy Processing Equipment</a>
+                        </li>
+
+                        <li class="flex items-center mt-2 gap-3 border-b py-2">
+                            <i class="fi fi-rr-peach"></i>
+                            <a href="/solutions/food" class="hover:underline">Fruit & Vegetable Processing Equipment</a>
+                        </li>
+
+                        <li class="flex items-center mt-2 gap-3 border-b py-2">
+                            <i class="fi fi-rr-drink-alt"></i>
+                            <a href="/solutions/beverages" class="hover:underline">Beverage Processing & Filling
+                                Equipment</a>
+                        </li>
+
+                        <li class="flex items-center mt-2 gap-3 border-b py-2">
+                            <i class="fi fi-rr-hand-holding-heart"></i>
+                            <a href="/solutions/home-and-personal-care" class="hover:underline">Pharma & Home / Personal
+                                Care Equipment</a>
+                        </li>
+
+                        <li class="flex items-center mt-2 gap-3 py-2">
+                            <i class="fi fi-rr-stethoscope"></i>
+                            <a href="/solutions/pharma-industries" class="hover:underline">Packaging, Filling &
+                                Labelling Equipment</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="/about"
+                        class="md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
+                        About Us
+                    </a>
+                </li>
+
+                <!-- NEWS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="py-6 px-3 block hover:text-white hover:bg-accent duration-300">
+                        News & Resources
+                    </a>
+
+                    <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div class="absolute left-8 top-1 w-0 h-0
+                    border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent"></div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-bell"></i>
+                                <a href="/news-and-resources/news" class="hover:underline">News</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-calendar-day"></i>
+                                <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming
+                                    Events</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-play-alt"></i>
+                                <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-book"></i>
+                                <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- NEWS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        News & Resources
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pl-3 pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-bell"></i>
+                            <a href="/news-and-resources/news" class="hover:underline">News</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-calendar-day"></i>
+                            <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-play-alt"></i>
+                            <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                        </li>
+
+                        <li class="flex gap-3 py-2">
+                            <i class="fi fi-rr-book"></i>
+                            <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+                <a href="/contact"
+                    class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                    Contact Us
+                </a>
+            </ul>
+
+            <!-- MOBILE MENU ICON -->
+            <div id="menu-bar"
+                class="hamburger lg:hidden w-8 h-8 flex items-center justify-center bg-accent text-white cursor-pointer z-50">
+                <i class="fi fi-rr-bars text-lg translate-y-0.5"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="w-full h-full overflow-hidden">
+            <img class="w-full h-full object-cover"
+                src="https://www.tnasolutions.com/wp-content/uploads/2024/07/brochures-banner.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="max-w-[1200px] mx-auto px-4 py-8">
+         <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    TECHNICAL RESOURCES
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    AFROPACK <span class="text-accent-dark">Integrated Systems</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    As a leading packaging solutions partner for more than four decades, you can trust we have seen,
+                    addressed and overcome even the most difficult production challenges so you don't have to.
+                </p>
+            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pb-10">
+
+            <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+                <img class="w-full h-full object-cover"
+                    src="https://www.tnasolutions.com/wp-content/uploads/2018/01/9-300x227.jpg" />
+                <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
+                    <i class="fi fi-rr-download bg-accent text-white w-10 h-10 flex justify-center items-center"></i>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-40 text-white flex items-center justify-center duration-300 opacity-0 group-hover:opacity-100">
+                    Pharma.pdf
+                    <a href="#"
+                        class="absolute bottom-0 w-full bg-accent hover:bg-accent-dark duration-300 text-white py-2">
+                        <i class="fi fi-rr-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+                <img class="w-full h-full object-cover"
+                    src="https://www.tnasolutions.com/wp-content/uploads/2018/01/4-300x227.jpg" />
+                <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
+                    <i class="fi fi-rr-download bg-accent text-white w-10 h-10 flex justify-center items-center"></i>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-40 text-white flex items-center justify-center duration-300 opacity-0 group-hover:opacity-100">
+                    Pharma.pdf
+                    <a href="#"
+                        class="absolute bottom-0 w-full bg-accent hover:bg-accent-dark duration-300 text-white py-2">
+                        <i class="fi fi-rr-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+                <img class="w-full h-full object-cover"
+                    src="https://www.tnasolutions.com/wp-content/uploads/2018/01/7-300x227.jpg" />
+                <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
+                    <i class="fi fi-rr-download bg-accent text-white w-10 h-10 flex justify-center items-center"></i>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-40 text-white flex items-center justify-center duration-300 opacity-0 group-hover:opacity-100">
+                    Pharma.pdf
+                    <a href="#"
+                        class="absolute bottom-0 w-full bg-accent hover:bg-accent-dark duration-300 text-white py-2">
+                        <i class="fi fi-rr-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+                <img class="w-full h-full object-cover"
+                    src="https://www.tnasolutions.com/wp-content/uploads/2024/07/TNA-Meat-and-Poultry.png" />
+                <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
+                    <i class="fi fi-rr-download bg-accent text-white w-10 h-10 flex justify-center items-center"></i>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-40 text-white flex items-center justify-center duration-300 opacity-0 group-hover:opacity-100">
+                    Pharma.pdf
+                    <a href="#"
+                        class="absolute bottom-0 w-full bg-accent hover:bg-accent-dark duration-300 text-white py-2">
+                        <i class="fi fi-rr-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+                <img class="w-full h-full object-cover"
+                    src="https://www.tnasolutions.com/wp-content/uploads/2018/01/8-300x227.jpg" />
+                <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
+                    <i class="fi fi-rr-download bg-accent text-white w-10 h-10 flex justify-center items-center"></i>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-40 text-white flex items-center justify-center duration-300 opacity-0 group-hover:opacity-100">
+                    Pharma.pdf
+                    <a href="#"
+                        class="absolute bottom-0 w-full bg-accent hover:bg-accent-dark duration-300 text-white py-2">
+                        <i class="fi fi-rr-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+                <img class="w-full h-full object-cover"
+                    src="https://www.tnasolutions.com/wp-content/uploads/2018/01/6-300x227.jpg" />
+                <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
+                    <i class="fi fi-rr-download bg-accent text-white w-10 h-10 flex justify-center items-center"></i>
+                </div>
+                <div class="absolute inset-0 bg-black bg-opacity-40 text-white flex items-center justify-center duration-300 opacity-0 group-hover:opacity-100">
+                    Pharma.pdf
+                    <a href="#"
+                        class="absolute bottom-0 w-full bg-accent hover:bg-accent-dark duration-300 text-white py-2">
+                        <i class="fi fi-rr-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-dark text-text-light md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="flex justify-evenly md:flex-row flex-col gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-text-light font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Email:
+                        <a href="mailto:afropackgroup@gmail.com"
+                            class="hover:text-accent">afropackgroup@gmail.com</a>
+                    </p>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Phone:
+                        <a href="tel:+393429801567" class="hover:text-accent">+393429801567</a>
+                    </p>
+                    <p class="text-sm text-neutral-400">Address: Bujumbura, Burundi</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/solutions" class="text-sm text-neutral-400 hover:text-accent">Solutions</a></li>
+                        <li><a href="/about" class="text-sm text-neutral-400 hover:text-accent">About Us</a></li>
+                        <li><a href="/news-and-resources/videos" class="text-sm text-neutral-400 hover:text-accent">Videos</a></li>
+                        <li><a href="/contact" class="text-sm text-neutral-400 hover:text-accent">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:max-w-[315px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Subscribe</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Get notified about new video releases and industry updates.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3">
+                        <button type="submit"
+                            class="inline-block py-2 px-4 bg-accent hover:bg-accent/80 text-text-light">
+                            <i class="fi fi-rr-arrow-small-right inline-block mt-1"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="md:max-w-[250px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Follow us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Watch more videos and join our community.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-youtube"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-facebook"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-linkedin"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">
+                    © <span id="copyright"></span> AFROPACK GROUP — All rights reserved.
+                </p>
+                <div class="flex items-center gap-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/slick_custom.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript" src="../../assets/js/loader.js"></script>
+
+    <!-- Auto year update -->
+    <script type="text/javascript" src="../../assets/js/year_update.js"></script>
+
+    <!-- navbar accordions scripts -->
+    <script type="text/javascript" src="../../assets/js/navbar.js"></script>
+
+</body>
+
+</html>

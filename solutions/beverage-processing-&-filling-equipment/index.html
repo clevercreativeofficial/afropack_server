@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AFROPACK - Beverage Processing & Filling Equipment for Juices, Beer, and Ice Cream Mixes">
+    <meta name="keywords" content="Beverage Processing, Juice Production, Beer Brewing, Ice Cream Mixes, Filling Equipment">
+    <meta name="author" content="AFROPACK- Food Processing and Packaging Company">
+
+    <title>Beverage Processing & Filling Equipment - AFROPACK</title>
+
+    <meta name="theme-color" content="#CE0B10">
+
+    <!-- favicon -->
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <style>
+        .slick-dots {
+            bottom: 20px;
+        }
+
+        .slick-dots li button:before {
+            font-size: 8px;
+            color: #fff;
+            opacity: 0.5;
+            transition: color 0.3s, opacity 0.3s;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #CE0B10;
+            opacity: 1;
+        }
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+        
+        /* Consistent spacing classes */
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 5rem 1rem;
+            }
+        }
+        
+        .content-padding {
+            padding: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .content-padding {
+                padding: 3rem;
+            }
+        }
+        
+        .card-padding {
+            padding: 2.5rem;
+        }
+        
+        .content-box {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+        
+        .process-icon {
+            @apply w-16 h-16 flex items-center justify-center rounded-xl mb-6;
+            @apply bg-gradient-to-br from-blue-50 to-blue-100 text-accent;
+        }
+        
+        .feature-list li {
+            @apply flex items-start gap-3 mb-3;
+        }
+        
+        .feature-list li i {
+            @apply text-accent mt-1 flex-shrink-0;
+        }
+        
+        .beverage-card {
+            @apply h-full transition-all duration-300 hover:shadow-xl;
+        }
+        
+        .beverage-badge {
+            @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+        }
+        
+        .juice-badge {
+            @apply bg-orange-50 text-orange-700;
+        }
+        
+        .beer-badge {
+            @apply bg-amber-50 text-amber-700;
+        }
+        
+        .icecream-badge {
+            @apply bg-purple-50 text-purple-700;
+        }
+    </style>
+
+</head>
+
+<body class="bg-bg-alt">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            Loading...
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-background z-50">
+        <div class="max-w-7xl m-auto px-3 flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="md:w-16 w-10 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                </a>
+            </div>
+
+            <!-- NAV ITEMS -->
+            <ul id="navItems" class="lg:relative fixed top-0 left-0 lg:bg-transparent bg-background
+            lg:w-auto w-full min-h-screen lg:min-h-0 flex lg:flex-row flex-col text-sm text-text-color
+            lg:items-center justify-start lg:px-0 px-10 lg:py-0 py-6 lg:gap-10 gap-6 -translate-x-[1024px] md:-translate-x-0
+            duration-500 z-50">
+
+                <!-- Mobile Logo -->
+                <div class="lg:hidden block w-16 pb-4">
+                    <a href="/">
+                        <img class="w-10" src="/assets/images/logo/Logo_AfropackGroup.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- HOME -->
+                <li>
+                    <a href="/" class="hover:text-accent duration-300">Home</a>
+                </li>
+
+                <!-- SOLUTIONS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="md:py-6 py-3 px-3 block hover:text-white hover:bg-accent duration-300">
+                        Solutions
+                    </a>
+
+                    <div
+                        class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div
+                            class="absolute left-8 top-1 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent">
+                        </div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-utensils text-xl"></i>
+                                <a href="/solutions/food" class="py-1 hover:underline">Food Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-cheese text-xl"></i>
+                                <a href="/solutions/dairy" class="py-1 hover:underline">Dairy Processing</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-peach text-xl"></i>
+                                <a href="/solutions/fruit-vegetable" class="py-1 hover:underline">Fruit & Vegetable</a>
+                            </li>
+
+                            <li class="text-white flex items-start gap-3">
+                                <i class="fi fi-rr-drink-alt text-xl"></i>
+                                <a href="/solutions/beverages" class="py-1 hover:underline">Beverage Processing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- SOLUTIONS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        Solutions
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-utensils"></i>
+                            <a href="/solutions/food" class="hover:underline">Food Processing</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-cheese"></i>
+                            <a href="/solutions/dairy" class="hover:underline">Dairy Processing</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 border-b py-2">
+                            <i class="fi fi-rr-peach"></i>
+                            <a href="/solutions/fruit-vegetable" class="hover:underline">Fruit & Vegetable</a>
+                        </li>
+
+                        <li class="flex items-start gap-3 py-2">
+                            <i class="fi fi-rr-drink-alt"></i>
+                            <a href="/solutions/beverages" class="hover:underline">Beverage Processing</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ABOUT -->
+                <li>
+                    <a href="/about"
+                        class="md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
+                        About Us
+                    </a>
+                </li>
+
+                <!-- NEWS (Desktop) -->
+                <li class="relative group hidden lg:block">
+                    <a href="#" class="py-6 px-3 block hover:text-white hover:bg-accent duration-300">
+                        News & Resources
+                    </a>
+
+                    <div class="absolute left-0 top-full pt-3 opacity-0 invisible
+                group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                        <div class="absolute left-8 top-1 w-0 h-0
+                    border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-accent"></div>
+
+                        <ul class="w-[315px] bg-accent px-10 py-8 grid grid-cols-1 gap-4">
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-bell"></i>
+                                <a href="/news-and-resources/news" class="hover:underline">News</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-calendar-day"></i>
+                                <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-play-alt"></i>
+                                <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                            </li>
+                            <li class="text-white flex gap-3">
+                                <i class="fi fi-rr-book"></i>
+                                <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- NEWS (Mobile Accordion) -->
+                <li class="lg:hidden">
+                    <button class="w-full flex justify-between items-center py-3 font-medium"
+                        onclick="toggleMobile(this)">
+                        News & Resources
+                        <i class="fi fi-rr-angle-small-down text-lg"></i>
+                    </button>
+
+                    <ul class="pl-3 pt-2 hidden flex-col gap-4 text-text-color">
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-bell"></i>
+                            <a href="/news-and-resources/news" class="hover:underline">News</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-calendar-day"></i>
+                            <a href="/news-and-resources/upcoming-events" class="hover:underline">Upcoming Events</a>
+                        </li>
+
+                        <li class="flex gap-3 border-b py-2">
+                            <i class="fi fi-rr-play-alt"></i>
+                            <a href="/news-and-resources/videos" class="hover:underline">Videos</a>
+                        </li>
+
+                        <li class="flex gap-3 py-2">
+                            <i class="fi fi-rr-book"></i>
+                            <a href="/news-and-resources/brochures" class="hover:underline">Brochures</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+                <a href="/contact"
+                    class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                    Contact Us
+                </a>
+            </ul>
+
+            <!-- MOBILE MENU ICON -->
+            <div id="menu-bar"
+                class="hamburger lg:hidden w-8 h-8 flex items-center justify-center bg-accent text-white cursor-pointer z-50">
+                <i class="fi fi-rr-bars text-lg translate-y-0.5"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[50vh] flex flex-col justify-center items-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent-dark/20 z-10"></div>
+        <div class="w-full h-full overflow-hidden">
+            <img class="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1592555052153-a173b7c2f5f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="Beverage Processing Equipment">
+        </div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white z-20 px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-6">
+                Beverage <span class="text-accent">Processing</span> & Filling
+            </h1>
+            <p class="text-xl text-center max-w-3xl">
+                Advanced equipment for juices, beer, and ice cream mix production
+            </p>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <span
+                    class="inline-block px-4 py-2 bg-accent/10 text-accent-dark text-sm font-medium rounded-full mb-4">
+                    BEVERAGE PROCESSING EXCELLENCE
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Complete <span class="text-accent-dark">Beverage Solutions</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    AFROPACK designs and supplies advanced production lines for juices, soft drinks, beer, 
+                    and ice cream mixes, focusing on efficiency, reliability, and quality.
+                </p>
+            </div>
+
+            <!-- Beverage Categories -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Juices & Beverages -->
+                <div class="content-box beverage-card p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-orange-50 text-accent rounded-xl">
+                        <i class="fi fi-rr-glass-juice text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Juices & Beverages</h4>
+                    <p class="text-gray-600 mb-4">
+                        Advanced production lines for high-quality fruit juices and soft drinks
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="beverage-badge juice-badge">Fruit Juices</span>
+                    </div>
+                </div>
+
+                <!-- Beer Processing -->
+                <div class="content-box beverage-card p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-amber-50 text-accent rounded-xl">
+                        <i class="fi fi-rr-beer text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Beer Processing</h4>
+                    <p class="text-gray-600 mb-4">
+                        Brewery systems for craft beer and large-scale industrial production
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="beverage-badge beer-badge">Brewery Systems</span>
+                    </div>
+                </div>
+
+                <!-- Ice Cream Mixes -->
+                <div class="content-box beverage-card p-6 text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-purple-50 text-accent rounded-xl">
+                        <i class="fi fi-rr-ice-cream text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Ice Cream Mixes</h4>
+                    <p class="text-gray-600 mb-4">
+                        Complete lines for ice cream mix preparation and processing
+                    </p>
+                    <div class="flex justify-center">
+                        <span class="beverage-badge icecream-badge">Frozen Desserts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Juices & Beverages Section -->
+    <section class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
+                        <i class="fi fi-rr-glass-juice text-2xl text-amber-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Juices & Beverages</h3>
+                        <p class="text-gray-600">Production units for high-quality fruit juices and soft drinks</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 mb-10">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Market Requirements</h4>
+                        <p class="text-gray-700 mb-6">
+                            The fruit juice and soft drink market increasingly demands price competitiveness, 
+                            production efficiency, and reliability. Every hour of operation, every litre of product, 
+                            and every kilowatt of energy saved can make a significant difference.
+                        </p>
+                        
+                        <div class="bg-orange-50 p-6 rounded-lg">
+                            <h5 class="text-lg font-semibold text-gray-900 mb-4">Advanced Automation</h5>
+                            <p class="text-gray-700 mb-4">
+                                AFROPACK designs and supplies highly automated production lines where all operations 
+                                can be controlled from a single workstation, reducing human error and ensuring 
+                                repeatability and precision.
+                            </p>
+                            <ul class="feature-list space-y-2">
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Single workstation control</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Reduced human error</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Enhanced repeatability</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Precision throughout production</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Mixing & Blending Systems</h4>
+                        <p class="text-gray-700 mb-6">
+                            Our mixing and blending units rely on innovative technologies that guarantee a perfectly 
+                            homogeneous and natural product. Mixing can be performed in batches by the operator or 
+                            automatically through an in-line process.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white text-accent rounded-lg">
+                                    <i class="fi fi-rr-mixer"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Flexible Mixing Options</h5>
+                                    <p class="text-gray-600 text-sm">
+                                        Batch mixing by operator or automated in-line process
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white text-accent rounded-lg">
+                                    <i class="fi fi-rr-cog"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Customized Solutions</h5>
+                                    <p class="text-gray-600 text-sm">
+                                        Optimal solution selection based on product requirements and costs
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="w-10 h-10 flex items-center justify-center bg-white text-accent rounded-lg">
+                                    <i class="fi fi-rr-bottle"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900">Raw Materials</h5>
+                                    <p class="text-gray-600 text-sm">
+                                        Lines designed for concentrates and powders as raw materials
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customized Systems -->
+                <div class="mt-10 pt-10 border-t border-gray-200">
+                    <h4 class="text-xl font-bold text-gray-900 mb-6">Customized Systems</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-lg p-5 text-center hover:border-accent transition-colors">
+                            <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-orange-50 text-accent rounded-lg">
+                                <i class="fi fi-rr-factory"></i>
+                            </div>
+                            <h5 class="font-semibold text-gray-900">Turnkey Beverage Plants</h5>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-5 text-center hover:border-accent transition-colors">
+                            <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-orange-50 text-accent rounded-lg">
+                                <i class="fi fi-rr-temperature-high"></i>
+                            </div>
+                            <h5 class="font-semibold text-gray-900">Pasteurisers: HTST / ESL / UHT</h5>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-5 text-center hover:border-accent transition-colors">
+                            <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-orange-50 text-accent rounded-lg">
+                                <i class="fi fi-rr-clean"></i>
+                            </div>
+                            <h5 class="font-semibold text-gray-900">CIP (Clean-in-Place) Plants</h5>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-5 text-center hover:border-accent transition-colors">
+                            <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-orange-50 text-accent rounded-lg">
+                                <i class="fi fi-rr-robot"></i>
+                            </div>
+                            <h5 class="font-semibold text-gray-900">Process Automation Systems</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beer Processing Section -->
+    <section class="bg-gradient-to-b from-amber-50 to-white section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #fef3c7, #fbbf24);">
+                        <i class="fi fi-rr-beer text-2xl text-amber-700"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Beer Processing</h3>
+                        <p class="text-gray-600">Brewery systems for small-scale production or large volumes</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 mb-10">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Craft Beer Solutions</h4>
+                        <p class="text-gray-700 mb-6">
+                            AFROPACK offers solutions for the craft beer industry, developed with the support 
+                            of experienced master brewers. Our systems focus on flexibility, tailor-made configurations 
+                            based on on-site studies, efficiency, and scalable automation levels.
+                        </p>
+                        
+                        <div class="bg-amber-50 p-6 rounded-lg">
+                            <h5 class="text-lg font-semibold text-gray-900 mb-4">System Flexibility</h5>
+                            <p class="text-gray-700 mb-4">
+                                These systems allow brewers to develop and test different recipes while guaranteeing 
+                                excellent repeatability in production.
+                            </p>
+                            <ul class="feature-list space-y-2">
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Recipe development and testing</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Excellent production repeatability</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Scalable automation levels</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>On-site configuration studies</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Brewery Solutions Include</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Base & Specialty Malts</h5>
+                                <p class="text-gray-600 text-xs">Management systems for malt handling</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Brewhouse</h5>
+                                <p class="text-gray-600 text-xs">Complete brewing equipment</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Fermentation Tanks</h5>
+                                <p class="text-gray-600 text-xs">Fermentation and maturation systems</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Water Tanks</h5>
+                                <p class="text-gray-600 text-xs">Storage and process water management</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Auxiliary Equipment</h5>
+                                <p class="text-gray-600 text-xs">Steam generators, chillers, compressors</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Separation Equipment</h5>
+                                <p class="text-gray-600 text-xs">Centrifuges, filters, pasteurisers</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">CIP Systems</h5>
+                                <p class="text-gray-600 text-xs">Cleaning-in-place systems</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h5 class="font-semibold text-gray-900 mb-2 text-sm">Automation</h5>
+                                <p class="text-gray-600 text-xs">Process control and remote monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Assurance -->
+                <div class="mt-10 pt-10 border-t border-gray-200">
+                    <div class="flex items-center gap-6">
+                        <div class="w-12 h-12 flex items-center justify-center bg-amber-100 text-amber-700 rounded-lg">
+                            <i class="fi fi-rr-certificate"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-900 mb-2">Quality Assurance Process</h5>
+                            <p class="text-gray-600">
+                                All equipment is tested in-house before shipment and assembled at the customer's premises. 
+                                We provide installation layout studies, on-site installation, commissioning, and training.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ice Cream Mixes Section -->
+    <section class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="content-box card-padding mb-16">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="process-icon" style="background: linear-gradient(135deg, #f3e8ff, #e9d5ff);">
+                        <i class="fi fi-rr-ice-cream text-2xl text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Ice Cream Mixes</h3>
+                        <p class="text-gray-600">Complete lines dedicated to ice cream mix production and processing</p>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Processing Lines</h4>
+                        <p class="text-gray-700 mb-6">
+                            AFROPACK designs and supplies the entire ice cream mix preparation and processing line 
+                            up to ice cream production freezers.
+                        </p>
+                        
+                        <div class="bg-purple-50 p-6 rounded-lg">
+                            <h5 class="text-lg font-semibold text-gray-900 mb-4">Italian Collaboration</h5>
+                            <p class="text-gray-700 mb-4">
+                                We collaborate with leading Italian companies to supply complete lines including 
+                                freezers, extrusion systems, hardening tunnels, and packaging lines for cups, 
+                                cones, sticks, sandwiches, and more.
+                            </p>
+                            <ul class="feature-list space-y-2">
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Freezers and extrusion systems</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Hardening tunnels</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Complete packaging lines</span>
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check"></i>
+                                    <span>Multiple product formats</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="space-y-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">Production Capabilities</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Our lines are dedicated to the production and pasteurisation of ice cream mixes, 
+                                    ensuring consistent quality and food safety throughout the process.
+                                </p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-purple-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-mixer"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Mix Preparation</h5>
+                                    </div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-purple-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-temperature-high"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Pasteurisation</h5>
+                                    </div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-purple-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-freezer"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Freezing Systems</h5>
+                                    </div>
+                                    <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                        <div class="w-10 h-10 mb-3 flex items-center justify-center bg-purple-50 text-accent rounded-lg">
+                                            <i class="fi fi-rr-package"></i>
+                                        </div>
+                                        <h5 class="font-semibold text-gray-900 text-sm">Packaging</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-4">The System</h4>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="beverage-badge icecream-badge">Ice Cream Plants</span>
+                                    <span class="beverage-badge icecream-badge">CIP Plants</span>
+                                    <span class="beverage-badge icecream-badge">Process Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Technology Section -->
+    <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Fraugroup Juices -->
+                <div class="content-box p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-orange-50 text-accent rounded-lg">
+                        <i class="fi fi-rr-glass-juice text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Juice Technology</h4>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Powered by Fraugroup's advanced machinery for juice and beverage production.
+                    </p>
+                    <a href="https://www.fraugroup.com/machinery-plants-production-juice-beverage/index.php" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-accent font-semibold text-sm hover:text-accent-dark">
+                        <span>Explore Fraugroup Juice Tech</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+
+                <!-- Fraugroup Beer -->
+                <div class="content-box p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-amber-50 text-accent rounded-lg">
+                        <i class="fi fi-rr-beer text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Beer Technology</h4>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Advanced brewery systems from Fraugroup for industrial and craft beer production.
+                    </p>
+                    <a href="https://www.fraugroup.com/plant-machine-production-industrial-craft-beer/index.php" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-accent font-semibold text-sm hover:text-accent-dark">
+                        <span>Explore Fraugroup Beer Tech</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+
+                <!-- Fraugroup Ice Cream -->
+                <div class="content-box p-6">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-purple-50 text-accent rounded-lg">
+                        <i class="fi fi-rr-ice-cream text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Ice Cream Technology</h4>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Complete ice cream mix production technology from Fraugroup.
+                    </p>
+                    <a href="https://www.fraugroup.com/ice-cream-mixed-blend-production-machine/index.php" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-accent font-semibold text-sm hover:text-accent-dark">
+                        <span>Explore Fraugroup Ice Cream Tech</span>
+                        <i class="fi fi-rr-external-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="bg-gradient-to-r from-accent-dark to-accent section-padding">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Transform Your Beverage Production
+                </h2>
+                <p class="text-white/90 text-lg max-w-2xl mx-auto mb-8">
+                    Contact our beverage processing experts to discuss customized solutions for your 
+                    juice, beer, or ice cream mix production requirements.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact" 
+                       class="bg-white text-accent px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 
+                              transition-all duration-300 flex items-center justify-center gap-2 group">
+                        <span>Contact Beverage Experts</span>
+                        <i class="fi fi-rr-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="/solutions" 
+                       class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold 
+                              hover:bg-white hover:text-accent transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>View All Solutions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-dark text-text-light md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="flex justify-evenly md:flex-row flex-col gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-text-light font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Email:
+                        <a href="mailto:afropackgroup@gmail.com"
+                            class="hover:text-accent">afropackgroup@gmail.com</a>
+                    </p>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Phone:
+                        <a href="tel:+393429801567" class="hover:text-accent">+393429801567</a>
+                    </p>
+                    <p class="text-sm text-neutral-400">Address: Bujumbura, Burundi</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/solutions/beverages" class="text-sm text-neutral-400 hover:text-accent">Beverage Processing</a></li>
+                        <li><a href="/solutions/food" class="text-sm text-neutral-400 hover:text-accent">Food Processing</a></li>
+                        <li><a href="/solutions/dairy" class="text-sm text-neutral-400 hover:text-accent">Dairy Processing</a></li>
+                        <li><a href="/contact" class="text-sm text-neutral-400 hover:text-accent">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:max-w-[315px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Subscribe</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Get updates on beverage processing innovations and industry trends.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3">
+                        <button type="submit"
+                            class="inline-block py-2 px-4 bg-accent hover:bg-accent/80 text-text-light">
+                            <i class="fi fi-rr-arrow-small-right inline-block mt-1"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="md:max-w-[250px] w-full">
+                    <h3 class="text-xl text-text-light font-bold mb-4">Follow us</h3>
+                    <p class="text-sm text-neutral-400 mb-4">
+                        Stay connected for beverage industry insights and updates.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-linkedin"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-facebook"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-twitter-alt"></i></a>
+                        <a href="#" class="text-text-light text-lg hover:text-accent"><i
+                                class="fi fi-brands-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="text-center flex md:flex-row flex-col justify-between mt-8 border-t border-neutral-800 py-6">
+                <p class="text-sm text-neutral-400">
+                    © <span id="copyright"></span> AFROPACK GROUP — All rights reserved.
+                </p>
+                <div class="flex items-center gap-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm text-neutral-400 hover:text-accent transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="../../assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="../../assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="../../assets/js/slick_custom.js"></script>
+
+    <!-- loader -->
+    <script type="text/javascript" src="../../assets/js/loader.js"></script>
+
+    <!-- Auto year update -->
+    <script type="text/javascript" src="../../assets/js/year_update.js"></script>
+
+    <!-- navbar accordions scripts -->
+    <script type="text/javascript" src="../../assets/js/navbar.js"></script>
+
+</body>
+
+</html>

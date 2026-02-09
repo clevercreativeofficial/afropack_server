@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ecobrix burundi">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <title>eCoBrix | Accueil</title>
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+</head>
+
+<body class="bg-background text-text transition-colors duration-500">
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div class="animate-pulse">
+                <div
+                    class="animate-spin rounded-full h-20 w-20 flex justify-center items-center border-b-2 border-r-2 border-accent-light">
+                    <div
+                        class="animate-spin rounded-full h-16 w-16 flex justify-center items-center border-b-2 border-r-2 border-text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- overlay -->
+    <div
+        class="overlay md:translate-x-full translate-x-[750px] duration-300 bg-background bg-opacity-75 fixed top-0 left-0 w-full h-screen z-50">
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-background bg-opacity-75 z-50">
+        <!-- container -->
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+            <div class="md:w-[120px] py-4">
+                <a href="/">
+                    <img src="assets/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul id="navItems"
+                class="md:relative fixed top-0 left-0 md:bg-transparent bg-accent-dark md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm text-gray-400 md:items-center justify-start md:p-0 p-10 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <li><a class="hover:text-accent text-accent duration-300 ease-in-out" href="/">Accueil</a></li>
+                <li><a class="hover:text-accent duration-300 ease-in-out" href="/about">Apropos</a></li>
+
+                <!-- Dropdown -->
+                <li
+                    class="dropdown group relative md:max-h-auto max-h-4 transition-[max-height] duration-500 md:!overflow-visible overflow-hidden">
+                    <a class="hover:text-accent flex justify-between duration-300 ease-in-out cursor-pointer"
+                        href="/services">Services</a>
+                </li>
+
+                <li><a class="hover:text-accent duration-300 ease-in-out" href="/projects">Projets & Réalisations</a>
+                </li>
+                <li><a class="hover:text-accent duration-300 ease-in-out" href="/join_us">Nous rejoindre</a></li>
+                <a href="/contact"
+                    class="flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-10 text-sm bg-accent text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                    Contact
+                </a>
+
+            </ul>
+
+            <div id="menu-bar"
+                class="hamburger md:hidden flex w-8 h-8 items-center justify-center bg-accent text-white rounded cursor-pointer z-50">
+                <i class="fi fi-rr-bars-staggered text-lg translate-y-0.5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section
+        class="relative bg-white md:h-[55vh] h-[65vh] flex flex-col justify-center items-center rounded-b-[2.5rem] overflow-hidden">
+        <div class="flex flex-col text-center items-center px-3 z-30">
+            <h1 class="max-w-[750px] m-auto text-center md:text-5xl text-3xl font-bold text-white">
+                Ensemble,
+                <br>
+                transformons les déchets en
+                <br>
+                <span class="text-warning">
+                    ressources.
+                </span>
+            </h1>
+            <p class="max-w-[650px] m-auto text-white my-6">
+                ECOBRIX transforme les déchets ménagers et industriels en énergie propre, emplois verts et solutions durables.
+            </p>
+
+            <!-- CTA -->
+            <a href="/about"
+                class="flex justify-center items-center gap-2 rounded-lg text-sm md:w-26 m-auto h-10 px-4 bg-white text-accent">
+                Learn more
+                <i class="fi fi-rr-arrow-small-right translate-y-0.5 inline-block"></i>
+            </a href="/">
+        </div>
+
+        <div class="hiddens absolute top-0 left-0 w-full h-2/3 bg-gradient-to-t from-transparent to-white z-20">
+        </div>
+
+        <!-- carousel -->
+        <div class="carousel absolute bottom-0 bg-white bg-opacity-10 w-full md:h-[55vh] h-[65vh] z-10">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-30"
+                src="https://images.unsplash.com/photo-1760979219056-20bc838d2234?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500"
+                alt="">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-30"
+                src="https://images.unsplash.com/photo-1640053666741-7ac3daf30ff9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500"
+                alt="">
+            <img class="w-full md:h-[55vh] h-[65vh] object-cover opacity-30"
+                src="https://images.unsplash.com/photo-1738464328391-bd47932c6548?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500"
+                alt="">
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-accent-dark md:pt-20 pt-10">
+        <div class="max-w-[1200px] mx-auto px-4">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-20">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Contact Us</h3>
+                    <p class="text-sm text-text-muted mb-2">Email: <a href="mailto:info@italafricagroup.com"
+                            class="text-text-muted hover:text-accent">info@italafricagroup.com</a></p>
+                    <p class="text-sm text-text-muted mb-2">Phone: <a href="tel:+393429801567"
+                            class="hover:text-accent">+39 342 980
+                            1567</a></p>
+                    <p class="text-sm text-text-muted">Address: [Insert Address Here]</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-sm text-text-muted hover:text-accent">Home</a></li>
+                        <li><a href="#about" class="text-sm text-text-muted hover:text-accent">About Us</a></li>
+                        <li><a href="#products" class="text-sm text-text-muted hover:text-accent">Products &
+                                Solutions</a></li>
+                        <li><a href="#projects" class="text-sm text-text-muted hover:text-accent">Projects</a></li>
+                        <li><a href="#contact" class="text-sm text-text-muted hover:text-accent">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="sm:w-[275px] w-full">
+                    <h3 class="text-xl text-white font-bold mb-4">Stay Updated</h3>
+                    <p class="text-sm text-text-muted mb-4">Subscribe to our newsletter for the latest updates and news.
+                    </p>
+                    <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                        <input type="email" placeholder="Your email"
+                            class="w-full bg-background text-sm text-text-muted outline-none border border-text-muted focus:border-accent duration-500 p-2 sm:rounded-l-lg sm:rounded-none rounded-lg text-gray-900">
+                        <button type="submit"
+                            class="inline-block sm:rounded-r-lg sm:rounded-none rounded-lg py-2 px-6 text-sm bg-accent hover:bg-accent-light text-white">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Links -->
+                <div>
+                    <h3 class="text-xl text-white font-bold mb-4">Follow Us</h3>
+                    <p class="text-sm text-text-muted mb-4">Follow us and stay connected on social media for the latest
+                        updates and news.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-text-muted text-lg hover:text-accent">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a href="#" class="text-text-muted text-lg hover:text-accent">
+                            <i class="fi fi-brands-twitter-alt"></i>
+                        </a>
+                        <a href="#" class="text-text-muted text-lg hover:text-accent">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-8 border-t border-text-muted py-6">
+                <p class="text-sm text-text-muted">© <span id="copyright"></span> EcoBrix Burundi | Tous droits
+                    reservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $( document ).ready( function ()
+        {
+            $( '.carousel' ).slick( {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            } );
+        } );
+    </script>
+
+    <!-- loader -->
+    <script type="text/javascript">
+        $( window ).on( 'load', function ()
+        {
+            $( '#loader' ).fadeOut();
+        } )
+    </script>
+
+    <!-- Copyright -->
+    <script>
+        const copyright = new Date().getFullYear();
+        document.getElementById( 'copyright' ).innerHTML = copyright;
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: "var(--accent)",
+                        "accent-dark": "var(--accent-dark)",
+                        "accent-light": "var(--accent-light)",
+                        secondary: "var(--secondary)",
+                        highlight: "var(--highlight)",
+                        brown: "var(--brown)",
+                        text: "var(--text-color)",
+                        "text-muted": "var(--text-muted)",
+                        background: "var(--background)",
+                        surface: "var(--surface)",
+                        success: "var(--success)",
+                        warning: "var(--warning)",
+                        error: "var(--error)",
+                    },
+                    boxShadow: {
+                        soft: "0 4px 10px var(--shadow-color)",
+                    },
+                    borderColor: {
+                        DEFAULT: "var(--border-color)",
+                    },
+                },
+            }
+        };
+    </script>
+</body>
+
+</html>

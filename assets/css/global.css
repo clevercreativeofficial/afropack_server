@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+span:not(.sidebar span){
+    font-family: 'Inter', sans-serif;
+    color: var(--accent);
+}
+
+p, a, li, button, div{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-muted);
+}
+
+.title {
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .paragraph {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+:root {
+    /* Brand Identity */
+    --accent: #CE0B10;
+    --accent-dark: #140202;
+    --accent-light: #ce0b1117;
+    
+    /* Supporting Colors */
+    --secondary: #529B48; 
+    --highlight: #c5f3bf;
+
+    /* Text & Background */
+    --text-color: #111827;
+    --text-muted: #3e4555;
+
+    --background: #fff;
+    --bg-blur: #ffffffb4;
+    --bg-alt: #F3F4F6;
+    --surface: #f8f9f6;
+    
+    /* Feedback & State Colors */
+    --success: #2d7a4b;          /* Success green */
+    --warning: #f5b700;          /* Eco yellow warning */
+    --error: #d64545;            /* Error red (subtle, not harsh) */
+
+    /* Shadows & Border */
+    --shadow-color: #dbc9c91f;
+    --border-color: rgba(0, 0, 0, 0.08);
+}
+
+
+/* Loader Animation */
+.progress {
+   height: 4.5px;
+   width: 145.6px;
+   background: linear-gradient(#ce0b10 0 0),
+       linear-gradient(#ce0b10 0 0),
+       #dbdcef;
+   background-size: 60% 100%;
+   background-repeat: no-repeat;
+   animation: progress-7x9cg2 3s infinite;
+}
+
+@keyframes progress-7x9cg2 {
+   0% {
+      background-position: -150% 0,-150% 0;
+   }
+
+   66% {
+      background-position: 250% 0,-150% 0;
+   }
+
+   100% {
+      background-position: 250% 0, 250% 0;
+   }
+}
+
+
+/*============= Sidebar =================*/
+/* Completely hide sidebar scrollbar (cross-browser) */
+.sidebar {
+    /* For WebKit browsers (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    
+    /* For Firefox */
+    scrollbar-width: none;
+    
+    /* For IE and Edge */
+    -ms-overflow-style: none;
+}
+
+/* Optional: Show scrollbar on hover for power users */
+.sidebar:hover {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: rgba(156, 163, 175, 0.3);
+        border-radius: 3px;
+    }
+}
+
+/* Firefox hover state */
+.sidebar:hover {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+}
