@@ -183,12 +183,12 @@ switch ($current_URL) {
 
                 <!-- HOME -->
                 <li>
-                    <a href="<?= $url ?>" class="hover:text-accent text-accent duration-300">Home</a>
+                    <a href="<?= $url ?>" class="<?= $current_URL == $url ? 'text-accent' : '' ?>">Home</a>
                 </li>
 
                 <!-- SOLUTIONS (Desktop) -->
                 <li class="relative group hidden lg:block">
-                    <a href="#" class="md:py-6 py-3 px-3 block group-hover:text-white group-hover:bg-accent duration-300">
+                    <a href="#" class="<?= $current_URL == $url . 'beverage-processing-and-filling-equipment/' ? 'text-accent' : '' ?> md:py-6 py-3 px-3 block group-hover:text-white group-hover:bg-accent duration-300">
                         Solutions
                     </a>
 
@@ -356,7 +356,7 @@ switch ($current_URL) {
                 </li>
 
                 <!-- CONTACT -->
-                <a href="<?= $url ?>contact"
+                <a href="<?= $url ?>contact/"
                     class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
                     <i class="fi fi-rr-envelope translate-y-0.5"></i>
                     Contact Us

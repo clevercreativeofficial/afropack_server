@@ -68,7 +68,7 @@ require_once ROOT_PATH . '/components/button.php';
                     <?php
                     render_button(
                         "Find a solution",
-                        "/contact",
+                        "$url" . "contact",
                         "primary",
                         "sm:w-auto w-full text-center"
                     );
@@ -675,7 +675,7 @@ require_once ROOT_PATH . '/components/button.php';
             <?php
             render_button(
                 "View all events",
-                "/news-and-resources/upcoming-events",
+                "$url" . "news-and-resources/upcoming-events",
                 "outline",
                 "sm:w-auto w-full text-center"
             );
