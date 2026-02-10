@@ -213,7 +213,7 @@ switch ($current_URL) {
 
                             <li class="text-white flex items-center mt-2 gap-3">
                                 <i class="fi fi-rr-peach text-xl"></i>
-                                <a href="<?= $url ?>solutions/fruit-and-vegetable-processing-equipment/" class="py-1 hover:underline">Fruit & Vegetable Processing
+                                <a href="<?= $url ?>solutions/fruits-and-vegetable-processing-equipment/" class="py-1 hover:underline">Fruit & Vegetable Processing
                                     Equipment</a>
                             </li>
 
@@ -259,7 +259,7 @@ switch ($current_URL) {
 
                         <li class="flex items-center mt-2 gap-3 border-b py-2">
                             <i class="fi fi-rr-peach"></i>
-                            <a href="<?= $url ?>solutions/fruits-and-vegetable-processing/" class="hover:underline">Fruit & Vegetable Processing Equipment</a>
+                            <a href="<?= $url ?>solutions/fruitss-and-vegetable-processing/" class="hover:underline">Fruit & Vegetable Processing Equipment</a>
                         </li>
 
                         <li class="flex items-center mt-2 gap-3 border-b py-2">
