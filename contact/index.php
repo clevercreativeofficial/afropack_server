@@ -18,24 +18,27 @@ require_once ROOT_PATH . '/components/button.php';
     <div class="max-w-5xl mx-auto">
 
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            "Get in Touch",
-            "Let's",
-            "Connect",
-            "Product enquiry, feedback or question? We always appreciate hearing from you.
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                "Get in Touch",
+                "Let's",
+                "Connect",
+                "Product enquiry, feedback or question? We always appreciate hearing from you.
                     Our team is ready to assist with your processing and packaging needs."
-        );
-        ?>
+            );
+            ?>
+        </div>
+
 
         <div class="grid lg:grid-cols-2 gap-12">
             <!-- Contact Form -->
             <div class="bg-white p-8 shadow-2xl shadow-gray-100">
-                <div class="flex items-center gap-4 mb-8">
+                <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                     <h3 class="text-3xl font-bold text-gray-900">Send Us a Message</h3>
                 </div>
 
-                <form action="#" method="POST" class="space-y-6">
+                <form data-aos="fade-up" action="#" method="POST" class="space-y-6">
                     <div class="flex flex-col">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" id="name" name="name" required
@@ -70,12 +73,12 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Contact Information & Social -->
             <div class="bg-white shadow-2xl shadow-gray-100">
                 <!-- Contact Info Card -->
-                <div class="content-box card-padding">
+                <div data-aos="fade-up" class="content-box card-padding">
                     <div class="flex items-center gap-4 mb-8">
                         <h3 class="text-3xl font-bold text-gray-900">Contact Information</h3>
                     </div>
 
-                    <div class="space-y-6">
+                    <div data-aos="fade-up" class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div
                                 class="w-12 h-12 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
@@ -123,7 +126,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Social Media Card -->
-                <div class="content-box card-padding">
+                <div data-aos="fade-up" class="content-box card-padding">
                     <p class="text-gray-600 my-6">
                         Stay connected with us on social media for the latest updates and industry insights.
                     </p>

@@ -14,7 +14,7 @@ function render_header_section($subTitle, $title, $titleAccent, $description)
 
     <!-- Header Section -->
     <div class="text-center mb-16 md:mb-20">
-        <span class="inline-block px-6 py-2 bg-accent-light text-accent-dark text-sm uppercase rounded-full font-medium mb-4 tracking-wider">
+        <span class="inline-block px-6 py-2 bg-accent-light border border-red-200 text-accent-dark text-sm uppercase rounded-full font-medium mb-4 tracking-wider">
             <?= $escapedSubTitle ?>
         </span>
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-3xl mx-auto leading-tight">

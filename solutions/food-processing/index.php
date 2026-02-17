@@ -61,7 +61,7 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid md:grid-cols-2 gap-8 mb-16">
             <!-- Pasta Category -->
             <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-flatbread text-xl mt-1"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Pasta Production</h4>
@@ -72,7 +72,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Snacks Category -->
             <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-pot text-xl mt- 1"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Snacks Processing</h4>
@@ -83,7 +83,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Cereals Category -->
             <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-wheat-awn text-xl mt-1"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Cereal Processing</h4>
@@ -94,7 +94,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Coffee Category -->
             <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-coffee text-xl mt-1"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Coffee Processing</h4>
@@ -151,28 +151,28 @@ require_once ROOT_PATH . '/components/button.php';
                     <h4 data-aos="fade-up" class="text-xl font-bold text-gray-900 mb-6">Specialized Pasta Plants</h4>
                     <div class="grid grid-cols-2 gap-6">
                         <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-flatbread"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Short Pasta</h5>
                             <p class="text-gray-600 text-sm">Complete plants for various short pasta shapes</p>
                         </div>
                         <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-flatbread"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Long Pasta</h5>
                             <p class="text-gray-600 text-sm">Production lines for spaghetti, fettuccine, etc.</p>
                         </div>
                         <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-wheat-awn"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Couscous</h5>
                             <p class="text-gray-600 text-sm">Specialized couscous production systems</p>
                         </div>
                         <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-warehouse-alt"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Storage Systems</h5>
@@ -243,7 +243,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </p>
                         </div>
 
-                        <div class="bg-red-50 p-6">
+                        <div class="bg-red-50 border border-red-200 p-6">
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Partner Technology</h4>
                             <p class="text-gray-700 mb-4">
                                 Our solutions are powered by Fenitalia's advanced food processing technology,
@@ -314,7 +314,7 @@ require_once ROOT_PATH . '/components/button.php';
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Green Coffee Plants -->
                 <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-leaf text-lg mt-1"></i>
                     </div>
                     <h5 class="text-xl font-bold text-gray-900 mb-4">Green Coffee Plants</h5>
@@ -340,7 +340,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Roasted Coffee Plants -->
                 <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-mug-hot text-lg mt-1"></i>
                     </div>
                     <h5 class="text-xl font-bold text-gray-900 mb-4">Roasted Coffee Plants</h5>
@@ -366,7 +366,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Ground Coffee & Grinders -->
                 <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-coffee-beans text-lg mt-1"></i>
                     </div>
                     <h5 class="text-xl font-bold text-gray-900 mb-4">Ground Coffee & Grinders</h5>

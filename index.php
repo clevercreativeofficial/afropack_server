@@ -162,7 +162,7 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Card 1 -->
             <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
-                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
+                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 border border-red-200 text-accent p-3">
                         <i class="fi fi-rr-utensils text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-gray-800 text-2xl font-bold">Food Processing</h3>
@@ -170,10 +170,10 @@ require_once ROOT_PATH . '/components/button.php';
                 <p>Processing solutions for a wide range of food products, including:</p>
                 <div class="my-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Pasta</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Snacks</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Cereals</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Coffee</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Pasta</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Snacks</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Cereals</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Coffee</span>
                     </div>
                 </div>
                 <hr>
@@ -189,7 +189,7 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Card 2 -->
             <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
-                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
+                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 border border-red-200 text-accent p-3">
                         <i class="fi fi-rr-cheese text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-gray-800 text-2xl font-bold">Dairy Processing Equipment</h3>
@@ -197,10 +197,10 @@ require_once ROOT_PATH . '/components/button.php';
                 <p>Complete dairy processing solutions for:</p>
                 <div class="my-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Milk</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Yogurt</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Cheese</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Other dairy products</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Milk</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Yogurt</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Cheese</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Other dairy products</span>
                     </div>
                 </div>
                 <hr>
@@ -216,7 +216,7 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Card 3 -->
             <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
-                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
+                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 border border-red-200 text-accent p-3">
                         <i class="fi fi-rr-peach text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-gray-800 text-2xl font-bold">
@@ -229,9 +229,9 @@ require_once ROOT_PATH . '/components/button.php';
                 </p>
                 <div class="my-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Juice</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Purées</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Concentrates</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Juice</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Purées</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Concentrates</span>
                     </div>
                 </div>
                 <hr>
@@ -246,7 +246,7 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Card 4 -->
             <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
-                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
+                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 border border-red-200 text-accent p-3">
                         <i class="fi fi-rr-drink-alt text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-gray-800 text-2xl font-bold">
@@ -258,10 +258,10 @@ require_once ROOT_PATH . '/components/button.php';
                 </p>
                 <div class="my-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Juices</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Soft drinks</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Beer</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Other beverages</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Juices</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Soft drinks</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Beer</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Other beverages</span>
                     </div>
                 </div>
                 <hr>
@@ -277,7 +277,7 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Card 5 -->
             <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
-                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
+                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 border border-red-200 text-accent p-3">
                         <i class="fi fi-rr-hand-holding-heart text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-gray-800 text-2xl font-bold">
@@ -289,9 +289,9 @@ require_once ROOT_PATH . '/components/button.php';
                 </p>
                 <div class="my-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Detergent products</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Cosmetic products</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Pharmaceutical products</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Detergent products</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Cosmetic products</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Pharmaceutical products</span>
                     </div>
                 </div>
                 <hr>
@@ -308,7 +308,7 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Card 6 -->
             <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
-                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
+                    <div class="w-14 h-14 flex items-center justify-center bg-red-50 border border-red-200 text-accent p-3">
                         <i class="fi fi-rr-box-open text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-gray-800 text-2xl font-bold">
@@ -320,11 +320,11 @@ require_once ROOT_PATH . '/components/button.php';
                 </p>
                 <div class="my-6">
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Form-fill-seal machines</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Bottling lines</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Filling systems</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Labelling equipment</span>
-                        <span class="bg-red-50 px-3 py-1 rounded-full text-sm">Automated packaging lines</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Form-fill-seal machines</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Bottling lines</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Filling systems</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Labelling equipment</span>
+                        <span class="bg-red-50 border border-red-200 px-3 py-1 rounded-full text-sm">Automated packaging lines</span>
                     </div>
                 </div>
                 <hr>

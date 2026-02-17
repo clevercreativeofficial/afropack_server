@@ -88,7 +88,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-customize"></i>
                             </div>
                             <div>
@@ -100,7 +100,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-globe"></i>
                             </div>
                             <div>
@@ -213,7 +213,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                     <div data-aos="fade-up" class="space-y-4">
                         <div data-aos="fade-up" class="flex items-start gap-3 bg-white border border-gray-200 p-4">
-                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-house-chimney"></i>
                             </div>
                             <div>
@@ -223,7 +223,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-3 bg-white border border-gray-200 p-4">
-                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-bath"></i>
                             </div>
                             <div>
@@ -294,7 +294,7 @@ require_once ROOT_PATH . '/components/button.php';
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Filling & Closing -->
                 <div data-aos="fade-up" class="bg-white border p-6">
-                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-bottle text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Filling & Closing</h4>
@@ -315,7 +315,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Labelling -->
                 <div data-aos="fade-up" class="bg-white border p-6">
-                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-label text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Labelling</h4>
@@ -336,7 +336,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Secondary Packaging -->
                 <div data-aos="fade-up" class="bg-white border p-6">
-                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-boxes text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Secondary Packaging</h4>
@@ -357,7 +357,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Soap Technologies -->
                 <div data-aos="fade-up" class="bg-white border p-6">
-                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-soap text-xl"></i>
                     </div>
                     <h4 class="text-xl font-bold text-gray-900 mb-3">Soap Technologies</h4>
@@ -441,25 +441,25 @@ require_once ROOT_PATH . '/components/button.php';
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Packaging Capabilities</h4>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent">
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                         <i class="fi fi-rr-bottle"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Bottle Filling</h5>
                                 </div>
                                 <div class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent">
-                                        <i class="fi fi-rr-tube"></i>
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                                        <i class="fi fi-rr-test-tube"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Tube Filling</h5>
                                 </div>
                                 <div class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent">
-                                        <i class="fi fi-rr-jar"></i>
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                                        <i class="fi fi-rr-jar-alt"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Jar Filling</h5>
                                 </div>
                                 <div class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-pink-50 text-accent">
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                         <i class="fi fi-rr-pump"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Pump Systems</h5>

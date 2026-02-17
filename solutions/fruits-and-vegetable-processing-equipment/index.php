@@ -43,10 +43,10 @@ require_once ROOT_PATH . '/components/button.php';
                         all produced according to the highest quality standards.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Continental Fruits</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Tropical Fruits</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">High Performance</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Italian Quality</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Continental Fruits</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Tropical Fruits</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">High Performance</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Italian Quality</span>
                     </div>
                 </div>
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
@@ -98,7 +98,7 @@ require_once ROOT_PATH . '/components/button.php';
                 <div>
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-leaf"></i>
                             </div>
                             <div>
@@ -111,8 +111,8 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
-                                <i class="fi fi-rr-factory"></i>
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                                <i class="fi fi-rr-industry-windows"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900 mb-2">Integrated Plant Design</h4>
@@ -124,8 +124,8 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
-                                <i class="fi fi-rr-quality"></i>
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                                <i class="fi fi-rr-shield-check"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900 mb-2">Quality Optimization</h4>
@@ -162,140 +162,140 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <!-- Avocado Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-avocado text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Avocado Processing</h4>
                 <p class="text-gray-600 mb-4">Complete plants for high-quality avocado products</p>
                 <div class="space-y-3">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Stainless steel washers with water immersion
-                            systems</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Stainless steel washers with water immersion
+                            systems
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Specialized destoners for maximum yield</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Specialized destoners for maximum yield
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Fresh water rinsing before sorting</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Fresh water rinsing before sorting
                     </div>
                 </div>
             </div>
 
             <!-- Banana Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-banana text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Banana Processing</h4>
                 <p class="text-gray-600 mb-4">Complete systems from washing to aseptic filling</p>
                 <div class="space-y-3">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Stainless steel washers and dedicated peeling
-                            lines</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Stainless steel washers and dedicated peeling
+                            lines
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Nitrogen injection to prevent oxidation</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Nitrogen injection to prevent oxidation
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Pasteurization/sterilization with aseptic filling</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Pasteurization/sterilization with aseptic filling
                     </div>
                 </div>
             </div>
 
             <!-- Passion Fruit Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-fruit-apple text-xl"></i>
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-citrus text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Passion Fruit Processing</h4>
                 <p class="text-gray-600 mb-4">Premium ingredient for mixed juices and beverages</p>
                 <div class="space-y-3">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Dedicated extraction machines</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Dedicated extraction machines
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Highly accurate juice treatment processes</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Highly accurate juice treatment processes
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Maximum yield and quality optimization</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Maximum yield and quality optimization
                     </div>
                 </div>
             </div>
 
             <!-- Pineapple Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-yellow-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-pineapple text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Pineapple Processing</h4>
                 <p class="text-gray-600 mb-4">Specialized technologies for juice production</p>
                 <div class="space-y-3">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Natural and concentrated pineapple juice</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Natural and concentrated pineapple juice
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Dedicated extractors minimizing peel contact</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Dedicated extractors minimizing peel contact
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Superior product quality preservation</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Superior product quality preservation
                     </div>
                 </div>
             </div>
 
             <!-- Papaya Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-papaya text-xl"></i>
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-citrus-slice text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Papaya Processing</h4>
                 <p class="text-gray-600 mb-4">Complete processing lines for papaya products</p>
                 <div class="space-y-3">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Washing, sorting, and deseeding systems</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Washing, sorting, and deseeding systems
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Pulping and deaeration processes</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Pulping and deaeration processes
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Sterilization with aseptic filling</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Sterilization with aseptic filling
                     </div>
                 </div>
             </div>
 
             <!-- Mango Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-mango text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Mango Processing</h4>
                 <p class="text-gray-600 mb-4">High-quality juice and purée production</p>
                 <div class="space-y-3">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Complete washing and sorting systems</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Complete washing and sorting systems
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Customized destoners and pulp refining</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Customized destoners and pulp refining
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Deaeration or concentration options</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Deaeration or concentration options
                     </div>
                 </div>
             </div>
@@ -305,8 +305,8 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid md:grid-cols-3 gap-8 mb-16">
             <!-- Citrus Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-orange text-xl"></i>
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-citrus text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Citrus Processing</h4>
                 <p class="text-gray-600 mb-4">Equipment for fresh juice and NFC pasteurized juice</p>
@@ -319,7 +319,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Coconut Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-coconut text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Coconut Processing</h4>
@@ -333,7 +333,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Tomato Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-tomato text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Tomato Processing</h4>
@@ -389,8 +389,8 @@ require_once ROOT_PATH . '/components/button.php';
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div
-                                class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
-                                <i class="fi fi-rr-certificate"></i>
+                                class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
+                                <i class="fi fi-rr-badge"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900 mb-2">International Standards</h4>
@@ -403,7 +403,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                         <div class="flex items-start gap-4">
                             <div
-                                class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                                class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
                                 <i class="fi fi-rr-robot"></i>
                             </div>
                             <div>
@@ -417,8 +417,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                         <div class="flex items-start gap-4">
                             <div
-                                class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
-                                <i class="fi fi-rr-shield-check-circle"></i>
+                                class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
+                                <i class="fi fi-rr-shield-check"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900 mb-2">Quality Assurance</h4>

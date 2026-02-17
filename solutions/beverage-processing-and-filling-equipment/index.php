@@ -32,8 +32,8 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid md:grid-cols-3 gap-8 mb-16">
             <!-- Juices & Beverages -->
             <div data-aos="fade-up" class="bg-white p-6 text-center">
-                <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-glass-juice text-2xl"></i>
+                <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-glass-citrus text-2xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Juices & Beverages</h4>
                 <p class="text-gray-600 mb-4">
@@ -46,7 +46,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Beer Processing -->
             <div data-aos="fade-up" class="bg-white p-6 text-center">
-                <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-beer text-2xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Beer Processing</h4>
@@ -60,7 +60,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Ice Cream Mixes -->
             <div data-aos="fade-up" class="bg-white p-6 text-center">
-                <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-ice-cream text-2xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Ice Cream Mixes</h4>
@@ -133,7 +133,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                     <div class="space-y-4">
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-mixer"></i>
                             </div>
                             <div>
@@ -145,8 +145,8 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
-                                <i class="fi fi-rr-cog"></i>
+                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                                <i class="fi fi-rr-settings"></i>
                             </div>
                             <div>
                                 <h5 class="font-semibold text-gray-900">Customized Solutions</h5>
@@ -157,7 +157,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
+                            <div class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                 <i class="fi fi-rr-bottle"></i>
                             </div>
                             <div>
@@ -176,25 +176,25 @@ require_once ROOT_PATH . '/components/button.php';
                 <h4 class="text-xl font-bold text-gray-900 mb-6">Customized Systems</h4>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
-                            <i class="fi fi-rr-factory"></i>
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                            <i class="fi fi-rr-industry-windows"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">Turnkey Beverage Plants</h5>
                     </div>
                     <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                             <i class="fi fi-rr-temperature-high"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">Pasteurisers: HTST / ESL / UHT</h5>
                     </div>
                     <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
-                            <i class="fi fi-rr-clean"></i>
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                            <i class="fi fi-rr-sparkles"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">CIP (Clean-in-Place) Plants</h5>
                     </div>
                     <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
-                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
+                        <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                             <i class="fi fi-rr-robot"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">Process Automation Systems</h5>
@@ -294,8 +294,8 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Quality Assurance -->
             <div class="mt-10 pt-10 border-t border-gray-200">
                 <div data-aos="fade-up" class="flex items-start gap-6">
-                    <div class="min-w-12 h-12 flex items-center justify-center bg-red-100 text-red-700">
-                        <i class="fi fi-rr-certificate"></i>
+                    <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-red-700">
+                        <i class="fi fi-rr-badge"></i>
                     </div>
                     <div>
                         <h5 class="font-semibold text-gray-900 mb-2">Quality Assurance Process</h5>
@@ -367,25 +367,25 @@ require_once ROOT_PATH . '/components/button.php';
                             </p>
                             <div data-aos="fade-up" class="grid grid-cols-2 gap-4">
                                 <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                         <i class="fi fi-rr-mixer"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Mix Preparation</h5>
                                 </div>
                                 <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                         <i class="fi fi-rr-temperature-high"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Pasteurisation</h5>
                                 </div>
                                 <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
-                                        <i class="fi fi-rr-freezer"></i>
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                                        <i class="fi fi-rr-temperature-frigid"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Freezing Systems</h5>
                                 </div>
                                 <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
-                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
+                                    <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                                         <i class="fi fi-rr-package"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Packaging</h5>
@@ -414,8 +414,8 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Fraugroup Juices -->
             <div data-aos="fade-up" class="content-box p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-glass-juice text-xl"></i>
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-glass-citrus text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Juice Technology</h4>
                 <p class="text-gray-600 mb-4 text-sm">
@@ -431,7 +431,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Fraugroup Beer -->
             <div data-aos="fade-up" class="content-box p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-beer text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Beer Technology</h4>
@@ -448,7 +448,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Fraugroup Ice Cream -->
             <div data-aos="fade-up" class="content-box p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-ice-cream text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Ice Cream Technology</h4>

@@ -31,6 +31,12 @@ require_once ROOT_PATH . '/config/functions.php';
         href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
 
+    <!-- Lucide Icons -->
+    <!-- Development version -->
+    <!-- <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script> -->
+    <!-- Production version -->
+    <!-- <script src="https://unpkg.com/lucide@latest"></script> -->
+
     <!-- Slick Carousel -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />

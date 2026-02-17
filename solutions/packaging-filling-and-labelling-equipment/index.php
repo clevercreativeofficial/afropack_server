@@ -42,10 +42,10 @@ require_once ROOT_PATH . '/components/button.php';
                         Our thermoforming machines stand out for their outstanding quality–price ratio, providing maximum packaging safety with fully automatic, fast, reliable, and precise operation.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Form Fill Seal</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Thermoforming</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Vacuum Packaging</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Modified Atmosphere</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Form Fill Seal</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Thermoforming</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Vacuum Packaging</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Modified Atmosphere</span>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@ require_once ROOT_PATH . '/components/button.php';
             <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
                 <div data-aos="fade-up">
                     <div class="flex flex-col gap-4 mb-8">
-                        <div class="w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                        <div class="w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                             <i class="fi fi-rr-eye text-xl"></i>
                         </div>
                         <div>
@@ -83,7 +83,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <div data-aos="fade-up">
                     <div class="flex flex-col gap-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
+                        <div class="w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                             <i class="fi fi-rr-target text-xl"></i>
                         </div>
                         <div>
@@ -125,23 +125,23 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
             <!-- Flow Wrap HFFS -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-box-open text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Flow Wrap Machines HFFS</h4>
                 <p class="text-gray-600 mb-4">Horizontal Form Fill & Seal solutions</p>
-                <div class="space-y-3">
+                <div class="space-y-3 text-sm">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">High-speed horizontal packaging</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        High-speed horizontal packaging
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Versatile for various product types</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Versatile for various product types
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Precise and reliable operation</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Precise and reliable operation
                     </div>
                 </div>
                 <a href="https://www.laferpack.com/categories" target="_blank" class="mt-4 inline-flex items-center gap-2 text-accent text-sm font-medium">
@@ -152,23 +152,23 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Vertical Baggers VFFS -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-box-alt text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Vertical Baggers VFFS</h4>
                 <p class="text-gray-600 mb-4">Vertical Form Fill & Seal systems</p>
-                <div class="space-y-3">
+                <div class="space-y-3 text-sm">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Efficient vertical packaging lines</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Efficient vertical packaging lines
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Suitable for granular and powdered products</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Suitable for granular and powdered products
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Compact footprint design</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Compact footprint design
                     </div>
                 </div>
                 <a href="https://www.mielepackaging.it/en/automatic-lines/" target="_blank" class="mt-4 inline-flex items-center gap-2 text-accent text-sm font-medium">
@@ -179,23 +179,23 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Thermoforming Machines -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-cube text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Thermoforming Machines</h4>
                 <p class="text-gray-600 mb-4">Exceptional quality–price ratio packaging</p>
-                <div class="space-y-3">
+                <div class="space-y-3 text-sm">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Fully automatic and fast operation</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Fully automatic and fast operation
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Outstanding packaging safety</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Outstanding packaging safety
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Suitable for vacuum and modified atmosphere</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Suitable for vacuum and modified atmosphere
                     </div>
                 </div>
                 <a href="https://bmbpack.com/en/tipologia/thermoforming-machines/" target="_blank" class="mt-4 inline-flex items-center gap-2 text-accent text-sm font-medium">
@@ -206,23 +206,23 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Vacuum & MAP Machines -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-wind text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Vacuum & MAP Machines</h4>
                 <p class="text-gray-600 mb-4">Modified Atmosphere Packaging solutions</p>
-                <div class="space-y-3">
+                <div class="space-y-3 text-sm">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Extended product shelf life</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Extended product shelf life
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Vacuum chamber and belt systems</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Vacuum chamber and belt systems
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Precise gas flushing technology</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Precise gas flushing technology
                     </div>
                 </div>
                 <div class="mt-4 space-y-2">
@@ -233,27 +233,27 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Additional Packaging Solutions -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-conveyor-belt text-xl"></i>
                 </div>
                 <h4 class="text-xl font-bold text-gray-900 mb-3">Complete Packaging Lines</h4>
                 <p class="text-gray-600 mb-4">End-to-end packaging solutions</p>
-                <div class="space-y-3">
+                <div class="space-y-3 text-sm">
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Tray sealers and sealing systems</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Tray sealers and sealing systems
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Shrinking and drying units</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Shrinking and drying units
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Product handling and automation</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Product handling and automation
                     </div>
                     <div class="flex items-start gap-2">
-                        <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                        <span class="text-sm text-gray-600">Counting and weighing machines</span>
+                        <i class="fi fi-rr-check-circle mt-1"></i>
+                        Counting and weighing machines
                     </div>
                 </div>
                 <div class="mt-4 space-y-2">
@@ -269,22 +269,22 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gray-50 section-padding">
     <div class="max-w-5xl mx-auto">
 
-    <div data-aos="fade-up">
-        <?php
-        render_header_section(
-            'Industry Expertise',
-            'Serving',
-            'Multiple Industries',
-            'AFROPACK has dedicated industry managers with extensive hands-on experience in specific sectors, ensuring tailored packaging solutions that meet the unique needs of each industry we serve.',
-        );
-        ?>
-    </div>
-        
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Industry Expertise',
+                'Serving',
+                'Multiple Industries',
+                'AFROPACK has dedicated industry managers with extensive hands-on experience in specific sectors, ensuring tailored packaging solutions that meet the unique needs of each industry we serve.',
+            );
+            ?>
+        </div>
+
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <!-- Food Industry -->
             <div data-aos="fade-up" class="bg-white p-6">
-                <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50">
+                <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50 border border-red-200">
                     <i class="fi fi-rr-utensils text-xl"></i>
                 </div>
                 <h4 class="text-lg font-bold text-gray-900 mb-3">Food Industry</h4>
@@ -295,7 +295,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Pharmaceutical -->
             <div data-aos="fade-up" class="bg-white p-6">
-                <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50">
+                <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50 border border-red-200">
                     <i class="fi fi-rr-pills text-xl"></i>
                 </div>
                 <h4 class="text-lg font-bold text-gray-900 mb-3">Pharmaceutical</h4>
@@ -306,7 +306,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Home & Personal Care -->
             <div data-aos="fade-up" class="bg-white p-6">
-                <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50">
+                <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50 border border-red-200">
                     <i class="fi fi-rr-soap text-xl"></i>
                 </div>
                 <h4 class="text-lg font-bold text-gray-900 mb-3">Home & Personal Care</h4>
@@ -341,16 +341,16 @@ require_once ROOT_PATH . '/components/button.php';
                             <h5 class="font-semibold text-gray-900 mb-3">Beverage Lines</h5>
                             <ul class="space-y-2 text-gray-600 text-sm">
                                 <li class="flex items-start gap-2">
-                                    <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                                    <span>Wine & Spirits plants</span>
+                                    <i class="fi fi-rr-check-circle mt-1"></i>
+                                    Wine & Spirits plants
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                                    <span>Beer production facilities</span>
+                                    <i class="fi fi-rr-check-circle mt-1"></i>
+                                    Beer production facilities
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                                    <span>Water & CSD plants</span>
+                                    <i class="fi fi-rr-check-circle mt-1"></i>
+                                    Water & CSD plants
                                 </li>
                             </ul>
                         </div>
@@ -359,16 +359,16 @@ require_once ROOT_PATH . '/components/button.php';
                             <h5 class="font-semibold text-gray-900 mb-3">Other Industries</h5>
                             <ul class="space-y-2 text-gray-600 text-sm">
                                 <li class="flex items-start gap-2">
-                                    <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                                    <span>Edible Oil & Food</span>
+                                    <i class="fi fi-rr-check-circle mt-1"></i>
+                                    Edible Oil & Food
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                                    <span>Home & Personal Care</span>
+                                    <i class="fi fi-rr-check-circle mt-1"></i>
+                                    Home & Personal Care
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                                    <span>Chemical products</span>
+                                    <i class="fi fi-rr-check-circle mt-1"></i>
+                                    Chemical products
                                 </li>
                             </ul>
                         </div>
@@ -383,8 +383,8 @@ require_once ROOT_PATH . '/components/button.php';
                 <div>
                     <div class="space-y-6">
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
-                                <i class="fi fi-rr-cog"></i>
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
+                                <i class="fi fi-rr-settings"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900 mb-2">Machine Features</h4>
@@ -395,8 +395,8 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
-                                <i class="fi fi-rr-precision-tool"></i>
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
+                                <i class="fi fi-rr-chevron-double-up"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900 mb-2">High Precision</h4>
@@ -407,7 +407,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
                                 <i class="fi fi-rr-shield-check"></i>
                             </div>
                             <div>
@@ -419,7 +419,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </div>
 
                         <div data-aos="fade-up" class="flex items-start gap-4">
-                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
+                            <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 border border-red-200 text-accent shadow-sm">
                                 <i class="fi fi-rr-refresh"></i>
                             </div>
                             <div>
@@ -438,7 +438,7 @@ require_once ROOT_PATH . '/components/button.php';
         <div data-aos="fade-up" class="mt-16 text-center">
             <div class="bg-white shadow-2xl shadow-gray-200 p-6 md:p-12">
                 <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 mb-6 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-16 h-16 mb-6 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-globe text-2xl mt-2"></i>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">International Presence</h3>

@@ -44,9 +44,9 @@ require_once ROOT_PATH . '/components/button.php';
                         derivatives.
                     </p>
                     <div class="flex flex-wrap items-center gap-4">
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Customized Solutions</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Maximum Yield</span>
-                        <span class="bg-red-50 py-2 px-4 text-sm rounded-full">Cost Efficiency</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Customized Solutions</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Maximum Yield</span>
+                        <span class="bg-red-50 border border-red-200 py-2 px-4 text-sm rounded-full">Cost Efficiency</span>
                     </div>
                 </div>
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
@@ -62,7 +62,7 @@ require_once ROOT_PATH . '/components/button.php';
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <!-- Milk & Derivatives -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-milk text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Milk & Milk Derivatives</h4>
@@ -83,8 +83,8 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Yogurt Products -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-yogurt text-xl mt-2"></i>
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-glass text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Yogurt & Fermented Products</h4>
                 <p class="text-gray-600 mb-4">
@@ -104,7 +104,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Cream & Butter -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-cream text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Cream & Butter</h4>
@@ -125,7 +125,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Ice Cream -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-ice-cream text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Ice Cream & Mixes</h4>
@@ -146,7 +146,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Cheese Products -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                     <i class="fi fi-rr-cheese text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Cheese Production</h4>
@@ -167,8 +167,8 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Whey Processing -->
             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-protein-shake text-xl mt-2"></i>
+                <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                    <i class="fi fi-rr-milk-alt text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Whey Processing</h4>
                 <p class="text-gray-600 mb-4">
@@ -214,7 +214,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
-                                    class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                    class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
                                 </div>
                                 <div>
@@ -224,7 +224,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
-                                    class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                    class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
                                 </div>
                                 <div>
@@ -234,7 +234,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
-                                    class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                    class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
                                 </div>
                                 <div>
@@ -244,7 +244,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
-                                    class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                    class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
                                 </div>
                                 <div>
@@ -255,7 +255,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
-                                    class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                    class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
                                 </div>
                                 <div>
@@ -265,7 +265,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                             <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
-                                    class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                    class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
                                 </div>
                                 <div>
@@ -283,7 +283,7 @@ require_once ROOT_PATH . '/components/button.php';
                     <div class="grid md:grid-cols-3 gap-4">
                         <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
-                                class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-temperature-high"></i>
                             </div>
                             <div>
@@ -295,8 +295,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                         <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
-                                class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
-                                <i class="fi fi-rr-yogurt"></i>
+                                class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
+                                <i class="fi fi-rr-glass"></i>
                             </div>
                             <div>
                                 <h5 class="font-semibold text-gray-900">Yogurt and Fermented Products</h5>
@@ -307,8 +307,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                         <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
-                                class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
-                                <i class="fi fi-rr-butter"></i>
+                                class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
+                                <i class="fi fi-rr-cream"></i>
                             </div>
                             <div>
                                 <h5 class="font-semibold text-gray-900">Cream and Butter</h5>
@@ -319,7 +319,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                         <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
-                                class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-ice-cream"></i>
                             </div>
                             <div>
@@ -330,7 +330,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                         <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
-                                class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
+                                class="w-10 h-10 flex items-center justify-center bg-red-50 border border-red-200 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-cheese"></i>
                             </div>
                             <div>
@@ -356,8 +356,8 @@ require_once ROOT_PATH . '/components/button.php';
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Turnkey Dairy Plants -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                        <i class="fi fi-rr-factory"></i>
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                        <i class="fi fi-rr-milk-alt"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Turnkey Dairy Plants</h5>
                     <p class="text-gray-600 text-sm">
@@ -367,7 +367,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Pasteurizers -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-temperature-high"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Pasteurizers: HTST / ESL / UHT</h5>
@@ -378,8 +378,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Ultra Clean / Aseptic Tanks -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                        <i class="fi fi-rr-container"></i>
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                        <i class="fi fi-rr-sparkles"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Ultra Clean / Aseptic Tanks</h5>
                     <p class="text-gray-600 text-sm">
@@ -389,7 +389,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Milk Reception Lines -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-truck-loading"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Milk Reception Lines</h5>
@@ -400,8 +400,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Yogurt Plants -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                        <i class="fi fi-rr-yogurt"></i>
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                        <i class="fi fi-rr-glass"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Yogurt Plants</h5>
                     <p class="text-gray-600 text-sm">
@@ -411,8 +411,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Mini Dairy Plants -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                        <i class="fi fi-rr-industry"></i>
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                        <i class="fi fi-rr-milk"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Mini Dairy Plants</h5>
                     <p class="text-gray-600 text-sm">
@@ -422,8 +422,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Whey Processing Plants -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                        <i class="fi fi-rr-lab-container"></i>
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                        <i class="fi fi-rr-glass"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Whey Processing Plants</h5>
                     <p class="text-gray-600 text-sm">
@@ -433,8 +433,8 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- CIP Plants -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                        <i class="fi fi-rr-clean"></i>
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
+                        <i class="fi fi-rr-sparkles"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">CIP (Clean-in-Place) Plants</h5>
                     <p class="text-gray-600 text-sm">
@@ -444,7 +444,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <!-- Process Automation Systems -->
                 <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
-                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
+                    <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 border border-red-200 text-accent">
                         <i class="fi fi-rr-robot"></i>
                     </div>
                     <h5 class="text-lg font-semibold text-gray-900 mb-3">Process Automation Systems</h5>
