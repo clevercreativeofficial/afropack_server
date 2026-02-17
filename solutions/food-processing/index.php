@@ -19,17 +19,20 @@ require_once ROOT_PATH . '/components/button.php';
     <div class="max-w-5xl mx-auto">
 
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            'Food Processing Solutions',
-            'Comprehensive',
-            'Food Industry Solutions',
-            'AFROPACK delivers advanced machinery and automatic/semi-automatic systems for the production of high-quality food products across multiple categories.',
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Food Processing Solutions',
+                'Comprehensive',
+                'Food Industry Solutions',
+                'AFROPACK delivers advanced machinery and automatic/semi-automatic systems for the production of high-quality food products across multiple categories.',
+            );
+            ?>
+        </div>
+
 
         <!-- Main Content Card -->
-        <div class="bg-white mb-16 shadow-2xl shadow-gray-200">
+        <div data-aos="fade-up" class="bg-white mb-16 shadow-2xl shadow-gray-200">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="p-6 md:p-12">
                     <h3 class="text-3xl font-bold text-gray-900 mb-6">Food Industry Equipment</h3>
@@ -57,7 +60,7 @@ require_once ROOT_PATH . '/components/button.php';
         <!-- Categories Grid -->
         <div class="grid md:grid-cols-2 gap-8 mb-16">
             <!-- Pasta Category -->
-            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+            <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-flatbread text-xl mt-1"></i>
                 </div>
@@ -68,7 +71,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Snacks Category -->
-            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+            <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-pot text-xl mt- 1"></i>
                 </div>
@@ -79,7 +82,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Cereals Category -->
-            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+            <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-wheat-awn text-xl mt-1"></i>
                 </div>
@@ -90,7 +93,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Coffee Category -->
-            <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+            <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-coffee text-xl mt-1"></i>
                 </div>
@@ -107,32 +110,32 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <div class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-4xl font-bold text-gray-900 mb-2">Pasta Production Systems</h3>
                     <p class="text-gray-600">Ensuring the highest quality standards in pasta manufacturing</p>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12">
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
                 <div class="bg-white p-6 shadow-2xl shadow-gray-200">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Process Lines</h4>
-                    <ul class="feature-list space-y-3">
+                    <ul class="feature-list space-y-3 text-sm">
                         <li>
                             <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            <span>Process lines for long pasta, short pasta, nests, lasagna, cannelloni</span>
+                            Process lines for long pasta, short pasta, nests, lasagna, cannelloni
                         </li>
                         <li>
                             <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            <span>Special pasta and couscous production systems</span>
+                            Special pasta and couscous production systems
                         </li>
                         <li>
                             <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            <span>Technologies for filled pasta, ravioli, and tortellini</span>
+                            Technologies for filled pasta, ravioli, and tortellini
                         </li>
                         <li>
                             <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            <span>Snack industry, breakfast cereals, and instant flour lines</span>
+                            Snack industry, breakfast cereals, and instant flour lines
                         </li>
                     </ul>
                     <div class="mt-8">
@@ -145,30 +148,30 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-6">Specialized Pasta Plants</h4>
+                    <h4 data-aos="fade-up" class="text-xl font-bold text-gray-900 mb-6">Specialized Pasta Plants</h4>
                     <div class="grid grid-cols-2 gap-6">
-                        <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                             <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-flatbread"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Short Pasta</h5>
                             <p class="text-gray-600 text-sm">Complete plants for various short pasta shapes</p>
                         </div>
-                        <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                             <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-flatbread"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Long Pasta</h5>
                             <p class="text-gray-600 text-sm">Production lines for spaghetti, fettuccine, etc.</p>
                         </div>
-                        <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                             <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-wheat-awn"></i>
                             </div>
                             <h5 class="font-semibold text-gray-900 mb-2">Couscous</h5>
                             <p class="text-gray-600 text-sm">Specialized couscous production systems</p>
                         </div>
-                        <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                        <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                             <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-warehouse-alt"></i>
                             </div>
@@ -186,7 +189,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-5xl mx-auto">
         <div class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-4xl font-bold text-gray-900 mb-2">Snack & Cereal Processing</h3>
                     <p class="text-gray-600">Advanced technologies for snack and cereal production</p>
@@ -194,7 +197,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                     <div class="space-y-8">
                         <div>
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Snack Pellets</h4>
@@ -222,7 +225,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                     <div class="space-y-8">
                         <div>
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Direct Expanded Products</h4>
@@ -263,7 +266,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <div class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-4xl font-bold text-gray-900 mb-2">Coffee Processing Systems</h3>
                     <p class="text-gray-600">Complete solutions from green coffee to packaged products</p>
@@ -271,7 +274,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Coffee Roasting Section -->
-            <div class="mb-12 p-6 bg-white shadow-2xl shadow-gray-200">
+            <div data-aos="fade-up" class="mb-12 p-6 bg-white shadow-2xl shadow-gray-200">
                 <h4 class="text-2xl font-bold text-gray-900 mb-6">Coffee Roasters & Roasting Plants</h4>
                 <div class="grid lg:grid-cols-2 gap-8">
                     <div>
@@ -280,22 +283,22 @@ require_once ROOT_PATH . '/components/button.php';
                             for specialty coffee shops and small artisan production to industrial models for
                             medium and large productions.
                         </p>
-                        <ul class="feature-list space-y-3">
+                        <ul class="feature-list space-y-3 text-sm">
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
-                                <span>Integrated destoners for foreign body cleaning</span>
+                                Integrated destoners for foreign body cleaning
                             </li>
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
-                                <span>Continuous chaff extraction systems</span>
+                                Continuous chaff extraction systems
                             </li>
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
-                                <span>Optional green coffee loaders</span>
+                                Optional green coffee loaders
                             </li>
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
-                                <span>Additional cyclones for cooling systems</span>
+                                Additional cyclones for cooling systems
                             </li>
                         </ul>
                     </div>
@@ -310,33 +313,33 @@ require_once ROOT_PATH . '/components/button.php';
             <!-- Coffee Processing Systems -->
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Green Coffee Plants -->
-                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-leaf text-lg mt-1"></i>
                     </div>
                     <h5 class="text-xl font-bold text-gray-900 mb-4">Green Coffee Plants</h5>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Green coffee reception systems (jute bags, big bags, bulk)</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                           Green coffee reception systems (jute bags, big bags, bulk)
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Cleaning and mechanical/optical selection</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                           Cleaning and mechanical/optical selection
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Pneumatic transport systems</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                           Pneumatic transport systems
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Custom storage silos and dosing systems</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                           Custom storage silos and dosing systems
                         </li>
                     </ul>
                 </div>
 
                 <!-- Roasted Coffee Plants -->
-                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-mug-hot text-lg mt-1"></i>
                     </div>
@@ -345,24 +348,24 @@ require_once ROOT_PATH . '/components/button.php';
                         Complete systems including cleaning, transport, storage silos, and mixing solutions
                         for consistent quality roasted coffee.
                     </p>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Complete processing systems</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                            Complete processing systems
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Integrated storage solutions</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                            Integrated storage solutions
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Advanced mixing technology</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                            Advanced mixing technology
                         </li>
                     </ul>
                 </div>
 
                 <!-- Ground Coffee & Grinders -->
-                <div class="bg-white p-6 shadow-2xl shadow-gray-200">
+                <div data-aos="fade-up" class="bg-white p-6 shadow-2xl shadow-gray-200">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-coffee-beans text-lg mt-1"></i>
                     </div>
@@ -371,25 +374,25 @@ require_once ROOT_PATH . '/components/button.php';
                         Storage systems with natural or controlled degassing suitable for capsules, pods,
                         and vacuum packaging.
                     </p>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-sm">
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Industrial coffee grinders</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                            Industrial coffee grinders
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Suitable for capsule and pod packaging</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                            Suitable for capsule and pod packaging
                         </li>
                         <li class="flex items-start gap-2">
-                            <i class="fi fi-rr-check-circle text-accent mt-1"></i>
-                            <span>Large-scale production capabilities</span>
+                            <i class="fi fi-rr-check-circle mt-1"></i>
+                            Large-scale production capabilities
                         </li>
                     </ul>
                 </div>
             </div>
 
             <!-- Partner Reference -->
-            <div class="mt-12 text-center">
+            <div data-aos="fade-up" class="mt-12 text-center">
                 <p class="text-gray-600 pb-3">Our coffee processing solutions feature IMF's advanced roasting
                     technology</p>
                 <a href="https://www.imf-srl.com/en/coffee-roasters/" target="_blank"

@@ -1,71 +1,8 @@
 <?php
 require_once __DIR__ . '/../path.php';
 require_once ROOT_PATH . '/config/database.php';
+require_once ROOT_PATH . '/config/functions.php';
 
-$current_URL = "http" . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on" ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$title = ''; // Initialize an empty title variable
-
-// Check the current URL and set the title accordingly
-switch ($current_URL) {
-    case $url:
-        $title = 'AFROPACK - Food Processing and Packaging Company';
-        break;
-
-    case $url . 'about/':
-        $title = 'AFROPACK - About Us';
-        break;
-
-    case $url . 'contact/':
-        $title = 'AFROPACK - Contact Us';
-        break;
-
-    case $url . 'news-and-resources/brochures/':
-        $title = 'AFROPACK - Brochures';
-        break;
-
-    case $url . 'news-and-resources/news/':
-        $title = 'AFROPACK - News';
-        break;
-
-    case $url . 'news-and-resources/upcoming-events/':
-        $title = 'AFROPACK - Upcoming Events';
-        break;
-
-    case $url . 'news-and-resources/videos/':
-        $title = 'AFROPACK - Videos';
-        break;
-
-    case $url . 'solutions/beverage-processing-&-filling-equipment/':
-        $title = 'AFROPACK - Beverage Processing & Filling Equipment';
-        break;
-
-    case $url . 'solutions/dairy-processing-equipment/':
-        $title = 'AFROPACK - Dairy Processing Equipment';
-        break;
-
-    case $url . 'solutions/food-processing/':
-        $title = 'AFROPACK - Food Processing';
-        break;
-
-    case $url . 'solutions/packaging-filling-labelling-equipment/':
-        $title = 'AFROPACK - Packaging, Filling & Labelling Equipment';
-        break;
-
-    case $url . 'solutions/pharma-and-home-personal-care-equipment/':
-        $title = 'AFROPACK - Pharma & Home / Personal Care Equipment';
-        break;
-
-    case $url . 'login/':
-        $title = 'AFROPACK - Login';
-        break;
-
-    case $url . 'not-found/':
-        $title = 'AFROPACK - 404 Not Found';
-        break;
-
-    default:
-        $title = 'AFROPACK - Food Processing and Packaging Company';
-}
 ?>
 
 <!DOCTYPE html>
@@ -78,7 +15,7 @@ switch ($current_URL) {
     <meta name="keywords" content="Afropack Group, packaging, food processing,">
     <meta name="author" content="AFROPACK- Food Processing and Packaging Company">
 
-    <title>AFROPACK - Food Processing and Packaging Company</title>
+    <title><?= $title ?></title>
 
     <!-- favicon -->
     <link rel="icon" href="<?= $url ?>assets/favicon.ico" type="image/x-icon">
@@ -97,6 +34,14 @@ switch ($current_URL) {
     <!-- Slick Carousel -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Notyf (Toast Notifications) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <style>
         .slick-dots {
@@ -150,12 +95,12 @@ switch ($current_URL) {
 <body class="bg-bg-alt">
 
     <!-- loader -->
-    <!-- <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
         <div class="flex flex-col justify-center items-center gap-4 h-full">
             Loading...
             <div class="progress"></div>
         </div>
-    </div> -->
+    </div>
 
     <!-- navbar -->
     <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] bg-white bg-opacity-70 backdrop-blur-lg z-50">
@@ -183,13 +128,14 @@ switch ($current_URL) {
 
                 <!-- HOME -->
                 <li>
-                    <a href="<?= $url ?>" class="<?= $current_URL == $url ? 'text-accent' : '' ?>">Home</a>
+                    <a href="<?= $url ?>" class="<?= $active_menu === 'home' ? 'text-accent' : '' ?>">Home</a>
                 </li>
 
                 <!-- SOLUTIONS (Desktop) -->
                 <li class="relative group hidden lg:block">
-                    <a href="#" class="<?= $current_URL == $url . 'beverage-processing-and-filling-equipment/' ? 'text-accent' : '' ?> md:py-6 py-3 px-3 block group-hover:text-white group-hover:bg-accent duration-300">
+                    <a href="#" class="<?= $active_menu === 'solutions' ? 'text-accent' : '' ?> md:py-6 py-3 px-3 block group-hover:text-white group-hover:bg-accent duration-300">
                         Solutions
+                        <i class="fi fi-rr-angle-small-down text-lg inline-block translate-y-1"></i>
                     </a>
 
                     <div
@@ -285,15 +231,16 @@ switch ($current_URL) {
                 <!-- ABOUT -->
                 <li>
                     <a href="<?= $url ?>about/"
-                        class="md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
+                        class="<?= $active_menu === 'about' ? 'text-accent' : '' ?> md:py-6 py-3 md:px-3 px-0 block md:hover:text-white md:hover:bg-accent duration-300">
                         About Us
                     </a>
                 </li>
 
                 <!-- NEWS (Desktop) -->
                 <li class="relative group hidden lg:block">
-                    <a href="#" class="py-6 px-3 block group-hover:text-white group-hover:bg-accent duration-300">
+                    <a href="#" class="<?= $active_menu === 'news-and-resources' ? 'text-accent' : '' ?> py-6 px-3 block group-hover:text-white group-hover:bg-accent duration-300">
                         News & Resources
+                        <i class="fi fi-rr-angle-small-down text-lg inline-block translate-y-1"></i>
                     </a>
 
                     <div class="absolute left-0 top-full pt-3 opacity-0 invisible
@@ -357,7 +304,7 @@ switch ($current_URL) {
 
                 <!-- CONTACT -->
                 <a href="<?= $url ?>contact/"
-                    class="py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
+                    class="<?= $active_menu === 'contact' ? 'text-accent' : '' ?> py-3 px-3 lg:py-6 flex justify-center items-center gap-2 min-w-[125px] bg-accent text-white">
                     <i class="fi fi-rr-envelope translate-y-0.5"></i>
                     Contact Us
                 </a>

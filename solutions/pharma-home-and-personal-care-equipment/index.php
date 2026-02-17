@@ -19,38 +19,40 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Section Header -->
-        <?php
+        <div data-aos="fade-up">
+            <?php
             render_header_section(
                 'Industrial Equipment Solutions',
                 'Advanced',
                 'Processing & Packaging',
                 'AFROPACK supplies and installs customized machines and complete lines for pharmaceutical packaging and home/personal care products, delivering genuine Italian manufacturing quality.',
             );
-        ?>
+            ?>
+        </div>
 
         <!-- Pharma Packaging Section -->
         <div class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Solutions for Pharma Packaging</h3>
                     <p class="text-gray-600">Customized machines and complete lines for pharmaceutical packaging</p>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12">
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
                 <div>
                     <p class="text-gray-700 mb-6">
                         All machines and systems are built in Italy, guaranteeing genuine Italian manufacturing
                         quality with precision engineering and strict quality control standards.
                     </p>
 
-                    <div class="">
+                    <div data-aos="fade-up">
                         <h4 class="text-xl font-bold text-gray-900 mb-4">African Service Network</h4>
                         <p class="text-gray-700 mb-4">
                             AFROPACK maintains close customer relationships across Africa through an extensive
                             network of Service Hubs in major countries, ensuring fast and reliable technical support.
                         </p>
-                        <ul class="feature-list space-y-2">
+                        <ul data-aos="fade-up" class="feature-list space-y-2">
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
                                 Extensive network of Service Hubs across Africa
@@ -72,8 +74,8 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <div>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
+                    <div data-aos="fade-up" class="space-y-6">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="w-12 h-12 flex items-center justify-center bg-white text-accent">
                                 <i class="fi fi-rr-factory"></i>
                             </div>
@@ -85,7 +87,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-customize"></i>
                             </div>
@@ -97,7 +99,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-globe"></i>
                             </div>
@@ -119,8 +121,8 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Powder Detergent -->
-        <div class="mb-12">
-            <div class="flex items-center gap-4 mb-8">
+        <div data-aos="fade-up" class="mb-12">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Powder Detergent Production Plants</h3>
                     <p class="text-gray-600">High-performance plants with unmatched efficiency and productivity</p>
@@ -128,14 +130,14 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <div>
+                <div data-aos="fade-up">
                     <p class="text-gray-700 mb-6">
                         AFROPACK designs and supplies high-performance powder detergent plants, delivering
                         unmatched efficiency and productivity with full technical support from product formulation
                         to manufacturing optimization.
                     </p>
 
-                    <div class="">
+                    <div data-aos="fade-up">
                         <h4 class="text-xl font-bold text-gray-900 mb-4">Sustainable Design Features</h4>
                         <ul class="feature-list space-y-2">
                             <li>
@@ -154,26 +156,26 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Packaging Solutions</h4>
                     <p class="text-gray-700 mb-4">
                         Plants are supplied and installed with VFFS packaging machines specifically engineered
                         for detergent powder packaging, featuring:
                     </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white border border-gray-200 p-4">
+                    <div data-aos="fade-up" class="grid grid-cols-2 gap-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 text-sm">High-Speed Production</h5>
                             <p class="text-gray-600 text-xs">Optimized for maximum throughput</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 text-sm">Powder Control</h5>
                             <p class="text-gray-600 text-xs">Aspiration systems at sealing</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 text-sm">Film Management</h5>
                             <p class="text-gray-600 text-xs">Electrostatic control solutions</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 text-sm">Quality Control</h5>
                             <p class="text-gray-600 text-xs">Density variation monitoring</p>
                         </div>
@@ -181,7 +183,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
 
-            <div class="mt-8 pt-8 border-t border-gray-200">
+            <div data-aos="fade-up" class="mt-8 pt-8 border-t border-gray-200">
                 <a href="https://www.mielepackaging.it/en/solutions-for-detergent-powder/"
                     target="_blank"
                     class="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark">
@@ -193,7 +195,7 @@ require_once ROOT_PATH . '/components/button.php';
 
         <!-- Liquid Detergent -->
         <div class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Liquid Detergent Production Plants</h3>
                     <p class="text-gray-600">Custom-designed plants for household and personal care products</p>
@@ -201,7 +203,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <div>
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Production Capabilities</h4>
                     <p class="text-gray-700 mb-6">
                         Plants are designed for the production of household cleaning products (dishwashing liquids,
@@ -209,8 +211,8 @@ require_once ROOT_PATH . '/components/button.php';
                         product types producible within the same manufacturing plant.
                     </p>
 
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-3 bg-white border border-gray-200 p-4">
+                    <div data-aos="fade-up" class="space-y-4">
+                        <div data-aos="fade-up" class="flex items-start gap-3 bg-white border border-gray-200 p-4">
                             <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-house-chimney"></i>
                             </div>
@@ -220,7 +222,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="flex items-start gap-3 bg-white border border-gray-200 p-4">
                             <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-bath"></i>
                             </div>
@@ -232,22 +234,22 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Plant Features</h4>
                     <div class="space-y-4">
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2">Compact Layout</h5>
                             <p class="text-gray-600 text-sm">Optimized space utilization for efficient operations</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2">Easy Operation</h5>
                             <p class="text-gray-600 text-sm">User-friendly interfaces and controls</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2">Product Stability</h5>
                             <p class="text-gray-600 text-sm">Ensuring consistent product quality and homogeneity</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2">High Performance</h5>
                             <p class="text-gray-600 text-sm">Maximum operational efficiency and output</p>
                         </div>
@@ -255,16 +257,16 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
 
-            <div class="mt-8 pt-8 border-t border-gray-200">
+            <div data-aos="fade-up" class="mt-8 pt-8 border-t border-gray-200">
                 <div class="grid md:grid-cols-1 gap-8">
-                    <div>
+                    <div data-aos="fade-up">
                         <h5 class="font-semibold text-gray-900 text-center mb-3">Filling Solutions</h5>
                         <p class="max-w-lg mx-auto text-center text-gray-600 text-sm">
                             Complete semi-automatic or fully automatic filling lines supplied, with special attention
                             to material selection for aggressive or corrosive products.
                         </p>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div data-aos="fade-up" class="flex items-center justify-center">
                         <a href="https://www.telm.it/en/filling-machines-chemical/detergents-washing-liquids"
                             target="_blank"
                             class="inline-flex items-center gap-2 text-accent text-center font-semibold hover:text-accent-dark">
@@ -281,8 +283,8 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- Packaging Technology Section -->
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-7xl mx-auto">
-        <div class="mb-16">
-            <div class="flex items-center gap-4 mb-8">
+        <div data-aos="fade-up" class="mb-16">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Packaging Technology Solutions</h3>
                     <p class="text-gray-600">Complete packaging systems for pharmaceutical and personal care products</p>
@@ -291,7 +293,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Filling & Closing -->
-                <div class="bg-white border p-6">
+                <div data-aos="fade-up" class="bg-white border p-6">
                     <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-bottle text-xl"></i>
                     </div>
@@ -312,7 +314,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Labelling -->
-                <div class="bg-white border p-6">
+                <div data-aos="fade-up" class="bg-white border p-6">
                     <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-label text-xl"></i>
                     </div>
@@ -333,7 +335,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Secondary Packaging -->
-                <div class="bg-white border p-6">
+                <div data-aos="fade-up" class="bg-white border p-6">
                     <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-boxes text-xl"></i>
                     </div>
@@ -354,7 +356,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Soap Technologies -->
-                <div class="bg-white border p-6">
+                <div data-aos="fade-up" class="bg-white border p-6">
                     <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-soap text-xl"></i>
                     </div>
@@ -382,7 +384,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-7xl mx-auto">
         <div class="">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Solutions for Cosmetics Packaging</h3>
                     <p class="text-gray-600">Complete packaging lines for the cosmetic industry</p>
@@ -390,7 +392,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <div>
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Comprehensive Solutions</h4>
                     <p class="text-gray-700 mb-6">
                         AFROPACK supplies and installs a wide range of machines and complete packaging lines
@@ -398,7 +400,7 @@ require_once ROOT_PATH . '/components/button.php';
                         to complex, fully customized projects.
                     </p>
 
-                    <div class="">
+                    <div data-aos="fade-up">
                         <h5 class="text-lg font-semibold text-gray-900 mb-4">Application Versatility</h5>
                         <ul class="feature-list space-y-2">
                             <li>
@@ -423,7 +425,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <div>
                     <div class="space-y-8">
-                        <div>
+                        <div data-aos="fade-up">
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Cosmetic Product Range</h4>
                             <div class="flex flex-wrap gap-3">
                                 <span class="px-4 py-2 bg-red-50 rounded-full text-sm border border-red-200">Skincare</span>
@@ -435,7 +437,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up">
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Packaging Capabilities</h4>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="bg-white border border-gray-200 p-4">
@@ -468,7 +470,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
 
-            <div class="mt-10 pt-10 border-t border-gray-200">
+            <div data-aos="fade-up" class="mt-10 pt-10 border-t border-gray-200">
                 <div class="flex items-center justify-between">
                     <div>
                         <h5 class="font-semibold text-gray-900">TELM Cosmetic Technology</h5>

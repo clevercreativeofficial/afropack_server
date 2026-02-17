@@ -35,8 +35,8 @@ require_once ROOT_PATH . '/components/button.php';
 
         <div class="grid lg:grid-cols-2 gap-8 md:gap-12">
             <!-- Content Column -->
-            <div class="flex flex-col justify-center">
-                <div class="mb-4">
+            <div data-aos="fade-up" class="flex flex-col justify-center">
+                <div>
                     <h1 class="title text-gray-900 mb-6 leading-tight">
                         Advanced <span class="text-accent-dark">Processing & Packaging</span> Solutions
                     </h1>
@@ -48,18 +48,18 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Key Features -->
-                <div class="space-y-2 paragraph mb-8">
+                <div class="space-y-2 paragraph mb-8 text-sm">
                     <div class="flex items-center gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
-                        <span>Complete plant solutions & individual equipment</span>
+                        Complete plant solutions & individual equipment
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
-                        <span>Multiple industry expertise & customization</span>
+                        Multiple industry expertise & customization
                     </div>
                     <div class="flex items-center gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
-                        <span>Advanced technology & sustainable solutions</span>
+                        Advanced technology & sustainable solutions
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Video Column -->
-            <div class="relative">
+            <div data-aos="fade-up" class="relative">
                 <!-- Video Container -->
                 <div class="relative overflow-hidden shadow-2xl shadow-gray-200">
                     <div class="aspect-video">
@@ -98,7 +98,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-7xl mx-auto w-full content-padding">
         <div class="flex flex-col gap-6">
-            <div class="text-center mx-auto">
+            <div data-aos="fade-up" class="text-center mx-auto">
                 <?php
                 render_header_section(
                     "Trustedby Industry Leaders",
@@ -109,7 +109,7 @@ require_once ROOT_PATH . '/components/button.php';
                 ?>
             </div>
             <div class="max-w-xlg mx-auto flex items-start md:flex-row flex-col gap-6">
-                <div class="max-w-sm flex flex-col justify-center items-center overflow-hidden">
+                <div data-aos="fade-up" class="max-w-sm flex flex-col justify-center items-center overflow-hidden">
                     <img class="object-cover"
                         src="https://www.tnasolutions.com/wp-content/uploads/2024/06/Mask-Group-11.png" alt="">
                     <div class="relative bg-secondary p-4 w-full">
@@ -124,7 +124,7 @@ require_once ROOT_PATH . '/components/button.php';
                         <div class="absolute -bottom-10 -right-14 w-[80px] h-[80px] rotate-[130deg] bg-white"></div>
                     </div>
                 </div>
-                <div class="max-w-sm flex flex-col justify-center items-center overflow-hidden">
+                <div data-aos="fade-up" class="max-w-sm flex flex-col justify-center items-center overflow-hidden">
                     <img class="object-cover"
                         src="https://www.tnasolutions.com/wp-content/uploads/2024/06/Mask-Group-22.png" alt="">
                     <div class="relative bg-accent-dark p-4 w-full">
@@ -148,18 +148,19 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            "Comprehensive Solutions",
-            "Industry-Tailored",
-            "Processing Solutions",
-            "Complete processing and packaging solutions engineered for maximum efficiency, product consistency, and superior quality across diverse industries."
-        );
-        ?>
-
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                "Comprehensive Solutions",
+                "Industry-Tailored",
+                "Processing Solutions",
+                "Complete processing and packaging solutions engineered for maximum efficiency, product consistency, and superior quality across diverse industries."
+            );
+            ?>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div class="bg-white card-padding">
+            <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
                     <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
                         <i class="fi fi-rr-utensils text-2xl mt-2"></i>
@@ -186,7 +187,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white card-padding">
+            <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
                     <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
                         <i class="fi fi-rr-cheese text-2xl mt-2"></i>
@@ -213,7 +214,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white card-padding">
+            <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
                     <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
                         <i class="fi fi-rr-peach text-2xl mt-2"></i>
@@ -243,7 +244,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white card-padding">
+            <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
                     <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
                         <i class="fi fi-rr-drink-alt text-2xl mt-2"></i>
@@ -274,7 +275,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Card 5 -->
-            <div class="bg-white card-padding">
+            <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
                     <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
                         <i class="fi fi-rr-hand-holding-heart text-2xl mt-2"></i>
@@ -305,7 +306,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Card 6 -->
-            <div class="bg-white card-padding">
+            <div data-aos="fade-up" class="bg-white card-padding">
                 <div class="flex flex-col gap-4 mb-6">
                     <div class="w-14 h-14 flex items-center justify-center bg-red-50 text-accent p-3">
                         <i class="fi fi-rr-box-open text-2xl mt-2"></i>
@@ -342,17 +343,20 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            "Trusted by Industry Leaders",
-            "Our Valued",
-            "Partners",
-            "Collaborating with the world's most innovative companies to deliver exceptional solutions"
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                "Trusted by Industry Leaders",
+                "Our Valued",
+                "Partners",
+                "Collaborating with the world's most innovative companies to deliver exceptional solutions"
+            );
+            ?>
+        </div>
+
 
         <!-- Logo Grid -->
-        <div class="relative">
+        <div data-aos="fade-up" class="relative">
             <!-- Gradient Overlays (Optional) -->
             <div
                 class="hidden lg:block absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none">
@@ -499,19 +503,22 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            "Industry Engagement",
-            "Upcoming",
-            "Events & Exhibitions",
-            "Join us at premier industry events worldwide to explore innovations, network with experts, and discover cutting-edge processing solutions."
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                "Industry Engagement",
+                "Upcoming",
+                "Events & Exhibitions",
+                "Join us at premier industry events worldwide to explore innovations, network with experts, and discover cutting-edge processing solutions."
+            );
+            ?>
+        </div>
+
 
         <!-- Events Cards -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- Event Card 1 -->
-            <div class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
+            <div data-aos="fade-up" class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
                        border border-gray-100 hover:border-accent/20 overflow-hidden">
                 <!-- Event Date Badge -->
                 <div class="absolute top-6 left-6 z-10">
@@ -564,7 +571,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Event Card 2 -->
-            <div class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
+            <div data-aos="fade-up" class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
                        border border-gray-100 hover:border-accent/20 overflow-hidden">
                 <!-- Event Date Badge -->
                 <div class="absolute top-6 left-6 z-10">
@@ -617,7 +624,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Event Card 3 -->
-            <div class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
+            <div data-aos="fade-up" class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
                        border border-gray-100 hover:border-accent/20 overflow-hidden">
                 <!-- Event Date Badge -->
                 <div class="absolute top-6 left-6 z-10">
@@ -671,7 +678,7 @@ require_once ROOT_PATH . '/components/button.php';
         </div>
 
         <!-- view all events button -->
-        <div class="mt-12 flex justify-center">
+        <div data-aos="fade-up" class="mt-12 flex justify-center">
             <?php
             render_button(
                 "View all events",
@@ -691,7 +698,6 @@ require_once ROOT_PATH . '/components/footer.php';
 <!-- Slick Carousel -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="<?= $url ?>assets/js/slick_custom.js"></script>
-
 
 </body>
 

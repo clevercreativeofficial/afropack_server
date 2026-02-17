@@ -18,19 +18,20 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Section Header -->
-        <?php
+        <div data-aos="fade-up">
+            <?php
             render_header_section(
                 'Beverage Processing Excellence',
                 'Complete',
                 'Beverage Solutions',
                 'AFROPACK designs and supplies advanced production lines for juices, soft drinks, beer, and ice cream mixes, focusing on efficiency, reliability, and quality.',
             );
-        ?>
-
+            ?>
+        </div>
         <!-- Beverage Categories -->
         <div class="grid md:grid-cols-3 gap-8 mb-16">
             <!-- Juices & Beverages -->
-            <div class="bg-white p-6 text-center">
+            <div data-aos="fade-up" class="bg-white p-6 text-center">
                 <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-glass-juice text-2xl"></i>
                 </div>
@@ -44,7 +45,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Beer Processing -->
-            <div class="bg-white p-6 text-center">
+            <div data-aos="fade-up" class="bg-white p-6 text-center">
                 <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-beer text-2xl"></i>
                 </div>
@@ -58,7 +59,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Ice Cream Mixes -->
-            <div class="bg-white p-6 text-center">
+            <div data-aos="fade-up" class="bg-white p-6 text-center">
                 <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-ice-cream text-2xl"></i>
                 </div>
@@ -77,15 +78,15 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- Juices & Beverages Section -->
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
-        <div class="bg-white p-8 mb-16">
-            <div class="flex items-center gap-4 mb-8">
+        <div data-aos="fade-up" class="bg-white p-8 mb-16">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Juices & Beverages</h3>
                     <p class="text-gray-600">Production units for high-quality fruit juices and soft drinks</p>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 mb-10">
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12 mb-10">
                 <div>
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Market Requirements</h4>
                     <p class="text-gray-700 mb-6">
@@ -94,14 +95,14 @@ require_once ROOT_PATH . '/components/button.php';
                         and every kilowatt of energy saved can make a significant difference.
                     </p>
 
-                    <div class="">
+                    <div data-aos="fade-up">
                         <h5 class="text-lg font-semibold text-gray-900 mb-4">Advanced Automation</h5>
                         <p class="text-gray-700 mb-4">
                             AFROPACK designs and supplies highly automated production lines where all operations
                             can be controlled from a single workstation, reducing human error and ensuring
                             repeatability and precision.
                         </p>
-                        <ul class="feature-list space-y-2">
+                        <ul data-aos="fade-up" class="feature-list space-y-2">
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
                                 Single workstation control
@@ -122,7 +123,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Mixing & Blending Systems</h4>
                     <p class="text-gray-700 mb-6">
                         Our mixing and blending units rely on innovative technologies that guarantee a perfectly
@@ -131,7 +132,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </p>
 
                     <div class="space-y-4">
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-mixer"></i>
                             </div>
@@ -143,7 +144,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-cog"></i>
                             </div>
@@ -155,7 +156,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent">
                                 <i class="fi fi-rr-bottle"></i>
                             </div>
@@ -171,28 +172,28 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Customized Systems -->
-            <div class="mt-10 pt-10 border-t border-gray-200">
+            <div data-aos="fade-up" class="mt-10 pt-10 border-t border-gray-200">
                 <h4 class="text-xl font-bold text-gray-900 mb-6">Customized Systems</h4>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
+                    <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
                         <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
                             <i class="fi fi-rr-factory"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">Turnkey Beverage Plants</h5>
                     </div>
-                    <div class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
+                    <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
                         <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
                             <i class="fi fi-rr-temperature-high"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">Pasteurisers: HTST / ESL / UHT</h5>
                     </div>
-                    <div class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
+                    <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
                         <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
                             <i class="fi fi-rr-clean"></i>
                         </div>
                         <h5 class="font-semibold text-gray-900">CIP (Clean-in-Place) Plants</h5>
                     </div>
-                    <div class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
+                    <div data-aos="fade-up" class="bg-white border border-gray-200 p-5 text-center hover:border-accent transition-colors">
                         <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-red-50 text-accent">
                             <i class="fi fi-rr-robot"></i>
                         </div>
@@ -207,16 +208,16 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- Beer Processing Section -->
 <section class="bg-white section-padding">
     <div class="max-w-5xl mx-auto">
-        <div class="content-box card-padding mb-16">
-            <div class="flex items-center gap-4 mb-8">
+        <div data-aos="fade-up" class="content-box card-padding mb-16">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Beer Processing</h3>
                     <p class="text-gray-600">Brewery systems for small-scale production or large volumes</p>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 mb-10">
-                <div>
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12 mb-10">
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Craft Beer Solutions</h4>
                     <p class="text-gray-700 mb-6">
                         AFROPACK offers solutions for the craft beer industry, developed with the support
@@ -224,13 +225,13 @@ require_once ROOT_PATH . '/components/button.php';
                         based on on-site studies, efficiency, and scalable automation levels.
                     </p>
 
-                    <div class="">
+                    <div data-aos="fade-up">
                         <h5 class="text-lg font-semibold text-gray-900 mb-4">System Flexibility</h5>
                         <p class="text-gray-700 mb-4">
                             These systems allow brewers to develop and test different recipes while guaranteeing
                             excellent repeatability in production.
                         </p>
-                        <ul class="feature-list space-y-2">
+                        <ul data-aos="fade-up" class="feature-list space-y-2">
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
                                 Recipe development and testing
@@ -251,38 +252,38 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Brewery Solutions Include</h4>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white border border-gray-200 p-4">
+                    <div data-aos="fade-up" class="grid grid-cols-2 gap-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Base & Specialty Malts</h5>
                             <p class="text-gray-600 text-xs">Management systems for malt handling</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Brewhouse</h5>
                             <p class="text-gray-600 text-xs">Complete brewing equipment</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Fermentation Tanks</h5>
                             <p class="text-gray-600 text-xs">Fermentation and maturation systems</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Water Tanks</h5>
                             <p class="text-gray-600 text-xs">Storage and process water management</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Auxiliary Equipment</h5>
                             <p class="text-gray-600 text-xs">Steam generators, chillers, compressors</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Separation Equipment</h5>
                             <p class="text-gray-600 text-xs">Centrifuges, filters, pasteurisers</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">CIP Systems</h5>
                             <p class="text-gray-600 text-xs">Cleaning-in-place systems</p>
                         </div>
-                        <div class="bg-white border border-gray-200 p-4">
+                        <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                             <h5 class="font-semibold text-gray-900 mb-2 text-sm">Automation</h5>
                             <p class="text-gray-600 text-xs">Process control and remote monitoring</p>
                         </div>
@@ -292,7 +293,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Quality Assurance -->
             <div class="mt-10 pt-10 border-t border-gray-200">
-                <div class="flex items-start gap-6">
+                <div data-aos="fade-up" class="flex items-start gap-6">
                     <div class="min-w-12 h-12 flex items-center justify-center bg-red-100 text-red-700">
                         <i class="fi fi-rr-certificate"></i>
                     </div>
@@ -313,14 +314,14 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <div class="content-box card-padding mb-16">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Ice Cream Mixes</h3>
                     <p class="text-gray-600">Complete lines dedicated to ice cream mix production and processing</p>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12">
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
                 <div>
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Processing Lines</h4>
                     <p class="text-gray-700 mb-6">
@@ -328,14 +329,14 @@ require_once ROOT_PATH . '/components/button.php';
                         up to ice cream production freezers.
                     </p>
 
-                    <div class="">
+                    <div data-aos="fade-up">
                         <h5 class="text-lg font-semibold text-gray-900 mb-4">Italian Collaboration</h5>
                         <p class="text-gray-700 mb-4">
                             We collaborate with leading Italian companies to supply complete lines including
                             freezers, extrusion systems, hardening tunnels, and packaging lines for cups,
                             cones, sticks, sandwiches, and more.
                         </p>
-                        <ul class="feature-list space-y-2">
+                        <ul data-aos="fade-up" class="feature-list space-y-2">
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
                                 Freezers and extrusion systems
@@ -358,32 +359,32 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <div>
                     <div class="space-y-8">
-                        <div>
+                        <div data-aos="fade-up">
                             <h4 class="text-xl font-bold text-gray-900 mb-4">Production Capabilities</h4>
                             <p class="text-gray-700 mb-4">
                                 Our lines are dedicated to the production and pasteurisation of ice cream mixes,
                                 ensuring consistent quality and food safety throughout the process.
                             </p>
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="bg-white border border-gray-200 p-4">
+                            <div data-aos="fade-up" class="grid grid-cols-2 gap-4">
+                                <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                                     <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
                                         <i class="fi fi-rr-mixer"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Mix Preparation</h5>
                                 </div>
-                                <div class="bg-white border border-gray-200 p-4">
+                                <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                                     <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
                                         <i class="fi fi-rr-temperature-high"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Pasteurisation</h5>
                                 </div>
-                                <div class="bg-white border border-gray-200 p-4">
+                                <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                                     <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
                                         <i class="fi fi-rr-freezer"></i>
                                     </div>
                                     <h5 class="font-semibold text-gray-900 text-sm">Freezing Systems</h5>
                                 </div>
-                                <div class="bg-white border border-gray-200 p-4">
+                                <div data-aos="fade-up" class="bg-white border border-gray-200 p-4">
                                     <div class="w-10 h-10 mb-3 flex items-center justify-center bg-red-50 text-accent">
                                         <i class="fi fi-rr-package"></i>
                                     </div>
@@ -392,7 +393,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up">
                             <h4 class="text-xl font-bold text-gray-900 mb-4">The System</h4>
                             <div class="flex flex-wrap gap-3">
                                 <span class="bg-red-50 text-sm px-4 py-2 rounded-full border border-red-200">Ice Cream Plants</span>
@@ -412,7 +413,7 @@ require_once ROOT_PATH . '/components/button.php';
     <div class="max-w-5xl mx-auto">
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Fraugroup Juices -->
-            <div class="content-box p-6">
+            <div data-aos="fade-up" class="content-box p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-glass-juice text-xl"></i>
                 </div>
@@ -429,7 +430,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Fraugroup Beer -->
-            <div class="content-box p-6">
+            <div data-aos="fade-up" class="content-box p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-beer text-xl"></i>
                 </div>
@@ -446,7 +447,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Fraugroup Ice Cream -->
-            <div class="content-box p-6">
+            <div data-aos="fade-up" class="content-box p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-ice-cream text-xl"></i>
                 </div>

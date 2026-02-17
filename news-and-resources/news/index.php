@@ -20,20 +20,23 @@ require_once ROOT_PATH . '/components/button.php';
 
         <div class="text-center mx-auto">
             <!-- Header Section -->
-            <?php
-            render_header_section(
-                "Latest News & Updates",
-                "Complete Confectionery Line Capabilities at",
-                "ProSweets 2026",
-                "As a leading packaging solutions partner for more than four decades, you can trust we have seen, addressed and overcome even the most difficult production challenges. Our advanced packaging systems are adding value to businesses and manufacturers worldwide."
-            );
-            ?>
+            <div data-aos="fade-up">
+                <?php
+                render_header_section(
+                    "Latest News & Updates",
+                    "Complete Confectionery Line Capabilities at",
+                    "ProSweets 2026",
+                    "As a leading packaging solutions partner for more than four decades, you can trust we have seen, addressed and overcome even the most difficult production challenges. Our advanced packaging systems are adding value to businesses and manufacturers worldwide."
+                );
+                ?>
+            </div>
+
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-16">
             <!-- News Item 1 -->
             <div class="bg-white border border-gray-200 group duration-300 transition-all">
-                <div class="relative h-48 w-full overflow-hidden">
+                <div data-aos="fade-up" class="relative h-48 w-full overflow-hidden">
                     <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         src="https://www.tnasolutions.com/wp-content/uploads/2024/06/Preziosi-1-1-scaled.jpg"
                         alt="Complete confectionery line capabilities">
@@ -41,7 +44,7 @@ require_once ROOT_PATH . '/components/button.php';
                         <small class="text-white font-medium">August 27</small>
                     </div>
                 </div>
-                <div class="p-6">
+                <div data-aos="fade-up" class="p-6">
                     <a href="#" class="block group-hover:text-accent transition-colors duration-300">
                         <h3 class="text-xl font-bold text-gray-900 mb-3 leading-tight">
                             Complete confectionery line capabilities
@@ -62,7 +65,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- News Item 2 -->
-            <div class="bg-white border border-gray-200 group duration-300 transition-all">
+            <div data-aos="fade-up" class="bg-white border border-gray-200 group duration-300 transition-all">
                 <div class="relative h-48 w-full overflow-hidden">
                     <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         src="https://www.tnasolutions.com/wp-content/uploads/2024/09/1_Visitors-at-the-TNA-Innovation-Centre-for-Feeding-Ambitions-A-TNA-Open-House.png"
@@ -92,7 +95,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- News Item 3 -->
-            <div class="bg-white border border-gray-200 group duration-300 transition-all">
+            <div data-aos="fade-up" class="bg-white border border-gray-200 group duration-300 transition-all">
                 <div class="relative h-48 w-full overflow-hidden">
                     <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         src="https://www.tnasolutions.com/wp-content/uploads/2025/06/Nadia-Award-2025.png"
@@ -122,7 +125,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- News Item 4 -->
-            <div class="bg-white border border-gray-200 group duration-300 transition-all">
+            <div data-aos="fade-up" class="bg-white border border-gray-200 group duration-300 transition-all">
                 <div class="relative h-48 w-full overflow-hidden">
                     <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         src="https://www.tnasolutions.com/wp-content/uploads/2024/12/62nd-AEA-scaled.jpg"
@@ -157,7 +160,7 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- Contact Section -->
 <section class="section-padding">
     <div class="max-w-7xl mx-auto w-full bg-white content-padding">
-        <div class="min-h-[30vh] flex flex-col justify-center items-center text-center gap-6">
+        <div data-aos="fade-up" class="min-h-[30vh] flex flex-col justify-center items-center text-center gap-6">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
                 Let's Build Your Success <span class="text-accent">Together</span>
             </h2>

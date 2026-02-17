@@ -18,18 +18,21 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            'Packaging, Filling & Labelling Equipment',
-            'Complete',
-            'Packaging Solutions',
-            'Afropack provides a comprehensive range of flexible packaging solutions, meeting every form, fill, and seal packaging requirement for diverse industries with precision and reliability.',
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Packaging, Filling & Labelling Equipment',
+                'Complete',
+                'Packaging Solutions',
+                'Afropack provides a comprehensive range of flexible packaging solutions, meeting every form, fill, and seal packaging requirement for diverse industries with precision and reliability.',
+            );
+            ?>
+        </div>
+
 
         <!-- Main Content Card -->
         <div class="bg-white mb-16 shadow-2xl shadow-gray-200">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="p-6 md:p-12">
                     <h3 class="text-3xl font-bold text-gray-900 mb-6">Packaging Solutions Portfolio</h3>
                     <p class="text-gray-700 text-lg leading-relaxed mb-8">
@@ -56,15 +59,15 @@ require_once ROOT_PATH . '/components/button.php';
 
         <!-- Vision & Mission Section -->
         <div class="bg-white mb-16 shadow-2xl shadow-gray-200 p-6 md:p-12">
-            <div class="flex items-center gap-4 mb-8">
+            <div data-aos="fade-up" class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Vision & Mission</h3>
                     <p class="text-gray-600">Partnering for packaging excellence</p>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div>
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
+                <div data-aos="fade-up">
                     <div class="flex flex-col gap-4 mb-8">
                         <div class="w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
                             <i class="fi fi-rr-eye text-xl"></i>
@@ -78,7 +81,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div>
+                <div data-aos="fade-up">
                     <div class="flex flex-col gap-4">
                         <div class="w-12 h-12 flex items-center justify-center bg-red-50 text-accent">
                             <i class="fi fi-rr-target text-xl"></i>
@@ -93,7 +96,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
 
-            <div class="mt-8 pt-8 border-t border-gray-100">
+            <div data-aos="fade-up" class="mt-8 pt-8 border-t border-gray-100">
                 <p class="text-gray-700">
                     Our R&D department collaborates closely with customers to provide effective and efficient packaging solutions, supporting clients at every stage from initial consultation to post-sales assistance and ongoing machine maintenance.
                 </p>
@@ -106,20 +109,22 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Section Header -->
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Comprehensive Equipment Range',
+                'Packaging',
+                'Machinery Portfolio',
+                'AFROPACK offers a wide range of packaging machinery, including flow wrap machines, vertical baggers, thermoforming machines, and vacuum packaging systems, designed to meet the diverse needs of our customers with precision and reliability.',
+            );
+            ?>
+        </div>
 
-        <?php
-        render_header_section(
-            'Comprehensive Equipment Range',
-            'Packaging',
-            'Machinery Portfolio',
-            'AFROPACK offers a wide range of packaging machinery, including flow wrap machines, vertical baggers, thermoforming machines, and vacuum packaging systems, designed to meet the diverse needs of our customers with precision and reliability.',
-        );
-        ?>
 
         <!-- Packaging Equipment Grid -->
         <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
             <!-- Flow Wrap HFFS -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-box-open text-xl"></i>
                 </div>
@@ -146,7 +151,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Vertical Baggers VFFS -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-box-alt text-xl"></i>
                 </div>
@@ -173,7 +178,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Thermoforming Machines -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-cube text-xl"></i>
                 </div>
@@ -200,7 +205,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Vacuum & MAP Machines -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-wind text-xl"></i>
                 </div>
@@ -227,7 +232,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Additional Packaging Solutions -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-conveyor-belt text-xl"></i>
                 </div>
@@ -264,6 +269,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gray-50 section-padding">
     <div class="max-w-5xl mx-auto">
 
+    <div data-aos="fade-up">
         <?php
         render_header_section(
             'Industry Expertise',
@@ -272,10 +278,12 @@ require_once ROOT_PATH . '/components/button.php';
             'AFROPACK has dedicated industry managers with extensive hands-on experience in specific sectors, ensuring tailored packaging solutions that meet the unique needs of each industry we serve.',
         );
         ?>
+    </div>
+        
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <!-- Food Industry -->
-            <div class="bg-white p-6">
+            <div data-aos="fade-up" class="bg-white p-6">
                 <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50">
                     <i class="fi fi-rr-utensils text-xl"></i>
                 </div>
@@ -286,7 +294,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Pharmaceutical -->
-            <div class="bg-white p-6">
+            <div data-aos="fade-up" class="bg-white p-6">
                 <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50">
                     <i class="fi fi-rr-pills text-xl"></i>
                 </div>
@@ -297,7 +305,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Home & Personal Care -->
-            <div class="bg-white p-6">
+            <div data-aos="fade-up" class="bg-white p-6">
                 <div class="text-accent mb-4 flex items-center justify-center w-14 h-14 bg-red-50">
                     <i class="fi fi-rr-soap text-xl"></i>
                 </div>
@@ -313,7 +321,7 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- Filling & Bottling Solutions Section -->
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
-        <div class="bg-white shadow-2xl shadow-gray-200 p-6 md:p-12">
+        <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6 md:p-12">
             <div class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Filling, Capping & Labelling Technologies</h3>
@@ -322,14 +330,14 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <div>
+                <div data-aos="fade-up">
                     <p class="text-gray-700 mb-6">
                         AFROPACK provides advanced filling technologies offering versatile solutions for both small artisans and high-volume production facilities.
                     </p>
 
                     <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Bottling & Packaging Lines</h4>
                     <div class="grid sm:grid-cols-2 gap-6">
-                        <div>
+                        <div data-aos="fade-up">
                             <h5 class="font-semibold text-gray-900 mb-3">Beverage Lines</h5>
                             <ul class="space-y-2 text-gray-600 text-sm">
                                 <li class="flex items-start gap-2">
@@ -347,7 +355,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </ul>
                         </div>
 
-                        <div>
+                        <div data-aos="fade-up">
                             <h5 class="font-semibold text-gray-900 mb-3">Other Industries</h5>
                             <ul class="space-y-2 text-gray-600 text-sm">
                                 <li class="flex items-start gap-2">
@@ -374,7 +382,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <div>
                     <div class="space-y-6">
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
                                 <i class="fi fi-rr-cog"></i>
                             </div>
@@ -386,7 +394,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
                                 <i class="fi fi-rr-precision-tool"></i>
                             </div>
@@ -398,7 +406,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
                                 <i class="fi fi-rr-shield-check"></i>
                             </div>
@@ -410,7 +418,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div data-aos="fade-up" class="flex items-start gap-4">
                             <div class="min-w-12 h-12 flex items-center justify-center bg-red-50 text-accent shadow-sm">
                                 <i class="fi fi-rr-refresh"></i>
                             </div>
@@ -427,7 +435,7 @@ require_once ROOT_PATH . '/components/button.php';
         </div>
 
         <!-- International Presence -->
-        <div class="mt-16 text-center">
+        <div data-aos="fade-up" class="mt-16 text-center">
             <div class="bg-white shadow-2xl shadow-gray-200 p-6 md:p-12">
                 <div class="flex flex-col items-center">
                     <div class="w-16 h-16 mb-6 flex items-center justify-center bg-red-50 text-accent">

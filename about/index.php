@@ -17,19 +17,22 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            "Our Purpose",
-            "Our",
-            "Mission",
-            "AFROPACK Group is a Euro-African bridge specializing in the design, supply, and after-sales service of
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                "Our Purpose",
+                "Our",
+                "Mission",
+                "AFROPACK Group is a Euro-African bridge specializing in the design, supply, and after-sales service of
                     automatic and semi-automatic machines for processing, packaging, and industrial automation."
-        );
-        ?>
+            );
+            ?>
+        </div>
+
 
         <div class="bg-white grid lg:grid-cols-2 gap-8 shadow-2xl shadow-gray-100 overflow-hidden">
             <!-- Mission Column -->
-            <div class="p-8">
+            <div data-aos="fade-up" class="p-8">
                 <div class="flex items-center gap-4 mb-4">
                     <h3 class="text-3xl font-bold text-gray-900">Our Mission</h3>
                 </div>
@@ -39,25 +42,25 @@ require_once ROOT_PATH . '/components/button.php';
                 </p>
 
                 <div class="space-y-3 mb-10">
-                    <div class="flex items-start group">
+                    <div data-aos="fade-up" class="flex items-start group">
                         <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                         <span class="text-gray-800 group-hover:text-gray-900 transition-colors duration-300">
                             Improve the quality of food and beverage machinery
                         </span>
                     </div>
-                    <div class="flex items-start group">
+                    <div data-aos="fade-up" class="flex items-start group">
                         <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                         <span class="text-gray-800 group-hover:text-gray-900 transition-colors duration-300">
                             Reduce food waste
                         </span>
                     </div>
-                    <div class="flex items-start group">
+                    <div data-aos="fade-up" class="flex items-start group">
                         <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                         <span class="text-gray-800 group-hover:text-gray-900 transition-colors duration-300">
                             Increase access to efficient and reliable equipment
                         </span>
                     </div>
-                    <div class="flex items-start group">
+                    <div data-aos="fade-up" class="flex items-start group">
                         <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                         <span class="text-gray-800 group-hover:text-gray-900 transition-colors duration-300">
                             Strengthen after-sales service across the African continent
@@ -65,7 +68,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div class="pt-8 border-t border-gray-200">
+                <div data-aos="fade-up" class="pt-8 border-t border-gray-200">
                     <p class="text-gray-800 leading-relaxed">
                         AFROPACK is committed to an environmentally responsible approach, supporting sustainable
                         development and long-term growth in Africa.
@@ -74,7 +77,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Vision Column -->
-            <div class="overflow-hidden">
+            <div data-aos="fade-up" class="overflow-hidden">
                 <img class="w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMHByb2Nlc3Npbmd8ZW58MHx8MHx8fDA%3D" alt="Image representing vision">
             </div>
         </div>
@@ -86,18 +89,21 @@ require_once ROOT_PATH . '/components/button.php';
     <div class="max-w-7xl mx-auto">
 
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            "Industry leaders",
-            "Our",
-            "Expertise",
-            "Food & Industrial Processing Equipment Specialists with comprehensive solutions across 18+ industry sectors."
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                "Industry leaders",
+                "Our",
+                "Expertise",
+                "Food & Industrial Processing Equipment Specialists with comprehensive solutions across 18+ industry sectors."
+            );
+            ?>
+        </div>
+
 
         <div class="grid lg:grid-cols-2 gap-12">
             <!-- Main Expertise Content -->
-            <div class="bg-white p-8 shadow-2xl shadow-gray-100">
+            <div data-aos="fade-up" class="bg-white p-8 shadow-2xl shadow-gray-100">
                 <p class="mb-10 leading-relaxed">
                     AFROPACK specializes in food industry equipment, providing machinery and automatic or semi-automatic
                     systems for the production of:
@@ -105,49 +111,49 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mb-12">
                     <div class="space-y-3">
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Dry pasta (short, long, special, instant)
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Snacks
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Cereals
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Bakery and biscuits
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Chocolate and confectionery
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Produce
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Meat and poultry
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Cheese and dairy
@@ -156,7 +162,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
 
                     <div class="space-y-3">
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 IQF (Individually Quick Frozen)
@@ -168,49 +174,49 @@ require_once ROOT_PATH . '/components/button.php';
                                 Fish and seafood
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Pet food
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Pharma and medical products
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Home and personal care
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Cosmetics
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Fresh juice
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 CSD (carbonated soft drinks)
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Beer
                             </span>
                         </div>
-                        <div class="flex items-start group">
+                        <div data-aos="fade-up" class="flex items-start group">
                             <span class="text-accent font-black mr-4 flex-shrink-0">•</span>
                             <span class="group-hover:text-gray-900 transition-colors duration-300">
                                 Wine and spirits
@@ -219,7 +225,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
 
-                <div class="pt-8 border-t border-gray-200">
+                <div data-aos="fade-up" class="pt-8 border-t border-gray-200">
                     <p class="leading-relaxed">
                         With over 18 specialized industry sectors, AFROPACK delivers comprehensive solutions tailored
                         to each client's unique production requirements, ensuring optimal efficiency and sustainable operations.
@@ -233,7 +239,7 @@ require_once ROOT_PATH . '/components/button.php';
                     <div class="flex items-center gap-4 mb-4">
                         <h3 class="text-2xl font-bold text-gray-900">Technical Capabilities</h3>
                     </div>
-                    <ul class="space-y-3">
+                    <ul data-aos="fade-up" class="space-y-3">
                         <li class="flex items-start">
                             <i class="fi fi-rr-check-circle text-accent mr-3 mt-1 flex-shrink-0"></i>
                             <span class="text-gray-700">Full turnkey solutions from design to implementation</span>
@@ -253,14 +259,14 @@ require_once ROOT_PATH . '/components/button.php';
                     </ul>
                 </div>
 
-                <div class="bg-white p-8 shadow-2xl shadow-gray-100">
+                <div data-aos="fade-up" class="bg-white p-8 shadow-2xl shadow-gray-100">
                     <div class="flex items-center gap-4 mb-6">
                         <h3 class="text-2xl font-bold text-gray-900">After-Sales Services</h3>
                     </div>
                     <p class="text-gray-700 mb-6">
                         Our commitment extends beyond installation with comprehensive support:
                     </p>
-                    <ul class="space-y-3">
+                    <ul data-aos="fade-up" class="space-y-3">
                         <li class="flex items-center">
                             <i class="fi fi-rr-check-circle text-accent mr-3 mt-1 flex-shrink-0"></i>
                             <span class="text-gray-700">Preventive maintenance programs</span>
@@ -287,7 +293,7 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- Contact Section -->
 <section class="section-padding">
     <div class="max-w-7xl mx-auto w-full bg-white content-padding">
-        <div class="min-h-[30vh] flex flex-col justify-center items-center text-center gap-6">
+        <div data-aos="fade-up" class="min-h-[30vh] flex flex-col justify-center items-center text-center gap-6">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
                 Partner With Us for <span class="text-accent">Success</span>
             </h2>

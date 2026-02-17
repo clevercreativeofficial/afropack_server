@@ -17,7 +17,8 @@ require_once ROOT_PATH . '/components/button.php';
 
 <section class="max-w-7xl mx-auto px-4 py-8">
     <!-- Section Header -->
-    <?php
+     <div data-aos="fade-up">
+        <?php
     render_header_section(
         "Technical Resources",
         "Explore Our",
@@ -25,10 +26,12 @@ require_once ROOT_PATH . '/components/button.php';
         "Discover our range of brochures that provide in-depth information about our products, services, and industry insights. Download the brochures to learn more about how we can help you achieve your packaging goals."
     );
     ?>
+     </div>
+    
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pb-10">
 
-        <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+        <div data-aos="fade-up" class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
             <img class="w-full h-full object-cover"
                 src="https://www.tnasolutions.com/wp-content/uploads/2018/01/9-300x227.jpg" />
             <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
@@ -45,7 +48,7 @@ require_once ROOT_PATH . '/components/button.php';
         </div>
 
 
-        <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+        <div data-aos="fade-up" class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
             <img class="w-full h-full object-cover"
                 src="https://www.tnasolutions.com/wp-content/uploads/2018/01/4-300x227.jpg" />
             <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
@@ -61,7 +64,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
         </div>
 
-        <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+        <div data-aos="fade-up" class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
             <img class="w-full h-full object-cover"
                 src="https://www.tnasolutions.com/wp-content/uploads/2018/01/7-300x227.jpg" />
             <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
@@ -77,7 +80,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
         </div>
 
-        <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+        <div data-aos="fade-up" class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
             <img class="w-full h-full object-cover"
                 src="https://www.tnasolutions.com/wp-content/uploads/2024/07/TNA-Meat-and-Poultry.png" />
             <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
@@ -93,7 +96,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
         </div>
 
-        <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+        <div data-aos="fade-up" class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
             <img class="w-full h-full object-cover"
                 src="https://www.tnasolutions.com/wp-content/uploads/2018/01/8-300x227.jpg" />
             <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">
@@ -109,7 +112,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
         </div>
 
-        <div class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
+        <div data-aos="fade-up" class="relative h-60 bg-white overflow-hidden flex flex-col items-center text-center group">
             <img class="w-full h-full object-cover"
                 src="https://www.tnasolutions.com/wp-content/uploads/2018/01/6-300x227.jpg" />
             <div class="absolute top-2 right-2 flex items-center justify-center duration-300 opacity-100 group-hover:opacity-0">

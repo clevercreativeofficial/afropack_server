@@ -17,17 +17,20 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            'Dairy Processing Excellence',
-            'Complete',
-            'Diary Solutions',
-            'AFROPACK specializes in designing, engineering, and supplying turnkey plants, processing lines, and equipment for raw milk processing and the production of milk-based products.',
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Dairy Processing Excellence',
+                'Complete',
+                'Diary Solutions',
+                'AFROPACK specializes in designing, engineering, and supplying turnkey plants, processing lines, and equipment for raw milk processing and the production of milk-based products.',
+            );
+            ?>
+        </div>
+
 
         <!-- Main Content Card -->
-        <div class="bg-white mb-16 shadow-2xl shadow-gray-200">
+        <div data-aos="fade-up" class="bg-white mb-16 shadow-2xl shadow-gray-200">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="p-6 md:p-12">
                     <h3 class="text-3xl font-bold text-gray-900 mb-6">Overview</h3>
@@ -58,7 +61,7 @@ require_once ROOT_PATH . '/components/button.php';
         <!-- Dairy Products Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <!-- Milk & Derivatives -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-milk text-xl mt-2"></i>
                 </div>
@@ -79,7 +82,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Yogurt Products -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-yogurt text-xl mt-2"></i>
                 </div>
@@ -100,9 +103,9 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Cream & Butter -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-butter text-xl mt-2"></i>
+                    <i class="fi fi-rr-cream text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Cream & Butter</h4>
                 <p class="text-gray-600 mb-4">
@@ -121,7 +124,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Ice Cream -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-ice-cream text-xl mt-2"></i>
                 </div>
@@ -142,7 +145,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Cheese Products -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-cheese text-xl mt-2"></i>
                 </div>
@@ -163,9 +166,9 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Whey Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
-                    <i class="fi fi-rr-lab-container text-xl mt-2"></i>
+                    <i class="fi fi-rr-protein-shake text-xl mt-2"></i>
                 </div>
                 <h4 class="text-2xl font-bold text-gray-900 mb-3">Whey Processing</h4>
                 <p class="text-gray-600 mb-4">
@@ -191,22 +194,25 @@ require_once ROOT_PATH . '/components/button.php';
     <div class="max-w-5xl mx-auto">
         <div class="mb-16">
             <!-- Section Header -->
-            <?php
-            render_header_section(
-                'Processing Solutions',
-                'Milk Treatment',
-                'Process',
-                'Complete turnkey plants covering the entire journey from raw material reception to final packaging.'
-            );
-            ?>
+            <div data-aos="fade-up">
+                <?php
+                render_header_section(
+                    'Processing Solutions',
+                    'Milk Treatment',
+                    'Process',
+                    'Complete turnkey plants covering the entire journey from raw material reception to final packaging.'
+                );
+                ?>
+            </div>
+
             <div class="grid lg:grid-cols-1 gap-12">
                 <div class="">
                     <!-- Process Steps -->
                     <div class="mb-8">
-                        <h4 class="text-2xl font-bold text-center text-gray-900 mb-6">Complete Process Coverage</h4>
+                        <h4 data-aos="fade-up" class="text-2xl font-bold text-center text-gray-900 mb-6">Complete Process Coverage</h4>
                         <div class="grid md:grid-cols-3 gap-4">
 
-                            <div class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
+                            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
                                     class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
@@ -216,7 +222,7 @@ require_once ROOT_PATH . '/components/button.php';
                                     <p class="text-gray-600 text-sm">Quality testing and initial processing</p>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
+                            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
                                     class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
@@ -226,7 +232,7 @@ require_once ROOT_PATH . '/components/button.php';
                                     <p class="text-gray-600 text-sm">Precise fat content adjustment</p>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
+                            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
                                     class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
@@ -236,7 +242,7 @@ require_once ROOT_PATH . '/components/button.php';
                                     <p class="text-gray-600 text-sm">Pasteurization and UHT processing</p>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
+                            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
                                     class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
@@ -247,7 +253,7 @@ require_once ROOT_PATH . '/components/button.php';
                                     </p>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
+                            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
                                     class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
@@ -257,7 +263,7 @@ require_once ROOT_PATH . '/components/button.php';
                                     <p class="text-gray-600 text-sm">Temperature-controlled storage</p>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
+                            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-4 flex flex-col gap-3">
                                 <div
                                     class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                     <i class="fi fi-rr-check-circle mt-1 text-sm"></i>
@@ -273,9 +279,9 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <div class="">
-                    <h4 class="text-2xl font-bold text-center text-gray-900 mb-6">Types of Milk Treatment</h4>
+                    <h4 data-aos="fade-up" class="text-2xl font-bold text-center text-gray-900 mb-6">Types of Milk Treatment</h4>
                     <div class="grid md:grid-cols-3 gap-4">
-                        <div class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
+                        <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
                                 class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-temperature-high"></i>
@@ -287,7 +293,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
+                        <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
                                 class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-yogurt"></i>
@@ -299,7 +305,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
+                        <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
                                 class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-butter"></i>
@@ -311,7 +317,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
+                        <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
                                 class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-ice-cream"></i>
@@ -322,7 +328,7 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
 
-                        <div class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
+                        <div data-aos="fade-up" class="flex flex-col gap-3 bg-white shadow-2xl shadow-gray-200 p-4">
                             <div
                                 class="w-10 h-10 flex items-center justify-center bg-red-50 text-accent flex-shrink-0">
                                 <i class="fi fi-rr-cheese"></i>
@@ -341,15 +347,15 @@ require_once ROOT_PATH . '/components/button.php';
 </section>
 
 <!-- Customized Systems Section -->
-<section class="">
+<section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-5xl mx-auto">
         <div class="mb-16">
-            <h4 class="text-2xl font-bold text-center text-gray-900 mb-4">Customized Systems and Equipment</h4>
-            <p class="text-gray-600 text-center mb-10">Wide range of equipment and turnkey solutions for dairy processing</p>
+            <h4 data-aos="fade-up" class="text-2xl font-bold text-center text-gray-900 mb-4">Customized Systems and Equipment</h4>
+            <p data-aos="fade-up" class="text-gray-600 text-center mb-10">Wide range of equipment and turnkey solutions for dairy processing</p>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Turnkey Dairy Plants -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-factory"></i>
                     </div>
@@ -360,7 +366,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Pasteurizers -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-temperature-high"></i>
                     </div>
@@ -371,7 +377,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Ultra Clean / Aseptic Tanks -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-container"></i>
                     </div>
@@ -382,7 +388,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Milk Reception Lines -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-truck-loading"></i>
                     </div>
@@ -393,7 +399,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Yogurt Plants -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-yogurt"></i>
                     </div>
@@ -404,7 +410,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Mini Dairy Plants -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-industry"></i>
                     </div>
@@ -415,7 +421,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Whey Processing Plants -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-lab-container"></i>
                     </div>
@@ -426,7 +432,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- CIP Plants -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-clean"></i>
                     </div>
@@ -437,7 +443,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
 
                 <!-- Process Automation Systems -->
-                <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+                <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                     <div class="w-12 h-12 mb-4 flex items-center justify-center bg-red-50 text-accent">
                         <i class="fi fi-rr-robot"></i>
                     </div>

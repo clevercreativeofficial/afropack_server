@@ -18,17 +18,18 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="bg-gradient-to-b from-gray-50 to-white section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            'Fruit & Vegetable Processing',
-            'Advanced',
-            'Processing Solutions',
-            'AFROPACK designs and supplies machines and complete plants for the processing of fruit and vegetables, covering both continental and tropical fruits with the highest quality standards.',
-        );
-        ?>
-
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Fruit & Vegetable Processing',
+                'Advanced',
+                'Processing Solutions',
+                'AFROPACK designs and supplies machines and complete plants for the processing of fruit and vegetables, covering both continental and tropical fruits with the highest quality standards.',
+            );
+            ?>
+        </div>
         <!-- Main Content Card -->
-        <div class="bg-white mb-16 shadow-2xl shadow-gray-200">
+        <div data-aos="fade-up" class="bg-white mb-16 shadow-2xl shadow-gray-200">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="p-6 md:p-12">
                     <h3 class="text-3xl font-bold text-gray-900 mb-6">Overview</h3>
@@ -57,7 +58,7 @@ require_once ROOT_PATH . '/components/button.php';
         </div>
 
         <!-- Specialized Machines Section -->
-        <div class="bg-white mb-16 shadow-2xl shadow-gray-200 p-6 md:p-12">
+        <div data-aos="fade-up" class="bg-white mb-16 shadow-2xl shadow-gray-200 p-6 md:p-12">
             <div class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Specialized Machines & Multi-Fruit Plants</h3>
@@ -73,7 +74,7 @@ require_once ROOT_PATH . '/components/button.php';
                     </p>
                     <div class="">
                         <h4 class="text-xl font-bold text-gray-900 mb-4">Multi-Fruit Plant Benefits</h4>
-                        <ul class="feature-list space-y-3">
+                        <ul class="feature-list space-y-3 text-sm">
                             <li>
                                 <i class="fi fi-rr-check-circle"></i>
                                 Greater flexibility in production planning
@@ -145,19 +146,22 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-5xl mx-auto">
         <!-- Section Header -->
-        <?php
-        render_header_section(
-            'Processing Solutions by Fruit Type',
-            'Complete',
-            'Processing Lines',
-            'Specialized equipment and complete plants for various tropical and continental fruits.',
-        );
-        ?>
+        <div data-aos="fade-up">
+            <?php
+            render_header_section(
+                'Processing Solutions by Fruit Type',
+                'Complete',
+                'Processing Lines',
+                'Specialized equipment and complete plants for various tropical and continental fruits.',
+            );
+            ?>
+        </div>
+
 
         <!-- Fruit Types Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <!-- Avocado Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-avocado text-xl"></i>
                 </div>
@@ -181,7 +185,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Banana Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-banana text-xl"></i>
                 </div>
@@ -205,7 +209,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Passion Fruit Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-fruit-apple text-xl"></i>
                 </div>
@@ -228,7 +232,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Pineapple Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-yellow-50 text-accent">
                     <i class="fi fi-rr-pineapple text-xl"></i>
                 </div>
@@ -251,7 +255,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Papaya Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-papaya text-xl"></i>
                 </div>
@@ -274,7 +278,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Mango Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-mango text-xl"></i>
                 </div>
@@ -300,7 +304,7 @@ require_once ROOT_PATH . '/components/button.php';
         <!-- Additional Fruit Types -->
         <div class="grid md:grid-cols-3 gap-8 mb-16">
             <!-- Citrus Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-orange text-xl"></i>
                 </div>
@@ -314,7 +318,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Coconut Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-coconut text-xl"></i>
                 </div>
@@ -328,7 +332,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Tomato Processing -->
-            <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+            <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
                 <div class="w-14 h-14 mb-4 flex items-center justify-center bg-red-50 text-accent">
                     <i class="fi fi-rr-tomato text-xl"></i>
                 </div>
@@ -341,13 +345,9 @@ require_once ROOT_PATH . '/components/button.php';
                 </ul>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- Plant Cleaning & Hygiene Section -->
-<section class="section-padding">
-    <div class="max-w-5xl mx-auto">
-        <div class="bg-white shadow-2xl shadow-gray-200 p-6">
+        <!-- Plant Cleaning & Hygiene Section -->
+        <div data-aos="fade-up" class="bg-white shadow-2xl shadow-gray-200 p-6">
             <div class="flex items-center gap-4 mb-8">
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Plant Cleaning & Hygiene</h3>
@@ -432,7 +432,9 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
         </div>
-        <div class="section-padding flex flex-col justify-center items-center">
+
+        
+        <div data-aos="fade-up" class="section-padding flex flex-col justify-center items-center">
             <p class="text-gray-700 mb-4 max-w-2xl text-center mx-auto">
                 Our fruit and vegetable processing solutions incorporate advanced technology from
                 Navatta Group, ensuring world-class performance, reliability, and efficiency in

@@ -18,7 +18,8 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="section-padding">
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
-        <?php
+         <div data-aos="fade-up">
+            <?php
         render_header_section(
             "Industry Engagement",
             "Upcoming",
@@ -26,11 +27,13 @@ require_once ROOT_PATH . '/components/button.php';
             "Join us at premier industry events worldwide to explore innovations, network with experts, and discover cutting-edge processing solutions."
         );
         ?>
+         </div>
+        
 
         <!-- Events Cards -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- Event Card 1 -->
-            <div class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
+            <div data-aos="fade-up" class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
                        border border-gray-100 hover:border-accent/20 overflow-hidden">
                 <!-- Event Date Badge -->
                 <div class="absolute top-6 left-6 z-10">
@@ -83,7 +86,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Event Card 2 -->
-            <div class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
+            <div data-aos="fade-up" class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
                        border border-gray-100 hover:border-accent/20 overflow-hidden">
                 <!-- Event Date Badge -->
                 <div class="absolute top-6 left-6 z-10">
@@ -136,7 +139,7 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Event Card 3 -->
-            <div class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
+            <div data-aos="fade-up" class="group relative bg-white shadow-2xl shadow-gray-200 transition-all duration-300 
                        border border-gray-100 hover:border-accent/20 overflow-hidden">
                 <!-- Event Date Badge -->
                 <div class="absolute top-6 left-6 z-10">
@@ -193,7 +196,7 @@ require_once ROOT_PATH . '/components/button.php';
 
 <!-- Contact Section -->
 <section class="section-padding">
-    <div class="max-w-7xl mx-auto w-full bg-white content-padding">
+    <div data-aos="fade-up" class="max-w-7xl mx-auto w-full bg-white content-padding">
         <div class="min-h-[30vh] flex flex-col justify-center items-center text-center gap-6">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
                 Let's Build Your Success <span class="text-accent">Together</span>
