@@ -303,9 +303,7 @@ require_once ROOT_PATH . '/components/button.php';
                         </ul>
                     </div>
                     <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
-                        <img class="w-full h-full object-cover"
-                            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                            alt="Coffee Roasting Equipment">
+                        <iframe class="w-full h-full aspect-video" src="https://www.youtube.com/embed/iZAHqbTP7YY?si=kmIZOioIDbwrvdi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -321,19 +319,19 @@ require_once ROOT_PATH . '/components/button.php';
                     <ul class="space-y-2 text-sm">
                         <li class="flex items-start gap-2">
                             <i class="fi fi-rr-check-circle mt-1"></i>
-                           Green coffee reception systems (jute bags, big bags, bulk)
+                            Green coffee reception systems (jute bags, big bags, bulk)
                         </li>
                         <li class="flex items-start gap-2">
                             <i class="fi fi-rr-check-circle mt-1"></i>
-                           Cleaning and mechanical/optical selection
+                            Cleaning and mechanical/optical selection
                         </li>
                         <li class="flex items-start gap-2">
                             <i class="fi fi-rr-check-circle mt-1"></i>
-                           Pneumatic transport systems
+                            Pneumatic transport systems
                         </li>
                         <li class="flex items-start gap-2">
                             <i class="fi fi-rr-check-circle mt-1"></i>
-                           Custom storage silos and dosing systems
+                            Custom storage silos and dosing systems
                         </li>
                     </ul>
                 </div>

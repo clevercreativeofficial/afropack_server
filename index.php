@@ -183,7 +183,7 @@ require_once ROOT_PATH . '/components/button.php';
                 <p class="text-sm my-4">
                     These solutions are designed to ensure efficiency, product consistency, and high quality.
                 </p>
-                <a href="#" class="text-sm text-accent hover:underline">
+                <a href="<?= $url ?>solutions/food-processing/" class="text-sm text-accent hover:underline">
                     Learn more
                     <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
                 </a>
@@ -210,7 +210,7 @@ require_once ROOT_PATH . '/components/button.php';
                 <p class="text-sm my-4">
                     Covering the entire process from raw milk reception to processing, treatment, and packaging.
                 </p>
-                <a href="#" class="text-sm text-accent hover:underline">
+                <a href="<?= $url ?>solutions/dairy-processing-equipment/" class="text-sm text-accent hover:underline">
                     Learn more
                     <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
                 </a>
@@ -240,7 +240,7 @@ require_once ROOT_PATH . '/components/button.php';
                 <hr>
                 <p class="text-sm my-4">These systems deliver high yields and superior product quality.
                 </p>
-                <a href="#" class="text-sm text-accent hover:underline">
+                <a href="<?= $url ?>solutions/fruits-and-vegetable-processing-equipment/" class="text-sm text-accent hover:underline">
                     Learn more
                     <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
                 </a>
@@ -271,7 +271,7 @@ require_once ROOT_PATH . '/components/button.php';
                 <p class="text-sm my-4">Including mixing, pasteurization, filling, and packaging, with
                     high levels of automation and reliability.
                 </p>
-                <a href="#" class="text-sm text-accent hover:underline">
+                <a href="<?= $url ?>solutions/beverage-processing-and-filling-equipment/" class="text-sm text-accent hover:underline">
                     Learn more
                     <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
                 </a>
@@ -302,7 +302,7 @@ require_once ROOT_PATH . '/components/button.php';
                     Including powder and liquid processing, filling, capping,
                     labelling, and secondary packaging systems.
                 </p>
-                <a href="#" class="text-sm text-accent hover:underline">
+                <a href="<?= $url ?>solutions/pharma-home-and-personal-care-equipment/" class="text-sm text-accent hover:underline">
                     Learn more
                     <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
                 </a>
@@ -333,7 +333,7 @@ require_once ROOT_PATH . '/components/button.php';
                 <hr>
                 <p class="text-sm my-4">Fully automated packaging lines designed for multiple industries
                     with high-speed operation and reliability.</p>
-                <a href="#" class="text-sm text-accent hover:underline">
+                <a href="<?= $url ?>solutions/packaging-filling-and-labelling-equipment/" class="text-sm text-accent hover:underline">
                     Learn more
                     <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
                 </a>
