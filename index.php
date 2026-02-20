@@ -11,20 +11,23 @@ require_once ROOT_PATH . '/components/button.php';
     <div class="carousel bg-white w-full max-h-[415px] overflow-hidden">
         <div class="w-full h-[415px]">
             <img class="w-full h-full object-cover"
-                src="https://www.tnasolutions.com/wp-content/uploads/2023/10/Website-Header-Image.png" alt="">
+                src="<?= $url ?>assets/images/slide (1).jpeg" alt="slide 1">
         </div>
         <div class="w-full h-[415px]">
             <img class="w-full h-full object-cover"
-                src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-sections-header-scaled.jpg" alt="">
+                src="<?= $url ?>assets/images/slide (2).jpeg" alt="slide 2">
         </div>
         <div class="w-full h-[415px]">
             <img class="w-full h-full object-cover"
-                src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg" alt="">
+                src="<?= $url ?>assets/images/slide (3).png" alt="slide 3">
         </div>
         <div class="w-full h-[415px]">
             <img class="w-full h-full object-cover"
-                src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-equipment-upgrades-main-header.jpg"
-                alt="">
+                src="<?= $url ?>assets/images/slide (4).png" alt="slide 4">
+        </div>
+        <div class="w-full h-[415px]">
+            <img class="w-full h-full object-cover"
+                src="<?= $url ?>assets/images/slide (5).jpeg" alt="slide 4">
         </div>
     </div>
 </section>
@@ -82,8 +85,8 @@ require_once ROOT_PATH . '/components/button.php';
                 <div class="relative overflow-hidden shadow-2xl shadow-gray-200">
                     <div class="aspect-video">
                         <iframe class="w-full h-full"
-                            src="https://www.youtube.com/embed/xGH1NwrBwc4?si=SOag-tpFP0Rm2tlr"
-                            title="AFROPACK Solutions Video"
+                            src="https://www.youtube.com/embed/ohvshlxCTdo?si=tLej6ATkNTMvtI2s"
+                            title="Miele 2021 Corporate"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -110,8 +113,8 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
             <div class="max-w-xlg mx-auto flex items-start md:flex-row flex-col gap-6">
                 <div data-aos="fade-up" class="max-w-sm flex flex-col justify-center items-center overflow-hidden">
-                    <img class="object-cover"
-                        src="https://www.tnasolutions.com/wp-content/uploads/2024/06/Mask-Group-11.png" alt="">
+                    <img class="h-60 w-full object-cover"
+                        src="<?= $url ?>assets/images/commitee (1).png" alt="">
                     <div class="relative bg-secondary p-4 w-full">
                         <h3 class="text-white text-2xl font-semibold mb-4 mt-6">
                             Engineering & Service Presence
@@ -125,8 +128,8 @@ require_once ROOT_PATH . '/components/button.php';
                     </div>
                 </div>
                 <div data-aos="fade-up" class="max-w-sm flex flex-col justify-center items-center overflow-hidden">
-                    <img class="object-cover"
-                        src="https://www.tnasolutions.com/wp-content/uploads/2024/06/Mask-Group-22.png" alt="">
+                    <img class="h-60 w-full object-cover"
+                        src="<?= $url ?>assets/images/commitee (2).png" alt="">
                     <div class="relative bg-accent-dark p-4 w-full">
                         <h3 class="text-white text-2xl font-semibold mb-4 mt-6">
                             One Afropack, one extraordinary mission
@@ -354,7 +357,6 @@ require_once ROOT_PATH . '/components/button.php';
             ?>
         </div>
 
-
         <!-- Logo Grid -->
         <div data-aos="fade-up" class="relative">
             <!-- Gradient Overlays (Optional) -->
@@ -369,130 +371,193 @@ require_once ROOT_PATH . '/components/button.php';
             <div class="relative overflow-hidden">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
                     <!-- Partner Logo Item -->
-                    <div class="group relative">
+                    <a href="https://www.laferpack.com/" class="group relative">
                         <div class="aspect-square bg-white
                                  border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
                             <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
                                       transition-opacity duration-300 grayscale group-hover:grayscale-0"
-                                src="https://www.tnasolutions.com/wp-content/uploads/2024/01/logo-1.png"
-                                alt="Partner Company">
+                                src="<?= $url ?>assets/images/partners/partner (1).png"
+                                alt="Laferpack">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
                                    group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
                             <div
                                 class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
-                                Partner Company
+                                Laferpack
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
                                            w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Partner Logo Item -->
-                    <div class="group relative">
+                    <a href="https://www.selematic.tech/en/" class="group relative">
                         <div class="aspect-square bg-white
                                  border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
                             <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
                                       transition-opacity duration-300 grayscale group-hover:grayscale-0"
-                                src="https://www.tnasolutions.com/wp-content/uploads/2024/01/logo-1.png"
-                                alt="Partner Company">
+                                src="<?= $url ?>assets/images/partners/partner (2).png"
+                                alt="Selematic">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
                                    group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
                             <div
                                 class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
-                                Partner Company
+                                Selematic
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
                                            w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Partner Logo Item -->
-                    <div class="group relative">
+                    <a href="https://www.telm.it/en" class="group relative">
                         <div class="aspect-square bg-white
                                  border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
                             <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
                                       transition-opacity duration-300 grayscale group-hover:grayscale-0"
-                                src="https://www.tnasolutions.com/wp-content/uploads/2024/01/logo-1.png"
-                                alt="Partner Company">
+                                src="<?= $url ?>assets/images/partners/partner (3).png"
+                                alt="Telm">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
                                    group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
                             <div
                                 class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
-                                Partner Company
+                                Telm
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
                                            w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Partner Logo Item -->
-                    <div class="group relative">
+                    <a href="https://bmbpack.com/en/" class="group relative">
                         <div class="aspect-square bg-white
                                  border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
                             <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
                                       transition-opacity duration-300 grayscale group-hover:grayscale-0"
-                                src="https://www.tnasolutions.com/wp-content/uploads/2024/01/logo-1.png"
-                                alt="Partner Company">
+                                src="<?= $url ?>assets/images/partners/partner (4).png"
+                                alt="BMB Packaging">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
                                    group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
                             <div
                                 class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
-                                Partner Company
+                                BMB Packaging
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
                                            w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Partner Logo Item -->
-                    <div class="group relative">
+                    <a href="https://www.makrolabelling.com/" class="group relative">
                         <div class="aspect-square bg-white
                                  border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
                             <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
                                       transition-opacity duration-300 grayscale group-hover:grayscale-0"
-                                src="https://www.tnasolutions.com/wp-content/uploads/2024/01/logo-1.png"
-                                alt="Partner Company">
+                                src="<?= $url ?>assets/images/partners/partner (5).png"
+                                alt="Makro Labelling">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
                                    group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
                             <div
                                 class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
-                                Partner Company
+                                Makro Labelling
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
                                            w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Partner Logo Item -->
-                    <div class="group relative">
+                    <a href="https://www.imf-srl.com/en/" class="group relative">
                         <div class="aspect-square bg-white
                                  border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
                             <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
                                       transition-opacity duration-300 grayscale group-hover:grayscale-0"
-                                src="https://www.tnasolutions.com/wp-content/uploads/2024/01/logo-1.png"
-                                alt="Partner Company">
+                                src="<?= $url ?>assets/images/partners/partner (6).png"
+                                alt="IMF srl">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
                                    group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
                             <div
                                 class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
-                                Partner Company
+                                IMF srl
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
                                            w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- Partner Logo Item -->
+                    <a href="https://www.navattagroup.com/" class="group relative">
+                        <div class="aspect-square bg-white
+                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
+                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                                src="<?= $url ?>assets/images/partners/partner (7).png"
+                                alt="Navatta Group">
+                        </div>
+                        <!-- Hover Tooltip -->
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
+                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
+                            <div
+                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                                Navatta Group
+                                <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
+                                           w-2 h-2 bg-gray-900"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Partner Logo Item -->
+                    <a href="https://www.italafricagroup.com/" class="group relative">
+                        <div class="aspect-square bg-white
+                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
+                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                                src="<?= $url ?>assets/images/partners/partner (8).png"
+                                alt="Italafrica Group">
+                        </div>
+                        <!-- Hover Tooltip -->
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
+                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
+                            <div
+                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                                Italafrica Group
+                                <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
+                                           w-2 h-2 bg-gray-900"></div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Partner Logo Item -->
+                    <a href="https://www.mielepackaging.it/en/" class="group relative">
+                        <div class="aspect-square bg-white
+                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
+                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                                src="<?= $url ?>assets/images/partners/partner (9).png"
+                                alt="Miele Packaging">
+                        </div>
+                        <!-- Hover Tooltip -->
+                        <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
+                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
+                            <div
+                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                                Miele Packaging
+                                <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
+                                           w-2 h-2 bg-gray-900"></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
