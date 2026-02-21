@@ -117,33 +117,38 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
 
-            <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-12">
+            <div data-aos="fade-up" class="grid lg:grid-cols-1 gap-12">
                 <div class="bg-white p-6 shadow-2xl shadow-gray-200">
-                    <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Process Lines</h4>
-                    <ul class="feature-list space-y-3 text-sm">
-                        <li>
-                            <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            Process lines for long pasta, short pasta, nests, lasagna, cannelloni
-                        </li>
-                        <li>
-                            <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            Special pasta and couscous production systems
-                        </li>
-                        <li>
-                            <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            Technologies for filled pasta, ravioli, and tortellini
-                        </li>
-                        <li>
-                            <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
-                            Snack industry, breakfast cereals, and instant flour lines
-                        </li>
-                    </ul>
-                    <div class="mt-8">
-                        <a href="https://anselmoitalia.com/en/production-lines" target="_blank"
-                            class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
-                            <span>View Anselmo Italia Solutions</span>
-                            <i class="fi fi-rr-arrow-up-right-from-square"></i>
-                        </a>
+                    <div  class="grid lg:grid-cols-2 gap-12">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-6">Complete Process Lines</h4>
+                            <ul class="feature-list space-y-3 text-sm">
+                                <li>
+                                    <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                    Process lines for long pasta, short pasta, nests, lasagna, cannelloni
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                    Special pasta and couscous production systems
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                    Technologies for filled pasta, ravioli, and tortellini
+                                </li>
+                                <li>
+                                    <i class="fi fi-rr-check-circle mt-1 inline-block"></i>
+                                    Snack industry, breakfast cereals, and instant flour lines
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="https://anselmoitalia.com/en/production-lines" target="_blank"
+                                    class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                                    <span>View Anselmo Italia Solutions</span>
+                                    <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <iframe class="w-full h-64 lg:h-80" src="https://www.youtube.com/embed/WCpXWrHSeZo?si=kxw_Md-izxiNpu6X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -182,6 +187,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 

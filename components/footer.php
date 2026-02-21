@@ -8,15 +8,16 @@
                 <h3 class="text-xl text-white font-bold mb-4">Contact Us</h3>
                 <p class="text-sm text-neutral-400 mb-2">
                     Email:
-                    <a href="mailto:contact@afropack.com"
-                        class="hover:text-accent">contact@afropack.com</a>
+                    <a href="mailto:info@afropackgroup.com"
+                        class="hover:text-accent block">info@afropackgroup.com</a>
+                        <a href="mailto:afropackengineering@gmail.com"
+                        class="hover:text-accent">afropackengineering@gmail.com</a>
                 </p>
                 <p class="text-sm text-neutral-400 mb-2">
                     Phone:
-                    <a href="tel:+25779916116" class="hover:text-accent">+257 79 916 116</a> |
-                    <a href="tel:+25779819453" class="hover:text-accent">+257 79 819 453</a>
+                    <a href="tel:+393429801567" class="hover:text-accent block">+39 342 980 1567</a>
+                    <a href="tel:+27814619723" class="hover:text-accent">+27 814 619 723</a>
                 </p>
-                <p class="text-sm text-neutral-400">Address: Bujumbura, Burundi</p>
             </div>
 
             <!-- Quick Links -->

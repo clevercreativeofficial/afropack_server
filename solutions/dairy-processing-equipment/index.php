@@ -51,8 +51,8 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
                     <img class="w-full h-full object-cover"
-                        src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-                        alt="Dairy Processing Plant">
+                        src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhaXJ5fGVufDB8fDB8fHww"
+                        alt="Dairy Processing">
                 </div>
             </div>
         </div>
@@ -343,6 +343,26 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
             </div>
         </div>
+        <div class="mb-16 flex flex-col gap-12">
+            <!-- Video Section Title -->
+            <div class="text-center">
+                <h4 data-aos="fade-up" class="text-2xl font-bold text-center text-gray-900 mb-6">Advanced Dairy Processing Solutions</h4>
+                <p data-aos="fade-up" class="text-md text-gray-600 max-w-3xl mx-auto">Discover how our state-of-the-art dairy processing equipment can optimize your production line, improve efficiency, and deliver superior quality milk, cheese, and yogurt products.</p>
+            </div>
+
+            <div data-aos="fade-up" class="w-full md:w-1/2 h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/vkYFV75FTNk?si=3FOBIgU9ygE7MK-u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div data-aos="fade-up" class="max-w-2xl mx-auto mt-6 text-center">
+                <p class="text-gray-600 pb-3">Our dairy processing solutions feature FRAUGROUP's advanced milk processing technology — from pasteurization and homogenization to cheese vats and membrane filtration systems, we provide complete integrated solutions for modern dairy facilities.</p>
+                <a href="https://www.fraugroup.com/machines-plants-for-processing-milk-cheese-derivatives/index.php" target="_blank"
+                    class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                    <span>Explore FRAUGROUP Dairy Processing Systems</span>
+                    <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -456,6 +476,7 @@ require_once ROOT_PATH . '/components/button.php';
         </div>
     </div>
 </section>
+
 
 <!-- Footer -->
 <?php require_once ROOT_PATH . '/components/footer.php'; ?>

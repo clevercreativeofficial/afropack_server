@@ -421,6 +421,9 @@ require_once ROOT_PATH . '/components/button.php';
                             </li>
                         </ul>
                     </div>
+                    <div data-aos="fade-up" class="w-full h-84 overflow-hidden mx-auto mt-8">
+                        <iframe class="mx-auto w-full h-full aspect-video" src="https://www.youtube.com/embed/FFubrEQ8UQE?si=okWGQD-yhDPiZCr7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
 
                 <div>

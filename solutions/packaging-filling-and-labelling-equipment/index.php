@@ -261,6 +261,7 @@ require_once ROOT_PATH . '/components/button.php';
                     <a href="https://bmbpack.com/en/tipologia/shrinking-and-drying-units/" target="_blank" class="block text-accent text-sm font-medium hover:underline">Shrinking Units</a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -315,6 +316,14 @@ require_once ROOT_PATH . '/components/button.php';
                 </p>
             </div>
         </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div data-aos="fade-up" class="w-full h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/zxb8xO3yZF0?si=m1BOq-jWlHxsl-KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div data-aos="fade-up" class="w-full h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/RTpx9Xs-BJ4?si=WBsP3bJBTZ-1kVDa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -326,6 +335,16 @@ require_once ROOT_PATH . '/components/button.php';
                 <div>
                     <h3 class="text-3xl font-bold text-gray-900 mb-2">Filling, Capping & Labelling Technologies</h3>
                     <p class="text-gray-600">Complete bottling and packaging lines for diverse industries</p>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div data-aos="fade-up" class="w-full h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                    <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/4e4GAoBfj1s?si=vjw4-l24aY-zIPjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div data-aos="fade-up" class="w-full h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                    <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/dJOng4NaFLg?si=AVLkMLScaU0cyR1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -430,6 +449,16 @@ require_once ROOT_PATH . '/components/button.php';
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <div data-aos="fade-up" class="w-full h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                    <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/5QKR5wzCw5o?si=CnQ6HNiLyZpwF6lR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div data-aos="fade-up" class="w-full h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                    <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/MY0W7ZgguIc?si=GOJElsqoDhXdPF8y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

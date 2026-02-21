@@ -171,7 +171,7 @@ require_once ROOT_PATH . '/components/button.php';
                     <div class="flex items-start gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
                         Stainless steel washers with water immersion
-                            systems
+                        systems
                     </div>
                     <div class="flex items-start gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
@@ -195,7 +195,7 @@ require_once ROOT_PATH . '/components/button.php';
                     <div class="flex items-start gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
                         Stainless steel washers and dedicated peeling
-                            lines
+                        lines
                     </div>
                     <div class="flex items-start gap-2">
                         <i class="fi fi-rr-check-circle mt-1"></i>
@@ -433,18 +433,23 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
         </div>
 
-        
-        <div data-aos="fade-up" class="section-padding flex flex-col justify-center items-center">
-            <p class="text-gray-700 mb-4 max-w-2xl text-center mx-auto">
-                Our fruit and vegetable processing solutions incorporate advanced technology from
-                Navatta Group, ensuring world-class performance, reliability, and efficiency in
-                all processing applications.
-            </p>
-            <a href="https://www.navattagroup.com/" target="_blank"
-                class="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark">
-                <span>Explore Navatta Group Technology</span>
-                <i class="fi fi-rr-external-link"></i>
-            </a>
+        <div class="my-16 flex md:flex-row flex-col gap-8">
+            <div data-aos="fade-up" class="w-full md:w-1/2 h-64 md:h-80 lg:h-full overflow-hidden mx-auto">
+                <iframe class="mx-auto w-full h-full aspect-video text-center" src="https://www.youtube.com/embed/vkYFV75FTNk?si=3FOBIgU9ygE7MK-u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div data-aos="fade-up" class="w-full md:w-1/2 mx-auto mt-6 text-centers">
+                <p class="text-gray-600 pb-3">
+                    Our fruit and vegetable processing solutions incorporate advanced technology from
+                    Navatta Group, ensuring world-class performance, reliability, and efficiency in
+                    all processing applications.
+                </p>
+                <a href="https://www.navattagroup.com/" target="_blank"
+                    class="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                    <span>Explore Navatta Group Technology</span>
+                    <i class="fi fi-rr-arrow-up-right-from-square"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>
