@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../path.php';
+require_once ROOT_PATH . '/config/constants.php';
 
 // Define the base URL of the website
 $current_URL = "http" . (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on" ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -71,41 +73,12 @@ switch ($current_URL) {
 }
 
 // Function to determine active menu item based on the current URL
-function isActiveMenu($current_URL, $baseUrl = '/')
+function isActiveMenu($current_URL, $url)
 {
     // Check for exact matches first
-    if ($current_URL === $baseUrl) {
-        return 'home';
+    if ($current_URL === $url . 'admin/') {
+        return 'dashboard';
     }
-
-    // Check for patterns
-    $menuPatterns = [
-        'solutions' => [
-            'solutions/beverage-processing-and-filling-equipment/',
-            'solutions/dairy-processing-equipment/',
-            'solutions/food-processing/',
-            'solutions/packaging-filling-and-labelling-equipment/',
-            'solutions/pharma-home-and-personal-care-equipment/',
-            'solutions/fruits-and-vegetable-processing-equipment/'
-        ],
-        'news-and-resources' => [
-            'news-and-resources/news',
-            'news-and-resources/upcoming-events',
-            'news-and-resources/videos',
-            'news-and-resources/brochures'
-        ],
-        'about' => ['about/'],
-        'contact' => ['contact/']
-    ];
-
-    foreach ($menuPatterns as $menu => $paths) {
-        foreach ($paths as $path) {
-            if (strpos($current_URL, $baseUrl . $path) === 0) {
-                return $menu;
-            }
-        }
-    }
-
     return '';
 }
 
