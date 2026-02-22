@@ -368,193 +368,202 @@ require_once ROOT_PATH . '/components/button.php';
             </div>
 
             <!-- Logo Container -->
-            <div class="relative overflow-hidden">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.laferpack.com/" class="group relative">
+            <div class="relative">
+                <div class="group/grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
+                    <!-- Partner Logo Item 1 -->
+                    <a href="https://www.laferpack.com/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (1).png"
                                 alt="Laferpack">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Laferpack
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.selematic.tech/en/" class="group relative">
+                    <!-- Partner Logo Item 2 -->
+                    <a href="https://www.selematic.tech/en/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (2).png"
                                 alt="Selematic">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Selematic
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.telm.it/en" class="group relative">
+                    <!-- Partner Logo Item 3 -->
+                    <a href="https://www.telm.it/en" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (3).png"
                                 alt="Telm">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Telm
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://bmbpack.com/en/" class="group relative">
+                    <!-- Partner Logo Item 4 -->
+                    <a href="https://bmbpack.com/en/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (4).png"
                                 alt="BMB Packaging">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 BMB Packaging
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.makrolabelling.com/" class="group relative">
+                    <!-- Partner Logo Item 5 -->
+                    <a href="https://www.makrolabelling.com/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (5).png"
                                 alt="Makro Labelling">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Makro Labelling
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.imf-srl.com/en/" class="group relative">
+                    <!-- Partner Logo Item 6 -->
+                    <a href="https://www.imf-srl.com/en/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (6).png"
                                 alt="IMF srl">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 IMF srl
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.navattagroup.com/" class="group relative">
+                    <!-- Partner Logo Item 7 -->
+                    <a href="https://www.navattagroup.com/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (7).png"
                                 alt="Navatta Group">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Navatta Group
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.italafricagroup.com/" class="group relative">
+                    <!-- Partner Logo Item 8 -->
+                    <a href="https://www.italafricagroup.com/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (8).png"
                                 alt="Italafrica Group">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Italafrica Group
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Partner Logo Item -->
-                    <a href="https://www.mielepackaging.it/en/" class="group relative">
+                    <!-- Partner Logo Item 9 -->
+                    <a href="https://www.mielepackaging.it/en/" class="group/item relative">
                         <div class="aspect-square bg-white
-                                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
-                            <img class="w-full h-auto max-h-16 object-contain opacity-90 group-hover:opacity-100 
-                                      transition-opacity duration-300 grayscale group-hover:grayscale-0"
+                 border border-gray-100 hover:border-gray-200 p-6 flex items-center justify-center">
+                            <img class="w-full h-auto max-h-16 object-contain 
+                      transition-all duration-300
+                      group-hover/grid:grayscale group-hover/grid:opacity-75
+                      group-hover/item:grayscale-0 group-hover/item:opacity-100"
                                 src="<?= $url ?>assets/images/partners/partner (9).png"
                                 alt="Miele Packaging">
                         </div>
                         <!-- Hover Tooltip -->
                         <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 
-                                   group-hover:opacity-100 group-hover:-bottom-4 transition-all duration-300 z-20">
-                            <div
-                                class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
+                   group-hover/item:opacity-100 group-hover/item:-bottom-4 transition-all duration-300 z-20">
+                            <div class="bg-gray-900 text-white text-sm font-medium px-3 py-2 rounded-lg whitespace-nowrap">
                                 Miele Packaging
                                 <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 rotate-45 
-                                           w-2 h-2 bg-gray-900"></div>
+                           w-2 h-2 bg-gray-900"></div>
                             </div>
                         </div>
                     </a>

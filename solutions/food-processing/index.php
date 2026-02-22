@@ -9,7 +9,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
         <img class="w-full h-full object-cover"
-            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-website-Food-Processing-scaled.jpg"
+            src="<?= $url ?>assets/images/machines (2).jpeg"
             alt="">
     </div>
 </section>
@@ -51,7 +51,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
                     <img class="w-full h-full object-cover shadow-lg"
-                        src="https://images.unsplash.com/photo-1675647699232-76b8f533b006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZCUyMHByb2Nlc3Npbmd8ZW58MHx8MHx8fDA%3D"
+                        src="<?= $url ?>assets/images/machines (4).jpeg"
                         alt="Food Processing Equipment">
                 </div>
             </div>

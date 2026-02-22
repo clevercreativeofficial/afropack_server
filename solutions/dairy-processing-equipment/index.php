@@ -8,7 +8,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
         <img class="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhaXJ5fGVufDB8fDB8fHww"
+            src="<?= $url ?>assets/images/machines (6).jpeg"
             alt="">
     </div>
 </section>
