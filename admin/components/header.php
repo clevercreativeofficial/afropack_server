@@ -13,13 +13,11 @@ require_once ROOT_PATH . '/config/database.php';
 
     <title>AFROPACK - Admin Dashboard</title>
 
-    <meta name="theme-color" content="#CE0B10">
-
     <!-- favicon -->
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= $url ?>assets/favicon.ico" type="image/x-icon">
 
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>assets/css/global.css">
 
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
