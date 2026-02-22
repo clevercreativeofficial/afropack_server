@@ -22,85 +22,14 @@ require_once ROOT_PATH . '/components/header.php';
                 </button>
             </div>
             <div class="w-full flex flex-col lg:flex-row gap-4">
-                <div class="w-full grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 bg-white p-6">
-                    <div class="relative h-48 group">
+                <div class="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-cols-1 gap-4">
+                    <div class="relative h-60 group">
                         <img class="w-full h-full object-cover"
                             src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg">
 
-                        <div
-                            class="absolute top-2 right-2 flex justify-center items-center gap-3 w-fit h-[50px] px-3 bg-accent duration-300 group-hover:opacity-100 opacity-0">
-                            <button><i class="fi fi-rr-edit text-white translate-y-0.5"></i></button>
-                            <button><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
-                        </div>
-                        <div
-                            class="absolute bottom-0 right-0 flex justify-center items-center gap-3 w-full h-[50px] px-3 bg-accent">
-                            <p class="text-white">Brochure.pdf</p>
-                        </div>
-                    </div>
-                    <div class="relative h-48 group">
-                        <img class="w-full h-full object-cover"
-                            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg">
-
-                        <div
-                            class="absolute top-2 right-2 flex justify-center items-center gap-3 w-fit h-[50px] px-3 bg-accent duration-300 group-hover:opacity-100 opacity-0">
-                            <button><i class="fi fi-rr-edit text-white translate-y-0.5"></i></button>
-                            <button><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
-                        </div>
-                        <div
-                            class="absolute bottom-0 right-0 flex justify-center items-center gap-3 w-full h-[50px] px-3 bg-accent">
-                            <p class="text-white">Brochure.pdf</p>
-                        </div>
-                    </div>
-                    <div class="relative h-48 group">
-                        <img class="w-full h-full object-cover"
-                            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg">
-
-                        <div
-                            class="absolute top-2 right-2 flex justify-center items-center gap-3 w-fit h-[50px] px-3 bg-accent duration-300 group-hover:opacity-100 opacity-0">
-                            <button><i class="fi fi-rr-edit text-white translate-y-0.5"></i></button>
-                            <button><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
-                        </div>
-                        <div
-                            class="absolute bottom-0 right-0 flex justify-center items-center gap-3 w-full h-[50px] px-3 bg-accent">
-                            <p class="text-white">Brochure.pdf</p>
-                        </div>
-                    </div>
-                    <div class="relative h-48 group">
-                        <img class="w-full h-full object-cover"
-                            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg">
-
-                        <div
-                            class="absolute top-2 right-2 flex justify-center items-center gap-3 w-fit h-[50px] px-3 bg-accent duration-300 group-hover:opacity-100 opacity-0">
-                            <button><i class="fi fi-rr-edit text-white translate-y-0.5"></i></button>
-                            <button><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
-                        </div>
-                        <div
-                            class="absolute bottom-0 right-0 flex justify-center items-center gap-3 w-full h-[50px] px-3 bg-accent">
-                            <p class="text-white">Brochure.pdf</p>
-                        </div>
-                    </div>
-                    <div class="relative h-48 group">
-                        <img class="w-full h-full object-cover"
-                            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg">
-
-                        <div
-                            class="absolute top-2 right-2 flex justify-center items-center gap-3 w-fit h-[50px] px-3 bg-accent duration-300 group-hover:opacity-100 opacity-0">
-                            <button><i class="fi fi-rr-edit text-white translate-y-0.5"></i></button>
-                            <button><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
-                        </div>
-                        <div
-                            class="absolute bottom-0 right-0 flex justify-center items-center gap-3 w-full h-[50px] px-3 bg-accent">
-                            <p class="text-white">Brochure.pdf</p>
-                        </div>
-                    </div>
-                    <div class="relative h-48 group">
-                        <img class="w-full h-full object-cover"
-                            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/TNA-distribution-header.jpg">
-
-                        <div
-                            class="absolute top-2 right-2 flex justify-center items-center gap-3 w-fit h-[50px] px-3 bg-accent duration-300 group-hover:opacity-100 opacity-0">
-                            <button><i class="fi fi-rr-edit text-white translate-y-0.5"></i></button>
-                            <button><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
+                        <div class="absolute top-2 right-2 flex justify-center items-center gap-2 group-hover:opacity-100 opacity-0">
+                            <button class="w-10 h-10 bg-accent flex items-center justify-center"><i class="fi fi-rr-eye text-white translate-y-0.5"></i></button>
+                            <button class="w-10 h-10 bg-accent flex items-center justify-center"><i class="fi fi-rr-trash text-white translate-y-0.5"></i></button>
                         </div>
                         <div
                             class="absolute bottom-0 right-0 flex justify-center items-center gap-3 w-full h-[50px] px-3 bg-accent">
@@ -108,51 +37,6 @@ require_once ROOT_PATH . '/components/header.php';
                         </div>
                     </div>
                 </div>
-                <form class="w-full bg-white space-y-4 mb-8 p-6">
-                    <!-- Simple Notice Message -->
-                    <div class="bg-gray-100 border border-gray-300 p-4 mb-4">
-                        <p class="text-sm text-gray-700">
-                            <span class="font-semibold">Notice:</span> Provide either Image URL or Image File. URL
-                            takes
-                            priority if both are provided.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Image URL</label>
-                            <input type="text"
-                                class="outline-none w-full py-3 px-4 border focus:border-accent duration-300"
-                                placeholder="https://image-url.com">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Image File</label>
-                            <input type="file"
-                                class="outline-none w-full py-3 px-4 border focus:border-accent duration-300"
-                                placeholder="https://image-url.com">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium mb-2">Title</label>
-                            <input type="text"
-                                class="outline-none w-full py-3 px-4 border focus:border-accent duration-300"
-                                placeholder="Enter title">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium mb-2">PDF File</label>
-                            <input type="file"
-                                class="outline-none w-full py-3 px-4 border focus:border-accent duration-300"
-                                placeholder="https://image-url.com">
-                        </div>
-                    </div>
-                    <button type="submit"
-                        class="outline-none md:w-fit py-3 px-4 bg-accent text-white hover:bg-accent-dark duration-300">
-                        <i class="fi fi-rr-add inline-block translate-y-0.5"></i>
-                        Add Brochure
-                    </button>
-                </form>
             </div>
         </div>
     </main>
@@ -169,7 +53,6 @@ require_once ROOT_PATH . '/components/header.php';
         ?>
     </div>
 </div>
-
 
 <?php
 require_once ROOT_PATH . '/components/footer.php';
