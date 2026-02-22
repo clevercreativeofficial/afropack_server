@@ -1,5 +1,5 @@
 <form class="w-full bg-white space-y-4 py-12">
-    <h2 class="text-2xl font-bold text-accent-dark">Add News Article</h2>
+    <h2 class="text-2xl font-bold text-accent-dark">Update News Article</h2>
     <div>
         <label class="block text-sm font-medium mb-2">Title</label>
         <input type="text"
@@ -42,6 +42,6 @@
     </small>
     <button type="submit"
         class="block outline-none md:w-fit py-3 px-4 bg-accent text-white hover:bg-accent-dark duration-300">
-        Add News
+        Update News
     </button>
 </form>

@@ -234,7 +234,7 @@ require_once ROOT_PATH . '/components/header.php';
     </main>
 </div>
 
-<!-- Add Slide Modal -->
+<!-- Modal -->
 <div id="addSlideModal" class="fixed inset-0 bg-black bg-opacity-30 hidden flex items-center justify-center z-50">
     <div class="bg-white shadow-lg w-full max-w-md md:p-6 p-3 m-3 relative">
         <button id="closeAddSlideModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
@@ -245,6 +245,7 @@ require_once ROOT_PATH . '/components/header.php';
         ?>
     </div>
 </div>
+
 
 <?php
 require_once ROOT_PATH . '/components/footer.php';
