@@ -9,7 +9,7 @@ require_once ROOT_PATH . '/components/button.php';
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
         <img class="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            src="<?= $url ?>assets/images/pharma-and-personal.webp"
             alt="">
     </div>
 </section>
