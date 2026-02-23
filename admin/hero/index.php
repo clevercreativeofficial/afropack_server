@@ -11,14 +11,15 @@ require_once ROOT_PATH . '/components/header.php';
     ?>
 
     <!-- Content -->
-    <main class="flex-1 overflow-y-auto md:p-6 p-3">
-        <div class="flex md:items-center items-start justify-between md:flex-row flex-col mb-6">
-            <h3 class="text-2xl font-bold text-accent-dark">Hero Carousel Management</h3>
-            <button class="btn-primary py-2 flex items-center space-x-2">
-                <i class="fi fi-rr-add translate-y-0.5 text-accent"></i>
-                <span>Add New Slide</span>
-            </button>
-        </div>
+    <main class="flex-1 overflow-y-auto py-6 px-3">
+        <!-- Brochures Management -->
+        <div id="hero" class="dashboard-section max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
+                <h3 class="text-2xl font-bold text-accent-dark">Hero Slides Management</h3>
+                <button class="btn-primary bg-accent sm:w-auto w-full text-white px-4 py-2">
+                    Add Hero Slide
+                </button>
+            </div>
         <div class="w-full gap-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-6 gap-3">
                 <!-- Slide Card 1 -->

@@ -1,5 +1,4 @@
 <!-- JavaScript -->
- 
 <script>
     // Modal Toggle Logic
     const addSlideModal = document.getElementById('addSlideModal');

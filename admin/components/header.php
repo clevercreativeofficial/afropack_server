@@ -38,7 +38,7 @@ require_once ROOT_PATH . '/config/functions.php';
     <!-- Sidebar -->
     <div class="sidebar bg-white w-64 shrink-0 text-gray-700 hidden md:flex flex-col border z-40">
         <!-- Logo -->
-        <div class="p-6 border-b border-gray-200">
+        <div class="py-4 px-3 border-b border-gray-200">
             <div class="flex items-center gap-3">
                 <div class="w-10">
                     <img src="<?= $url ?>assets/images/logo/Logo_AfropackGroup.svg" alt="AFROPACK Logo">
