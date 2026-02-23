@@ -11,14 +11,13 @@ require_once ROOT_PATH . '/components/header.php';
     ?>
 
     <!-- Content -->
-    <main class="flex-1 overflow-y-auto p-6">
+    <main class="flex-1 overflow-y-auto py-6 px-3">
         <!-- Events Management -->
-        <div id="events" class="dashboard-section">
-            <div class="flex items-center justify-between mb-6">
+        <div id="events" class="dashboard-section max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
                 <h3 class="text-2xl font-bold text-accent-dark">Events Management</h3>
-                <button class="btn-primary px-4 py-2 flex items-center space-x-2">
-                    <i class="fi fi-rr-plus"></i>
-                    <span>Add Event</span>
+                <button class="btn-primary bg-accent sm:w-auto w-full text-white px-4 py-2">
+                    Add Event
                 </button>
             </div>
             <div class="w-full flex flex-col lg:flex-row gap-4">

@@ -11,10 +11,12 @@ require_once ROOT_PATH . '/components/header.php';
     ?>
 
     <!-- Content -->
-    <main class="flex-1 overflow-y-auto p-6">
-        <!-- Settings -->
-        <div id="settings" class="dashboard-section">
-            <h3 class="text-2xl font-bold mb-6 text-accent-dark">Settings</h3>
+    <main class="flex-1 overflow-y-auto py-6 px-3">
+        <!-- Settings Management -->
+        <div id="settings" class="dashboard-section max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
+                <h3 class="text-2xl font-bold text-accent-dark">Settings</h3>
+            </div>
             <div class="bg-white card p-6">
                 <div class="space-y-6">
                     <div>

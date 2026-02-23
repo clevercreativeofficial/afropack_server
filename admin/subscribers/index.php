@@ -10,10 +10,12 @@ require_once ROOT_PATH . '/components/header.php';
     ?>
 
     <!-- Content -->
-    <main class="flex-1 overflow-y-auto p-6">
+    <main class="flex-1 overflow-y-auto py-6 px-3">
         <!-- Subscribers Management -->
-        <div id="subscribers" class="dashboard-section">
-            <h3 class="text-2xl font-bold mb-6 text-accent-dark">Newsletter Subscribers</h3>
+        <div id="Subscribers" class="dashboard-section max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
+                <h3 class="text-2xl font-bold text-accent-dark">Newsletter Subscribers</h3>
+            </div>
             <div class="bg-white card p-6">
                 <div class="flex justify-between items-center mb-4">
                     <p>Total Subscribers: <span class="font-semibold text-accent">1,234</span></p>
