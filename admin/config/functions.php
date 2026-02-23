@@ -8,79 +8,76 @@ $title = ''; // Initialize an empty title variable
 
 // Check the current URL and set the title accordingly
 switch ($current_URL) {
-    case $url:
-        $title = 'AFROPACK - Food Processing and Packaging Company';
+    case $url . 'admin/':
+        $title = 'AFROPACK - Admin Dashboard';
         break;
 
-    case $url . 'about/':
-        $title = 'AFROPACK - About Us';
+    case $url . 'admin/hero/':
+        $title = 'AFROPACK - Hero Carousel';
         break;
 
-    case $url . 'contact/':
-        $title = 'AFROPACK - Contact Us';
+    case $url . 'admin/news/':
+        $title = 'AFROPACK - Manage News';
         break;
 
-    case $url . 'news-and-resources/brochures/':
-        $title = 'AFROPACK - Brochures';
+    case $url . 'admin/events/':
+        $title = 'AFROPACK - Manage Events';
         break;
 
-    case $url . 'news-and-resources/news/':
-        $title = 'AFROPACK - News';
+    case $url . 'admin/videos/':
+        $title = 'AFROPACK - Manage Videos';
         break;
 
-    case $url . 'news-and-resources/upcoming-events/':
-        $title = 'AFROPACK - Upcoming Events';
+    case $url . 'admin/brochures/':
+        $title = 'AFROPACK - Manage Brochures';
         break;
 
-    case $url . 'news-and-resources/videos/':
-        $title = 'AFROPACK - Videos';
+    case $url . 'admin/subscribers/':
+        $title = 'AFROPACK - Manage Subscribers';
         break;
 
-    case $url . 'solutions/beverage-processing-and-filling-equipment/':
-        $title = 'AFROPACK - Beverage Processing & Filling Equipment';
+    case $url . 'admin/settings/':
+        $title = 'AFROPACK - Settings';
         break;
 
-    case $url . 'solutions/dairy-processing-equipment/':
-        $title = 'AFROPACK - Dairy Processing Equipment';
-        break;
-
-    case $url . 'solutions/food-processing/':
-        $title = 'AFROPACK - Food Processing';
-        break;
-
-    case $url . 'solutions/fruits-and-vegetable-processing-equipment/':
-        $title = 'AFROPACK - Fruits & Vegetable Processing Equipment';
-        break;
-
-    case $url . 'solutions/packaging-filling-labelling-equipment/':
-        $title = 'AFROPACK - Packaging, Filling & Labelling Equipment';
-        break;
-
-    case $url . 'solutions/pharma-home-and-personal-care-equipment/':
-        $title = 'AFROPACK - Pharma & Home / Personal Care Equipment';
-        break;
-
-    case $url . 'login/':
-        $title = 'AFROPACK - Login';
-        break;
-
-    case $url . 'not-found/':
-        $title = 'AFROPACK - 404 Not Found';
+    case $url . 'admin/users/':
+        $title = 'AFROPACK - Manage Users';
         break;
 
     default:
-        $title = 'AFROPACK - Food Processing and Packaging Company';
+        $title = 'AFROPACK - Admin Dashboard';
 }
 
-// Function to determine active menu item based on the current URL
-function isActiveMenu($current_URL, $url)
+// Function to determine active menu item
+function getActiveMenu($current_URL, $base_url)
 {
-    // Check for exact matches first
-    if ($current_URL === $url . 'admin/') {
-        return 'dashboard';
+    // Define menu items with their paths and names
+    $menu_items = [
+        'admin' => $base_url . 'admin/',
+        'hero' => $base_url . 'admin/hero/',
+        'news' => $base_url . 'admin/news/',
+        'events' => $base_url . 'admin/events/',
+        'videos' => $base_url . 'admin/videos/',
+        'brochures' => $base_url . 'admin/brochures/',
+        'subscribers' => $base_url . 'admin/subscribers/',
+        'users' => $base_url . 'admin/users/',
+        'settings' => $base_url . 'admin/settings/',
+    ];
+    
+    // Check each menu item
+    foreach ($menu_items as $menu_name => $menu_url) {
+        // Remove trailing slashes for comparison
+        $current = rtrim($current_URL, '/');
+        $menu = rtrim($menu_url, '/');
+        
+        // Check if current URL matches the menu URL
+        if ($current === $menu) {
+            return $menu_name;
+        }
     }
+    
     return '';
 }
 
 // Usage
-$active_menu = isActiveMenu($current_URL, $url);
+$active_menu = getActiveMenu($current_URL, $url);

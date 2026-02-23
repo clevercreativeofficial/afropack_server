@@ -13,7 +13,7 @@ require_once ROOT_PATH . '/config/functions.php';
     <meta name="description" content="AFROPACK GROUP - Admin Dashboard">
     <meta name="author" content="AFROPACK">
 
-    <title>AFROPACK - Admin Dashboard</title>
+    <title><?= $title ?></title>
 
     <!-- favicon -->
     <link rel="icon" href="<?= $url ?>assets/favicon.ico" type="image/x-icon">
@@ -57,7 +57,7 @@ require_once ROOT_PATH . '/config/functions.php';
                 <ul class="space-y-1">
                     <li>
                         <a href="<?= $url ?>admin/"
-                            class="<?= $active_menu === $url . 'admin/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'admin' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-dashboard translate-y-0.5"></i>
                             <span>Dashboard</span>
                         </a>
@@ -69,8 +69,8 @@ require_once ROOT_PATH . '/config/functions.php';
                 <h3 class="text-xs uppercase tracking-wider text-gray-500 mb-2">Content Management</h3>
                 <ul class="space-y-1">
                     <li>
-                        <a href="<?= $url ?>/admin/hero/"
-                            class="<?= $active_menu === $url . 'admin/hero/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                        <a href="<?= $url ?>admin/hero/"
+                            class="<?= $active_menu === 'hero' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-picture translate-y-0.5"></i>
                             <span>Hero Carousel</span>
                         </a>
@@ -82,28 +82,28 @@ require_once ROOT_PATH . '/config/functions.php';
                 <h3 class="text-xs uppercase tracking-wider text-gray-500 mb-2">News & Resources</h3>
                 <ul class="space-y-1">
                     <li>
-                        <a href="<?= $url ?>admin/news/" class="<?= $active_menu === $url . 'admin/news/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                        <a href="<?= $url ?>admin/news/" class="<?= $active_menu === 'news' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-bell translate-y-0.5"></i>
                             <span>News</span>
                         </a>
                     </li>
                     <li>
                         <a href="<?= $url ?>admin/events/"
-                            class="<?= $active_menu === $url . 'admin/events/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'events' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-calendar-day translate-y-0.5"></i>
                             <span>Events</span>
                         </a>
                     </li>
                     <li>
                         <a href="<?= $url ?>admin/videos/"
-                            class="<?= $active_menu === $url . 'admin/videos/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'videos' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-play-alt translate-y-0.5"></i>
                             <span>Videos</span>
                         </a>
                     </li>
                     <li>
                         <a href="<?= $url ?>admin/brochures/"
-                            class="<?= $active_menu === $url . 'admin/brochures/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'brochures' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-book translate-y-0.5"></i>
                             <span>Brochures</span>
                         </a>
@@ -116,7 +116,7 @@ require_once ROOT_PATH . '/config/functions.php';
                 <ul class="space-y-1">
                     <li>
                         <a href="<?= $url ?>admin/subscribers/"
-                            class="<?= $active_menu === $url . 'admin/subscribers/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'subscribers' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-users translate-y-0.5"></i>
                             <span>Subscribers</span>
                         </a>
@@ -129,14 +129,14 @@ require_once ROOT_PATH . '/config/functions.php';
                 <ul class="space-y-1">
                     <li>
                         <a href="<?= $url ?>admin/users/"
-                            class="<?= $active_menu === $url . 'admin/users/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'users' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-user translate-y-0.5"></i>
                             <span>Users</span>
                         </a>
                     </li>
                     <li>
                         <a href="<?= $url ?>admin/settings/"
-                            class="<?= $active_menu === $url . 'admin/settings/' ? 'bg-accent text-white' : ' hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            class="<?= $active_menu === 'settings' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
                             <i class="fi fi-rr-settings translate-y-0.5"></i>
                             <span>Settings</span>
                         </a>
