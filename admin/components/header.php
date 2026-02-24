@@ -3,6 +3,15 @@ require_once __DIR__ . '/../path.php';
 require_once ROOT_PATH . '/config/database.php';
 require_once ROOT_PATH . '/config/functions.php';
 
+
+
+// Bounce back to login page if not authenticated
+if(!isset($_SESSION['isAuth'])){
+    $_SESSION['login'] = "You are not allowed for Access!";
+    header('Location: ' . $url . 'login/');
+    exit();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -152,3 +152,9 @@ p, a, li, button, div{
     scrollbar-width: thin;
     scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
 }
+
+/* NOTIFY */
+/* Change text color for all notifications */
+.notyf__message {
+    color: white !important;
+}

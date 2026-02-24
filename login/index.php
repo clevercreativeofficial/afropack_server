@@ -19,13 +19,24 @@ require_once ROOT_PATH . '/components/button.php';
     <meta name="theme-color" content="#CE0B10">
 
     <!-- favicon -->
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= $url ?>assets/favicon.ico" type="image/x-icon">
 
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
+    <link rel="stylesheet" type="text/css" href="<?= $url ?>assets/css/global.css">
 
     <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Notyf (Toast Notifications) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <style>
+        .notyf__message {
+            color: white !important;
+            font-size: 12px;
+        }
+    </style>
 
 </head>
 
@@ -39,6 +50,8 @@ require_once ROOT_PATH . '/components/button.php';
         </div>
     </div>
 
+    <!-- Notification -->
+    <?php include_once ROOT_PATH . '/config/notifications.php'; ?>
 
     <!-- Login section -->
     <section class="relative h-screen flex flex-col justify-center items-center py-10">
@@ -46,27 +59,27 @@ require_once ROOT_PATH . '/components/button.php';
             <div data-aos="fade-up" class="hidden md:block w-1/2">
                 <img src="<?= $url ?>assets/images/machines (4).jpeg" alt="Afropack Logo" class="w-full h-full object-cover">
             </div>
-            <form action="#" method="POST" class="space-y-6 w-full md:w-1/2 bg-white p-8 shadow-2xl shadow-gray-100">
+            <form action="<?= $url ?>login/api/login.php" method="POST" class="space-y-6 w-full md:w-1/2 bg-white p-8 shadow-2xl shadow-gray-100">
                 <div data-aos="fade-up" class="flex flex-col gap-2 mb-8">
                     <h3 class="text-3xl font-bold text-gray-900">Welcome Back</h3>
                     <p class="text-gray-600">Please login to continue</p>
                 </div>
                 <div class="flex flex-col">
                     <label for="email" class="text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input type="email" id="email" name="email" required
+                    <input type="email" id="email" name="email"
                         class="border-b border-gray-300 py-3 focus:ring-accent focus:border-accent outline-none duration-300"
                         placeholder="Your email address">
                 </div>
 
                 <div class="flex flex-col">
                     <label for="password" class="text-sm font-medium text-gray-700 mb-1">Password</label>
-                    <input type="password" id="password" name="password" required
+                    <input type="password" id="password" name="password"
                         class="border-b border-gray-300 py-3 focus:ring-accent focus:border-accent outline-none duration-300"
                         placeholder="Your password">
                 </div>
-                <small class="block">Don't have an account? <a href="/" class="text-accent">Back to Homepage</a></small>
+                <small class="block">Don't have an account? <a href="<?= $url ?>" class="text-accent">Back to Homepage</a></small>
 
-                <button type="submit" class="w-full bg-accent text-white px-8 py-4 font-semibold hover:bg-accent-dark duration-300 ease-in-out
+                <button type="submit" name="submit" class="w-full bg-accent text-white px-8 py-4 font-semibold hover:bg-accent-dark duration-300 ease-in-out
                                    flex items-center justify-center gap-2 group">
                     Sign In to Dashboard
                 </button>
