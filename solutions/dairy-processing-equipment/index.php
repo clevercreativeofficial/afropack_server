@@ -7,7 +7,7 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- hero section -->
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
-        <img class="w-full h-full object-cover"
+        <img class="w-full h-full object-cover opacity-30"
             src="<?= $url ?>assets/images/dairy-processing.png"
             alt="">
     </div>
@@ -51,7 +51,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
                     <img class="w-full h-full object-cover"
-                        src="https://images.unsplash.com/photo-1523473827533-2a64d0d36748?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRhaXJ5fGVufDB8fDB8fHww"
+                        src="<?= $url ?>assets/images/dairy-processing.png"
                         alt="Dairy Processing">
                 </div>
             </div>

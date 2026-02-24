@@ -8,8 +8,8 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- hero section -->
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
-        <img class="w-full h-full object-cover"
-            src="<?= $url ?>assets/images/fruits-and-vegetables.jpg"
+        <img class="w-full h-full object-cover opacity-30"
+            src="<?= $url ?>assets/images/machines (4).jpeg"
             alt="">
     </div>
 </section>
@@ -51,7 +51,7 @@ require_once ROOT_PATH . '/components/button.php';
                 </div>
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
                     <img class="w-full h-full object-cover"
-                        src="<?= $url ?>assets/images/machines (4).jpeg"
+                        src="<?= $url ?>assets/images/fruits-and-vegetables.jpg"
                         alt="Fruit Processing Plant">
                 </div>
             </div>

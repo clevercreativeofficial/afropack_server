@@ -8,8 +8,8 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- hero section -->
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
-        <img class="w-full h-full object-cover"
-            src="https://www.tnasolutions.com/wp-content/uploads/2024/06/Preziosi-1-1-scaled.jpg" alt="">
+        <img class="w-full h-full object-cover opacity-30"
+            src="<?= $url ?>assets/images/machines (2).jpeg" alt="">
     </div>
 </section>
 
@@ -78,7 +78,7 @@ require_once ROOT_PATH . '/components/button.php';
 
             <!-- Vision Column -->
             <div data-aos="fade-up" class="overflow-hidden">
-                <img class="w-full h-full object-cover" src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMHByb2Nlc3Npbmd8ZW58MHx8MHx8fDA%3D" alt="Image representing vision">
+                <img class="w-full h-full object-cover" src="<?= $url ?>assets/images/about.avif" alt="Image representing vision">
             </div>
         </div>
     </div>

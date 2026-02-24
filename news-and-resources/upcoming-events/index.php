@@ -9,8 +9,8 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- hero section -->
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
-        <img class="w-full h-full object-cover"
-            src="https://www.tnasolutions.com/wp-content/uploads/2024/01/TNA-up-coming-events-main-header.jpg" alt="">
+        <img class="w-full h-full object-cover opacity-30"
+            src="<?= $url ?>assets/images/events.jpg" alt="Events">
     </div>
 </section>
 

@@ -8,8 +8,8 @@ require_once ROOT_PATH . '/components/button.php';
 <!-- hero section -->
 <section class="relative h-[40vh] flex flex-col justify-center items-center overflow-hidden">
     <div class="w-full h-full overflow-hidden">
-        <img class="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhY2thZ2luZyUyMG1hY2hpbmVyeXxlbnwwfHwwfHx8MA%3D%3D"
+        <img class="w-full h-full object-cover opacity-30"
+            src="<?= $url ?>assets/images/machines (3).jpeg"
             alt="Packaging Machinery">
     </div>
 </section>
@@ -51,7 +51,7 @@ require_once ROOT_PATH . '/components/button.php';
 
                 <div class="w-full h-64 md:h-80 lg:h-full overflow-hidden">
                     <img class="w-full h-full object-cover"
-                        src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src="<?= $url ?>assets/images/packaging.jpeg"
                         alt="Fruit Processing Plant">
                 </div>
             </div>
