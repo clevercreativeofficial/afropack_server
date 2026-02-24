@@ -40,6 +40,10 @@ switch ($current_URL) {
         $title = 'AFROPACK - Settings';
         break;
 
+    case $url . 'admin/analytics/':
+        $title = 'AFROPACK - Analytics';
+        break;
+
     case $url . 'admin/users/':
         $title = 'AFROPACK - Manage Users';
         break;
@@ -62,20 +66,21 @@ function getActiveMenu($current_URL, $base_url)
         'subscribers' => $base_url . 'admin/subscribers/',
         'users' => $base_url . 'admin/users/',
         'settings' => $base_url . 'admin/settings/',
+        'analytics' => $base_url . 'admin/analytics'
     ];
-    
+
     // Check each menu item
     foreach ($menu_items as $menu_name => $menu_url) {
         // Remove trailing slashes for comparison
         $current = rtrim($current_URL, '/');
         $menu = rtrim($menu_url, '/');
-        
+
         // Check if current URL matches the menu URL
         if ($current === $menu) {
             return $menu_name;
         }
     }
-    
+
     return '';
 }
 

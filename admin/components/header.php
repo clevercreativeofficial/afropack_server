@@ -142,6 +142,13 @@ require_once ROOT_PATH . '/config/functions.php';
                         </a>
                     </li>
                     <li>
+                        <a href="<?= $url ?>admin/analytics/"
+                            class="<?= $active_menu === 'analytics' ? 'bg-accent text-white' : 'hover:bg-bg-alt hover:text-accent' ?> flex items-center gap-3 px-4 py-3">
+                            <i class="fi fi-rr-chart-histogram translate-y-0.5"></i>
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#logout"
                             class="flex items-center gap-3 px-4 py-3 hover:bg-accent text-accent hover:text-white">
                             <i class="fi fi-rr-sign-out-alt translate-y-0.5"></i>
