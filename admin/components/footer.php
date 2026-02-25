@@ -63,21 +63,21 @@
         });
 
         // Handle form submissions
-        document.querySelectorAll('form').forEach(form => {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Show loading state
-                const submitBtn = this.querySelector('button[type="submit"]');
-                const originalText = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<div class="loading"></div>';
+        // document.querySelectorAll('form').forEach(form => {
+        //     form.addEventListener('submit', function(e) {
+        //         e.preventDefault();
+        //         // Show loading state
+        //         const submitBtn = this.querySelector('button[type="submit"]');
+        //         const originalText = submitBtn.innerHTML;
+        //         submitBtn.innerHTML = '<div class="loading"></div>';
 
-                // Simulate API call
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    alert('Changes saved successfully!');
-                }, 1000);
-            });
-        });
+        //         // Simulate API call
+        //         setTimeout(() => {
+        //             submitBtn.innerHTML = originalText;
+        //             alert('Changes saved successfully!');
+        //         }, 1000);
+        //     });
+        // });
 
         // Handle delete actions
         document.querySelectorAll('button.text-red-500').forEach(button => {

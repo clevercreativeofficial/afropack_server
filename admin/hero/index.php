@@ -20,145 +20,30 @@ require_once ROOT_PATH . '/components/header.php';
                     Add Hero Slide
                 </button>
             </div>
-        <div class="w-full gap-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-6 gap-3">
-                <!-- Slide Card 1 -->
-                <div class="bg-white card  border border-transparent hover:border-gray-200 p-3 group">
-                    <!-- Image Preview -->
-                    <div class="relative bg-gray-100 overflow-hidden aspect-video">
-                        <img src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <!-- Order Badge -->
-                        <div class="absolute top-2 left-2 bg-accent text-white text-xs font-bold px-2 py-1">
-                            Slide #1
-                        </div>
-
-                        <div class="absolute top-2 right-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <!-- Action Buttons -->
-                            <div class="flex items-center justify-end gap-2">
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="View">
-                                    <i class="fi fi-rr-eye mt-1"></i>
-                                </button>
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Delete">
-                                    <i class="fi fi-rr-trash mt-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="w-full gap-4">
+                <!-- Hero Slides Gallery Container -->
+                <div id="heroSlidesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-6 gap-3">
+                    <!-- Slides will be loaded here dynamically -->
                 </div>
 
-                <!-- Slide Card 1 -->
-                <div class="bg-white card  border border-transparent hover:border-gray-200 p-3 group">
-                    <!-- Image Preview -->
-                    <div class="relative bg-gray-100 overflow-hidden aspect-video">
-                        <img src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <!-- Order Badge -->
-                        <div class="absolute top-2 left-2 bg-accent text-white text-xs font-bold px-2 py-1">
-                            Slide #1
-                        </div>
-
-                        <div class="absolute top-2 right-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <!-- Action Buttons -->
-                            <div class="flex items-center justify-end gap-2">
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="View">
-                                    <i class="fi fi-rr-eye mt-1"></i>
-                                </button>
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Delete">
-                                    <i class="fi fi-rr-trash mt-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Loading State -->
+                <div id="slidesLoading" class="col-span-full text-center py-12 hidden">
+                    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
+                    <p class="mt-2 text-gray-500">Loading slides...</p>
                 </div>
 
-                <!-- Slide Card 1 -->
-                <div class="bg-white card  border border-transparent hover:border-gray-200 p-3 group">
-                    <!-- Image Preview -->
-                    <div class="relative bg-gray-100 overflow-hidden aspect-video">
-                        <img src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <!-- Order Badge -->
-                        <div class="absolute top-2 left-2 bg-accent text-white text-xs font-bold px-2 py-1">
-                            Slide #1
-                        </div>
-
-                        <div class="absolute top-2 right-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <!-- Action Buttons -->
-                            <div class="flex items-center justify-end gap-2">
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="View">
-                                    <i class="fi fi-rr-eye mt-1"></i>
-                                </button>
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Delete">
-                                    <i class="fi fi-rr-trash mt-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Empty State -->
+                <div id="slidesEmpty" class="col-span-full text-center py-12 bg-gray-50 hidden">
+                    <i class="fi fi-rr-picture text-4xl text-gray-400"></i>
+                    <p class="mt-2 text-gray-500">No slides found. Upload your first hero image!</p>
                 </div>
 
-                <!-- Slide Card 1 -->
-                <div class="bg-white card  border border-transparent hover:border-gray-200 p-3 group">
-                    <!-- Image Preview -->
-                    <div class="relative bg-gray-100 overflow-hidden aspect-video">
-                        <img src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <!-- Order Badge -->
-                        <div class="absolute top-2 left-2 bg-accent text-white text-xs font-bold px-2 py-1">
-                            Slide #1
-                        </div>
-
-                        <div class="absolute top-2 right-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <!-- Action Buttons -->
-                            <div class="flex items-center justify-end gap-2">
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="View">
-                                    <i class="fi fi-rr-eye mt-1"></i>
-                                </button>
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Delete">
-                                    <i class="fi fi-rr-trash mt-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Error State -->
+                <div id="slidesError" class="col-span-full text-center py-12 bg-red-50 hidden">
+                    <i class="fi fi-rr-exclamation text-4xl text-red-400"></i>
+                    <p class="mt-2 text-sm text-red-500">Failed to load slides. Please try again.</p>
                 </div>
-
-                <!-- Slide Card 1 -->
-                <div class="bg-white card  border border-transparent hover:border-gray-200 p-3 group">
-                    <!-- Image Preview -->
-                    <div class="relative bg-gray-100 overflow-hidden aspect-video">
-                        <img src="https://plus.unsplash.com/premium_photo-1663039952001-48ffa8f42c78?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <!-- Order Badge -->
-                        <div class="absolute top-2 left-2 bg-accent text-white text-xs font-bold px-2 py-1">
-                            Slide #1
-                        </div>
-
-                        <div class="absolute top-2 right-2 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <!-- Action Buttons -->
-                            <div class="flex items-center justify-end gap-2">
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="View">
-                                    <i class="fi fi-rr-eye mt-1"></i>
-                                </button>
-                                <button class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Delete">
-                                    <i class="fi fi-rr-trash mt-1"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
     </main>
 </div>
 
@@ -175,6 +60,9 @@ require_once ROOT_PATH . '/components/header.php';
     </div>
 </div>
 
+<!-- AJAX -->
+<script src="<?= $url ?>admin/hero/api/upload.js"></script>
+<script src="<?= $url ?>admin/hero/api/fetch.js"></script>
 
 <?php
 require_once ROOT_PATH . '/components/footer.php';
