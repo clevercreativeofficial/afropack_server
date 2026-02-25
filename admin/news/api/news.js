@@ -140,7 +140,7 @@ async function refreshNews ()
         console.error( 'Error refreshing news:', error );
         loading.classList.add( 'hidden' );
         container.innerHTML = `
-            <div class="col-span-full text-center py-8 bg-red-50 rounded-lg">
+            <div class="col-span-full text-center py-8 bg-red-50">
                 <i class="fi fi-rr-exclamation text-4xl text-red-400"></i>
                 <p class="mt-2 text-red-500">Failed to load news articles</p>
             </div>
@@ -162,91 +162,87 @@ function renderNewsArticles ( articles )
 }
 
 // Create news card
-function createNewsCard ( article )
-{
-    const div = document.createElement( 'div' );
+function createNewsCard(article) {
+    const div = document.createElement('div');
     div.className = 'bg-white card group border border-transparent hover:border-gray-200 transition-all duration-300 relative';
-    div.setAttribute( 'data-article-id', article.id );
+    div.setAttribute('data-article-id', article.id);
 
     const typeIcon = article.type === 'file' ? 'fi-rr-upload' : 'fi-rr-link';
-    const typeBadgeColor = article.type === 'file' ? 'bg-blue-500' : 'bg-purple-500';
+    const typeBadgeColor = article.type === 'file' ? 'bg-blue-500' : 'bg-amber-500';
+    
+    // Determine published status display
+    const publishedStatus = article.is_published ? 'Published' : 'Unpublished';
+    const statusBadgeColor = article.is_published ? 'bg-green-500' : 'bg-gray-500';
 
     div.innerHTML = `
-
-
-
-            <div>
-                            <div class="absolute top-4 left-4">
-                                <!-- Status Badge - Top Right -->
-                                <div class="absolute top-2 left-2 flex gap-2">
-                                    <span class="px-2 py-1 ${ typeBadgeColor } text-while text-xs font-medium">
-                                    <i class="fi ${ typeIcon } mr-1"></i>
-                                        ${ article.type === 'file' ? 'Uploaded' : 'URL' }
-                                    </span>
-
-                                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded-full">
-                                        ${ !article.is_published ? `Published` : 'Unpublished' }
-                                    </span>
-
-                                </div>
-                            </div>
-                            <img
-                                src="${ article.image_url }"
-                                alt="${ article.title }" class="w-full h-60 object-cover mb-4"
-                                onerror="this.src='/afropack_server/assets/images/placeholder.jpg'">
-
-                            <!-- Action Buttons -->
-                            <div class="absolute top-4 right-4 flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <button onclick="viewArticle(${ article.id }) class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="View">
-                                    <i class="fi fi-rr-eye mt-1"></i>
-                                </button>
-                                <button onclick="editArticle(${ article.id }) class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Edit">
-                                    <i class="fi fi-rr-edit mt-1"></i>
-                                </button>
-                                <button onclick="deleteArticle(${ article.id }) class="w-10 h-10 flex items-center justify-center text-white bg-accent transition-colors"
-                                    title="Delete">
-                                    <i class="fi fi-rr-trash mt-1"></i>
-                                </button>
-                            </div>
-
-                        </div>
-
-                        <div class="px-4 pb-4">
-
-                            <!-- Category Badge -->
-                            <div class="mb-3">
-                                <span class="text-xs font-medium !text-accent bg-accent-light px-2 py-1">
-                                ${ article.category }
-                                </span>
-                            </div>
-                            <div class="flex items-center text-xs text-gray-500 mb-3">
-                <i class="fi fi-rr-eye mr-1"></i>
-                <span>${ article.views } views</span>
+        <div class="relative">
+            <!-- Status Badges - Top Left -->
+            <div class="absolute top-4 left-4 flex gap-2 z-10">
+                <small class="px-2 py-1 ${typeBadgeColor} text-white text-xs font-medium">
+                    <i class="fi ${typeIcon} mr-1"></i>
+                    ${article.type === 'file' ? 'Uploaded' : 'URL'}
+                </small>
+                <small class="${statusBadgeColor} text-white text-xs px-2 py-1">
+                    ${publishedStatus}
+                </small>
             </div>
-                            <!-- Title & Date -->
-                            <h3 class="font-bold text-lg text-gray-900 mb-2 pr-20" title="${ article.title }">${ article.title }</h3>
 
-                            <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
-                                <i class="fi fi-rr-calendar text-accent"></i>
-                                <span>${ article.created_at_formatted }</span>
-                            </div>
+            <!-- Image -->
+            <img src="${article.image_url}" 
+                 alt="${article.title}" 
+                 class="w-full h-60 object-cover"
+                 onerror="this.src='../../assets/images/placeholder.png'">
 
-                            <!-- Preview/Excerpt (optional) -->
-                            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
-                             ${ article.body }
-                            </p>
-
-                        </div>
-
-                        <!-- Hover info -->
-        <div class="absolute inset-0 bg-black bg-opacity-75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 flex flex-col justify-center text-white text-sm">
-            <p class="mb-2"><strong>URL:</strong> ${ article.image_url.substring( 0, 50 ) }...</p>
-            ${ article.file_name ? `<p><strong>File:</strong> ${ article.file_name }</p>` : '' }
-            ${ article.file_size ? `<p><strong>Size:</strong> ${ article.file_size }</p>` : '' }
+            <!-- Action Buttons - Top Right -->
+            <div class="absolute top-4 right-4 flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <button onclick="viewArticle(${article.id})" 
+                    class="w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
+                    title="View">
+                    <i class="fi fi-rr-eye"></i>
+                </button>
+                <button onclick="editArticle(${article.id})" 
+                    class="w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
+                    title="Edit">
+                    <i class="fi fi-rr-edit"></i>
+                </button>
+                <button onclick="deleteArticle(${article.id})" 
+                    class="w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
+                    title="Delete">
+                    <i class="fi fi-rr-trash"></i>
+                </button>
+            </div>
         </div>
- 
+
+        <div class="px-4 pb-4">
+            <!-- Category Badge -->
+            <div class="my-3">
+                <span class="text-xs font-medium text-accent bg-accent-light px-2 py-1">
+                    ${article.category}
+                </span>
+            </div>
+
+            <!-- Views -->
+            <div class="flex items-center text-xs text-gray-500 mb-3">
+                <i class="fi fi-rr-eye mr-1 mt-1"></i>
+                <small class="text-xs">${article.views || 0} views</small>
+            </div>
+
+            <!-- Title -->
+            <h3 class="font-bold text-lg text-gray-900 mb-2 line-clamp-2" title="${article.title}">
+                ${article.title}
+            </h3>
+
+            <!-- Date -->
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                <i class="fi fi-rr-calendar text-accent"></i>
+                <span>${article.created_at_formatted || new Date(article.created_at).toLocaleDateString()}</span>
+            </div>
+
+            <!-- Preview/Excerpt -->
+            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+                ${article.excerpt || article.body || 'No description available'}
+            </p>
+        </div>
     `;
 
     return div;

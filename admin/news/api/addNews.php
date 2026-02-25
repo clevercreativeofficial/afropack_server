@@ -126,8 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         if (move_uploaded_file($uploadedFile['tmp_name'], $uploadPath)) {
             
             // Generate web-accessible URL
-            $baseUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . 
-                      "://" . $_SERVER['HTTP_HOST'];
+            $baseUrl = $url;
             $baseUrl = rtrim($baseUrl, '/');
             $imageUrl = $baseUrl . '/uploads/news/' . $newFileName;
             
