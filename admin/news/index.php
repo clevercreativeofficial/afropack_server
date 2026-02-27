@@ -54,6 +54,17 @@ require_once ROOT_PATH . '/components/header.php';
     </div>
 </div>
 
+<div id="editModal" class="fixed inset-0 bg-black bg-opacity-30 hidden flex items-center justify-center z-50">
+    <div class="bg-white shadow-lg w-full max-w-md md:p-6 p-3 m-3 relative">
+        <button id="closeEditModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
+            <i class="fi fi-rr-cross translate-y-0.5 hover:text-accent"></i>
+        </button>
+        <?php
+        require_once ROOT_PATH . '/components/updateNewsModal.php';
+        ?>
+    </div>
+</div>
+
 <script src="<?= $url ?>admin/news/api/news.js"></script>
 
 <?php

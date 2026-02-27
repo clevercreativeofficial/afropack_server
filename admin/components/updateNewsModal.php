@@ -17,7 +17,12 @@
             <option>Category Four</option>
             <option>Category Five</option>
         </select>
-
+    </div>
+    <div>
+        <label class="block text-sm font-medium mb-2">Content</label>
+        <textarea name="body" id="editBody" rows="6"
+            class="outline-none w-full py-3 px-4 border focus:border-accent duration-300"
+            placeholder="Article content goes here..."></textarea>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
@@ -35,6 +40,12 @@
 
         </div>
     </div>
+    
+    <div class="flex items-center">
+        <input type="checkbox" name="is_published" id="editIsPublished" class="mr-2" checked>
+        <label for="editIsPublished" class="text-sm text-gray-700">Published</label>
+    </div>
+
     <small class="text-gray-500 block">
         <span class="font-semibold">Notice:</span> Provide either Image URL or Image File. URL
         takes

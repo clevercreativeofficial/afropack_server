@@ -12,12 +12,13 @@ document.getElementById( 'addNewsModal' )?.addEventListener( 'submit', async fun
     // Validate
     const title = formData.get( 'title' );
     const category = formData.get( 'category' );
+    const body = formData.get( 'body' );
     const imageUrl = formData.get( 'image' );
     const imageFile = formData.get( 'file' );
 
-    if ( !title || !category )
+    if ( !title || !category || !body )
     {
-        showFormMessage( 'Title and category are required', 'error' );
+        showFormMessage( 'Title, category and body are required', 'error' );
         return;
     }
 
@@ -162,14 +163,15 @@ function renderNewsArticles ( articles )
 }
 
 // Create news card
-function createNewsCard(article) {
-    const div = document.createElement('div');
+function createNewsCard ( article )
+{
+    const div = document.createElement( 'div' );
     div.className = 'bg-white card group border border-transparent hover:border-gray-200 transition-all duration-300 relative';
-    div.setAttribute('data-article-id', article.id);
+    div.setAttribute( 'data-article-id', article.id );
 
     const typeIcon = article.type === 'file' ? 'fi-rr-upload' : 'fi-rr-link';
     const typeBadgeColor = article.type === 'file' ? 'bg-blue-500' : 'bg-amber-500';
-    
+
     // Determine published status display
     const publishedStatus = article.is_published ? 'Published' : 'Unpublished';
     const statusBadgeColor = article.is_published ? 'bg-green-500' : 'bg-gray-500';
@@ -178,34 +180,34 @@ function createNewsCard(article) {
         <div class="relative">
             <!-- Status Badges - Top Left -->
             <div class="absolute top-4 left-4 flex gap-2 z-10">
-                <small class="px-2 py-1 ${typeBadgeColor} text-white text-xs font-medium">
-                    <i class="fi ${typeIcon} mr-1"></i>
-                    ${article.type === 'file' ? 'Uploaded' : 'URL'}
+                <small class="px-2 py-1 ${ typeBadgeColor } text-white text-xs font-medium">
+                    <i class="fi ${ typeIcon } mr-1"></i>
+                    ${ article.type === 'file' ? 'Uploaded' : 'URL' }
                 </small>
-                <small class="${statusBadgeColor} text-white text-xs px-2 py-1">
-                    ${publishedStatus}
+                <small class="${ statusBadgeColor } text-white text-xs px-2 py-1">
+                    ${ publishedStatus }
                 </small>
             </div>
 
             <!-- Image -->
-            <img src="${article.image_url}" 
-                 alt="${article.title}" 
+            <img src="${ article.image_url }" 
+                 alt="${ article.title }" 
                  class="w-full h-60 object-cover"
                  onerror="this.src='../../assets/images/placeholder.png'">
 
             <!-- Action Buttons - Top Right -->
-            <div class="absolute top-4 right-4 flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <button onclick="viewArticle(${article.id})" 
+            <div class="absolute top-4 left-4 w-full h-full flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <button onclick="viewArticle(${ article.id })" 
                     class="w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
                     title="View">
                     <i class="fi fi-rr-eye"></i>
                 </button>
-                <button onclick="editArticle(${article.id})" 
-                    class="w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
+                <button onclick="editArticle(${ article.id })" 
+                    class="edit-btn w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
                     title="Edit">
                     <i class="fi fi-rr-edit"></i>
                 </button>
-                <button onclick="deleteArticle(${article.id})" 
+                <button onclick="deleteArticle(${ article.id })" 
                     class="w-10 h-10 flex items-center justify-center text-white bg-accent hover:bg-accent-dark transition-colors"
                     title="Delete">
                     <i class="fi fi-rr-trash"></i>
@@ -217,30 +219,30 @@ function createNewsCard(article) {
             <!-- Category Badge -->
             <div class="my-3">
                 <span class="text-xs font-medium text-accent bg-accent-light px-2 py-1">
-                    ${article.category}
+                    ${ article.category }
                 </span>
             </div>
 
             <!-- Views -->
             <div class="flex items-center text-xs text-gray-500 mb-3">
                 <i class="fi fi-rr-eye mr-1 mt-1"></i>
-                <small class="text-xs">${article.views || 0} views</small>
+                <small class="text-xs">${ article.views || 0 } views</small>
             </div>
 
             <!-- Title -->
-            <h3 class="font-bold text-lg text-gray-900 mb-2 line-clamp-2" title="${article.title}">
-                ${article.title}
+            <h3 class="font-bold text-lg text-gray-900 mb-2 line-clamp-2" title="${ article.title }">
+                ${ article.title }
             </h3>
 
             <!-- Date -->
             <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
                 <i class="fi fi-rr-calendar text-accent"></i>
-                <span>${article.created_at_formatted || new Date(article.created_at).toLocaleDateString()}</span>
+                <span>${ article.created_at_formatted || new Date( article.created_at ).toLocaleDateString() }</span>
             </div>
 
             <!-- Preview/Excerpt -->
             <p class="text-sm text-gray-600 mb-4 line-clamp-2">
-                ${article.excerpt || article.body || 'No description available'}
+                ${ article.body || 'No description available' }
             </p>
         </div>
     `;

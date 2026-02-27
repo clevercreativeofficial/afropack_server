@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     
     $title = isset($_POST['title']) ? trim($_POST['title']) : '';
     $category = isset($_POST['category']) ? trim($_POST['category']) : '';
+    $body = isset($_POST['body']) ? trim($_POST['body']) : '';
     $imageUrl = isset($_POST['image']) ? trim($_POST['image']) : '';
     $uploadedFile = isset($_FILES['file']) ? $_FILES['file'] : null;
     
@@ -35,6 +36,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     
     if (empty($category)) {
         $response['message'] = 'Category is required';
+        handleResponse($response);
+        exit;
+    }
+
+    if (empty($body)) {
+        $response['message'] = 'Body is required';
         handleResponse($response);
         exit;
     }
@@ -71,8 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         // Insert into database
         $createdBy = $_SESSION['admin_username'] ?? 'unknown';
         
-        $stmt = $conn->prepare("INSERT INTO news_articles (title, category, image_url, created_by) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $title, $category, $imageUrl, $createdBy);
+        $stmt = $conn->prepare("INSERT INTO news_articles (title, category, body, image_url, created_by) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $title, $category,$body, $imageUrl, $createdBy);
         
         if ($stmt->execute()) {
             $response['success'] = true;
@@ -81,6 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                 'id' => $stmt->insert_id,
                 'title' => $title,
                 'category' => $category,
+                'body' => $body,
                 'image_url' => $imageUrl
             ];
         } else {
@@ -133,10 +141,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
             // Insert into database
             $createdBy = $_SESSION['admin_username'] ?? 'unknown';
             
-            $stmt = $conn->prepare("INSERT INTO news_articles (title, category, image_url, file_name, file_path, file_size, mime_type, created_by) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("sssssiss", 
+            $stmt = $conn->prepare("INSERT INTO news_articles (title, category, body, image_url, file_name, file_path, file_size, mime_type, created_by) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param("ssssssiss", 
                 $title, 
                 $category,
+                $body,
                 $imageUrl, 
                 $uploadedFile['name'], 
                 $uploadPath, 
@@ -152,6 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                     'id' => $stmt->insert_id,
                     'title' => $title,
                     'category' => $category,
+                    'body' => $body,
                     'image_url' => $imageUrl,
                     'file_name' => $uploadedFile['name']
                 ];

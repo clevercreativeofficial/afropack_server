@@ -8,6 +8,7 @@ header('Content-Type: application/json');
 $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 12;
 $category = isset($_GET['category']) ? $_GET['category'] : '';
+$body = isset($_GET['body']) ? $_GET['body'] : '';
 $offset = ($page - 1) * $limit;
 
 // Build query with filters
@@ -18,6 +19,11 @@ $whereClause = [];
 if (!empty($category)) {
     $whereClause[] = "category = '" . mysqli_real_escape_string($conn, $category) . "'";
 }
+
+if (!empty($body)) {
+    $whereClause[] = "body = '" . mysqli_real_escape_string($conn, $body) . "'";
+}
+
 
 if (!empty($whereClause)) {
     $whereString = " WHERE " . implode(" AND ", $whereClause);
@@ -46,6 +52,7 @@ while ($row = $result->fetch_assoc()) {
         'id' => intval($row['id']),
         'title' => $row['title'],
         'category' => $row['category'],
+        'body' => $row['body'],
         'image_url' => $row['image_url'],
         'type' => $type,
         'file_name' => $row['file_name'],

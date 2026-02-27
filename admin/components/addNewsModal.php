@@ -20,9 +20,13 @@
             <option>Category Four</option>
             <option>Category Five</option>
         </select>
-
     </div>
-    <div class="grid grid-cols-1 gap-4">
+    <div>
+        <label class="block text-sm font-medium mb-2">Body</label>
+        <textarea name="body" id="newsBody" class="outline-none w-full min-h-32 py-3 px-4 border focus:border-accent duration-300"
+            placeholder="Body goes here"></textarea>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
             <label class="block text-sm font-medium mb-2">Image URL</label>
             <input type="text" name="image" id="newsImageUrl"
