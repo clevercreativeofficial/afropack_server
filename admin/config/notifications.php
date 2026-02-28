@@ -7,6 +7,11 @@ $sessionKeys = [
     'unsubscribe', 'unsubscribe-success',
     'contact', 'contact-success',
     'donate', 'donate-success',
+    'event', "event-success",
+    'video', 'video-success',
+    'news', 'news-success',
+    'brochure', 'brochure-success',
+    'user', 'user-success'
 ];
 
 foreach ($sessionKeys as $key) {

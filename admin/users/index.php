@@ -1,71 +1,85 @@
 <?php
 require_once __DIR__ . '/../path.php';
+require_once ROOT_PATH . '/config/database.php';
 require_once ROOT_PATH . '/components/header.php';
+
+// Fetch users
+$sql    = "SELECT * FROM users ORDER BY id DESC";
+$result = $conn->query($sql);
+$users  = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
-
-<!-- Main Content -->
 <div class="flex-1 flex flex-col overflow-hidden">
-    <?php
-    require_once ROOT_PATH . '/components/topbar.php';
-    ?>
+    <?php require_once ROOT_PATH . '/components/topbar.php'; ?>
 
-    <!-- Content -->
     <main class="flex-1 overflow-y-auto py-6 px-3">
-        <!-- Users Management -->
-        <div id="events" class="dashboard-section max-w-7xl mx-auto">
+        <div id="users" class="dashboard-section max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
                 <h3 class="text-2xl font-bold text-accent-dark">Users Management</h3>
-                <button class="btn-primary bg-accent sm:w-auto w-full text-white px-4 py-2">
-                    Add User
-                </button>
+                <a href="<?= $url ?>admin/users/add/"
+                    class="bg-accent sm:w-auto w-full text-center text-white px-4 py-2">
+                    Add New User
+                </a>
             </div>
-            <div class="w-full flex flex-col lg:flex-row gap-4">
-                <div class="w-full bg-white overflow-x-auto">
-                    <table class="w-full table-auto">
-                        <thead>
-                            <tr class="bg-surface">
-                                <th class="p-3 text-left">Full Name</th>
-                                <th class="p-3 text-left">Role</th>
-                                <th class="p-3 text-left">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-striped">
+
+            <div class="w-full bg-white overflow-x-auto">
+                <table class="w-full table-auto">
+                    <thead>
+                        <tr class="bg-surface">
+                            <th class="p-3 text-left">Full Name</th>
+                            <th class="p-3 text-left">Email</th>
+                            <th class="p-3 text-left">Role</th>
+                            <th class="p-3 text-left">Joined</th>
+                            <th class="p-3 text-left">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-striped">
+                        <?php if (!empty($users)): ?>
+                            <?php foreach ($users as $user): ?>
+                                <tr>
+                                    <td class="p-3">
+                                        <?= htmlspecialchars($user['first_name'] . ' ' . $user['last_name']) ?>
+                                    </td>
+                                    <td class="p-3 text-gray-500">
+                                        <?= htmlspecialchars($user['email']) ?>
+                                    </td>
+                                    <td class="p-3">
+                                        <?php if ($user['role'] === 'admin'): ?>
+                                            <small class="px-2 py-1 bg-purple-100 text-purple-800 text-xs">Admin</small>
+                                        <?php else: ?>
+                                            <small class="px-2 py-1 bg-green-100 text-green-800 text-xs">Author</small>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td class="p-3 text-gray-500 text-sm">
+                                        <?= date('M d, Y', strtotime($user['created_at'])) ?>
+                                    </td>
+                                    <td class="p-3 flex items-center gap-3">
+                                        <a href="<?= $url ?>admin/users/edit/?id=<?= $user['id'] ?>"
+                                            class="text-accent hover:text-accent-dark"
+                                            title="Edit">
+                                            <i class="fi fi-rr-edit"></i>
+                                        </a>
+                                        <form method="POST" action="<?= $url ?>admin/users/api/delete.php"
+                                            onsubmit="return confirm('Delete <?= htmlspecialchars($user['first_name'] . ' ' . $user['last_name']) ?>? This cannot be undone.')">
+                                            <input type="hidden" name="id" value="<?= $user['id'] ?>">
+                                            <button type="submit" class="text-red-500 hover:text-red-700" title="Delete">
+                                                <i class="fi fi-rr-trash"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
                             <tr>
-                                <td class="p-3">Admin User</td>
-                                <td class="p-3">
-                                    <small class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">Admin</small>
-                                </td>
-                                <td class="p-3">
-                                    <button class="text-accent hover:text-accent-dark mr-2">
-                                        <i class="fi fi-rr-edit"></i>
-                                    </button>
-                                    <button class="text-red-500 hover:text-red-700">
-                                        <i class="fi fi-rr-trash"></i>
-                                    </button>
-                                </td>
+                                <td colspan="5" class="p-3 text-center text-gray-500 text-sm">No users found.</td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
+                        <?php endif; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
 </div>
 
-<!-- Modal -->
-<div id="addSlideModal" class="fixed inset-0 bg-black bg-opacity-30 hidden flex items-center justify-center z-50">
-    <div class="bg-white shadow-lg w-full max-w-md md:p-6 p-3 m-3 relative">
-        <button id="closeAddSlideModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
-            <i class="fi fi-rr-cross translate-y-0.5 hover:text-accent"></i>
-        </button>
-        <?php
-        require_once ROOT_PATH . '/components/updateUserModal.php';
-        ?>
-    </div>
-</div>
-
-<?php
-require_once ROOT_PATH . '/components/footer.php';
-?>
+<?php include_once ROOT_PATH . '/config/notifications.php'; ?>
+<?php require_once ROOT_PATH . '/components/footer.php'; ?>

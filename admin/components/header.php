@@ -6,7 +6,7 @@ require_once ROOT_PATH . '/config/functions.php';
 
 
 // Bounce back to login page if not authenticated
-if(isset($_SESSION['isAuth'])){
+if (isset($_SESSION['isAuth'])) {
     $_SESSION['login'] = "You are not allowed for Access!";
     header('Location: ' . $url . 'login/');
     exit();
@@ -40,6 +40,18 @@ if(isset($_SESSION['isAuth'])){
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
 
+    <!-- Notyf (Toast Notifications) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script>
+        const BASE_URL = "<?= $url ?>";
+    </script>
+    <style>
+        .notyf__message {
+            color: white !important;
+            font-size: 14px !important;
+        }
+    </style>
 
 </head>
 
