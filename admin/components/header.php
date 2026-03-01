@@ -125,7 +125,7 @@ if (!isset($_SESSION['user_id'])) {
                 </ul>
             </div>
 
-            <div class="px-4 mb-6">
+            <!-- <div class="px-4 mb-6">
                 <h3 class="text-xs uppercase tracking-wider text-gray-500 mb-2">Content Management</h3>
                 <ul class="space-y-1">
                     <li>
@@ -136,7 +136,7 @@ if (!isset($_SESSION['user_id'])) {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="px-4 mb-6">
                 <h3 class="text-xs uppercase tracking-wider text-gray-500 mb-2">News & Resources</h3>

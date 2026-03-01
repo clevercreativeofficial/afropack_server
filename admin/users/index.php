@@ -61,7 +61,7 @@ $users  = $result->fetch_all(MYSQLI_ASSOC);
                                             title="Edit">
                                             <i class="fi fi-rr-edit"></i>
                                         </a>
-                                        <?php if (!$user['id'] == $_SESSION['user_id']): ?>
+                                        <?php if ($user['id'] != $_SESSION['user_id']): ?>
                                             <form method="POST" action="<?= $url ?>admin/users/api/delete.php"
                                                 onsubmit="return confirm('Delete <?= htmlspecialchars($user['first_name'] . ' ' . $user['last_name']) ?>? This cannot be undone.')">
                                                 <input type="hidden" name="id" value="<?= $user['id'] ?>">

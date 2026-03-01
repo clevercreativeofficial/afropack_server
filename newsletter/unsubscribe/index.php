@@ -29,10 +29,10 @@ require_once ROOT_PATH . '/components/header.php';
 ?>
 
 <section class="min-h-[60vh] flex items-center justify-center section-padding">
-    <div class="max-w-md mx-auto text-center bg-white p-10 shadow-xl">
+    <div class="max-w-md mx-auto text-center bg-white p-10 border">
         <?php if ($status === 'success'): ?>
             <div class="w-16 h-16 bg-green-100 flex items-center justify-center mx-auto mb-6">
-                <i class="fi fi-rr-check text-green-600 text-2xl"></i>
+                <i class="fi fi-rr-check text-green-600 text-2xl mt-2"></i>
             </div>
             <h2 class="text-2xl font-bold text-gray-900 mb-3">Unsubscribed</h2>
             <p class="text-gray-500 text-sm mb-6">
@@ -45,7 +45,7 @@ require_once ROOT_PATH . '/components/header.php';
 
         <?php else: ?>
             <div class="w-16 h-16 bg-red-100 flex items-center justify-center mx-auto mb-6">
-                <i class="fi fi-rr-cross text-red-500 text-2xl"></i>
+                <i class="fi fi-rr-cross text-red-500 text-2xl mt-2"></i>
             </div>
             <h2 class="text-2xl font-bold text-gray-900 mb-3">Invalid Link</h2>
             <p class="text-gray-500 text-sm mb-6">

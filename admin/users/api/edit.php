@@ -34,7 +34,7 @@ if ($last_name === '') {
 if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors[] = 'A valid email is required.';
 }
-if (!in_array($role, ['admin', 'author'], true)) {
+if (!in_array($role, ['admin', 'editor', 'author'], true)) {
     $errors[] = 'Invalid role selected.';
 }
 if ($password !== '' && strlen($password) < 8) {
