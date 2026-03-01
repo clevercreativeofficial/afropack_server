@@ -1,70 +1,88 @@
-<!-- Footer -->
+<?php
+// Fetch all settings into a key => value map
+$rows     = $conn->query("SELECT `key`, value FROM settings")->fetch_all(MYSQLI_ASSOC);
+$settings = array_column($rows, 'value', 'key');
+?>
+
 <footer class="bg-accent-dark text-text-light md:pt-20 pt-10">
     <div class="max-w-7xl mx-auto px-4">
 
         <div class="flex justify-evenly md:flex-row flex-col gap-8 py-20">
+
             <!-- Contact Information -->
             <div data-aos="fade-up">
                 <h3 class="text-xl text-white font-bold mb-4">Contact Us</h3>
-                <p class="text-sm text-neutral-400 mb-2">
-                    Email:
-                    <a href="mailto:info@afropackgroup.com"
-                        class="hover:text-accent block">info@afropackgroup.com</a>
-                        <a href="mailto:afropackengineering@gmail.com"
-                        class="hover:text-accent">afropackengineering@gmail.com</a>
-                </p>
-                <p class="text-sm text-neutral-400 mb-2">
-                    Phone:
-                    <a href="tel:+393429801567" class="hover:text-accent block">+39 342 980 1567</a>
-                    <a href="tel:+27814619723" class="hover:text-accent">+27 814 619 723</a>
-                </p>
+                <?php if (!empty($settings['contact_email'])): ?>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Email:
+                        <a href="mailto:<?= htmlspecialchars($settings['contact_email']) ?>"
+                            class="hover:text-accent block">
+                            <?= htmlspecialchars($settings['contact_email']) ?>
+                        </a>
+                    </p>
+                <?php endif; ?>
+                <?php if (!empty($settings['contact_phone'])): ?>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        Phone:
+                        <a href="tel:<?= htmlspecialchars($settings['contact_phone']) ?>"
+                            class="hover:text-accent block">
+                            <?= htmlspecialchars($settings['contact_phone']) ?>
+                        </a>
+                    </p>
+                <?php endif; ?>
+                <?php if (!empty($settings['contact_address'])): ?>
+                    <p class="text-sm text-neutral-400 mb-2">
+                        <?= htmlspecialchars($settings['contact_address']) ?>
+                    </p>
+                <?php endif; ?>
             </div>
 
             <!-- Quick Links -->
             <div data-aos="fade-up">
                 <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
-                    <!-- Deep links to popular subpages -->
-                    <li><a href="<?= $url ?>solutions/beverage-processing-and-filling-equipment" class="text-sm text-neutral-400 hover:text-accent">
-                            Beverage Equipment
-                            <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
-                        </a></li>
-
-                    <!-- Support/Service links -->
-                    <li><a href="<?= $url ?>support/request-quote" class="text-sm text-neutral-400 hover:text-accent">
-                            Request a Quote
-                            <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
-                        </a></li>
-
-                    <!-- Resource links -->
-                    <li><a href="<?= $url ?>news-and-resources/brochures" class="text-sm text-neutral-400 hover:text-accent">
+                    <li>
+                        <a href="<?= $url ?>news-and-resources/brochures/"
+                            class="text-sm text-neutral-400 hover:text-accent">
                             Download Brochures
                             <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
-                        </a></li>
-
-                    <!-- Contact alternatives -->
-                    <li><a href="<?= $url ?>contact/sales" class="text-sm text-neutral-400 hover:text-accent">
-                            Sales Department
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $url ?>news-and-resources/upcoming-events/"
+                            class="text-sm text-neutral-400 hover:text-accent">
+                            Upcoming Events
                             <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
-                        </a></li>
-
-                    <!-- Utility links -->
-                    <li><a href="<?= $url ?>sitemap" class="text-sm text-neutral-400 hover:text-accent">
-                            Sitemap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $url ?>news-and-resources/news/"
+                            class="text-sm text-neutral-400 hover:text-accent">
+                            Latest News
                             <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
-                        </a></li>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $url ?>contact/"
+                            class="text-sm text-neutral-400 hover:text-accent">
+                            Contact Us
+                            <i class="fi fi-rr-arrow-up-right-from-square ml-2"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
-            <!-- Newsletter Signup -->
+            <!-- Newsletter -->
             <div data-aos="fade-up" class="md:max-w-[315px] w-full">
                 <h3 class="text-xl text-white font-bold mb-4">Subscribe</h3>
                 <p class="text-sm text-neutral-400 mb-4">
                     Subscribe to our newsletter to receive the latest updates on our food processing and packaging innovations.
                 </p>
-                <form class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
-                    <input type="email" placeholder="Your email"
-                        class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3" required>
+                <form action="<?= $url ?>api/newsletter/subscribe.php" method="POST"
+                    class="flex sm:flex-row flex-col sm:gap-0 gap-2 w-full">
+                    <input type="email" name="email" placeholder="Your email"
+                        class="w-full bg-background text-sm text-text-color outline-none focus:border-accent border border-transparent duration-500 p-3"
+                        required>
                     <button type="submit"
                         class="inline-block py-3 px-4 bg-accent hover:bg-accent/80 text-white text-sm duration-300 ease-in-out">
                         <i class="fi fi-rr-arrow-small-right inline-block mt-1"></i>
@@ -72,22 +90,37 @@
                 </form>
             </div>
 
-            <!-- Social Media Links -->
+            <!-- Social Media -->
             <div data-aos="fade-up" class="md:max-w-[250px] w-full">
-                <h3 class="text-xl text-white font-bold mb-4">Follow us</h3>
+                <h3 class="text-xl text-white font-bold mb-4">Follow Us</h3>
                 <p class="text-sm text-neutral-400 mb-4">
                     Join our community and stay updated with the latest industry insights.
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-white text-lg hover:text-accent"><i
-                            class="fi fi-brands-facebook"></i></a>
-                    <a href="#" class="text-white text-lg hover:text-accent"><i
-                            class="fi fi-brands-twitter-alt"></i></a>
-                    <a href="#" class="text-white text-lg hover:text-accent"><i
-                            class="fi fi-brands-instagram"></i></a>
-                    <a href="#" class="text-white text-lg hover:text-accent"><i
-                            class="fi fi-brands-linkedin"></i></a>
-                </div>
+                <?php
+                $socials = [
+                    'facebook_url'  => 'fi-brands-facebook',
+                    'twitter_url'   => 'fi-brands-twitter-alt',
+                    'instagram_url' => 'fi-brands-instagram',
+                    'linkedin_url'  => 'fi-brands-linkedin',
+                    'youtube_url'   => 'fi-brands-youtube',
+                ];
+                $has_socials = array_filter($socials, fn($key) => !empty($settings[$key]), ARRAY_FILTER_USE_KEY);
+                ?>
+                <?php if (!empty($has_socials)): ?>
+                    <div class="flex space-x-4">
+                        <?php foreach ($socials as $key => $icon):
+                            if (empty($settings[$key])) continue;
+                        ?>
+                            <a href="<?= htmlspecialchars($settings[$key]) ?>"
+                                target="_blank" rel="noopener noreferrer"
+                                class="text-white text-lg hover:text-accent transition-colors duration-300">
+                                <i class="fi <?= $icon ?>"></i>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                <?php else: ?>
+                    <p class="text-neutral-500 text-sm">Coming soon.</p>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -96,7 +129,6 @@
             <p class="text-sm text-neutral-400">
                 © <span id="copyright"></span> AFROPACK GROUP — All rights reserved.
             </p>
-            <!-- Back to Top Button -->
             <div class="hidden md:block">
                 <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
                     class="inline-flex items-center gap-2 text-neutral-400 hover:text-accent transition-colors duration-300 text-sm">
@@ -108,32 +140,13 @@
     </div>
 </footer>
 
-<!-- dropdown -->
 <script src="<?= $url ?>assets/js/dropdown.js"></script>
-
-<!-- custom color -->
 <script src="<?= $url ?>assets/js/tailwind_config.js"></script>
-
-<!-- Auto year update -->
 <script type="text/javascript" src="<?= $url ?>assets/js/year_update.js"></script>
-
-<!-- navbar accordions scripts -->
 <script type="text/javascript" src="<?= $url ?>assets/js/navbar.js"></script>
-
-<!-- Jquery-->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-<!-- loader -->
 <script type="text/javascript" src="<?= $url ?>assets/js/loader.js"></script>
-
-<!-- AOS Animation -->
-<script>
-    AOS.init();
-</script>
-
-<!-- Lucide Icons -->
+<script>AOS.init();</script>
 <script src="https://unpkg.com/lucide@latest"></script>
-<script>
-    lucide.createIcons();
-</script>
+<script>lucide.createIcons();</script>

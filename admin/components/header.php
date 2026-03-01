@@ -2,17 +2,53 @@
 require_once __DIR__ . '/../path.php';
 require_once ROOT_PATH . '/config/database.php';
 require_once ROOT_PATH . '/config/functions.php';
+require_once ROOT_PATH . '/config/access.php';
 
-
-
-// Bounce back to login page if not authenticated
-if (isset($_SESSION['isAuth'])) {
-    $_SESSION['login'] = "You are not allowed for Access!";
-    header('Location: ' . $url . 'login/');
-    exit();
+if (!isset($_SESSION['user_id'])) {
+    $_SESSION['access'] = 'Login is required for access!';
+    header('location: ' . $url . 'login/');
+    die();
+} else {
+    // fetch authenticated user's username
+    $id = $_SESSION['user_id'];
+    $stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+    $stmt->close();
+    
+    // NOW check access based on the current page
+    // You can determine the required role based on the current URL
+    $current_page = basename($_SERVER['PHP_SELF']);
+    $required_role = 'author'; // default
+    
+    // Determine required role based on the page
+    if (strpos($_SERVER['REQUEST_URI'], '/admin/hero/') !== false) {
+        $required_role = 'admin';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/news/') !== false) {
+        $required_role = 'editor';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/events/') !== false) {
+        $required_role = 'editor';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/videos/') !== false) {
+        $required_role = 'editor';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/brochures/') !== false) {
+        $required_role = 'editor';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/subscribers/') !== false) {
+        $required_role = 'admin';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/settings/') !== false) {
+        $required_role = 'admin';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/users/') !== false) {
+        $required_role = 'admin';
+    } elseif (strpos($_SERVER['REQUEST_URI'], '/admin/analytics/') !== false) {
+        $required_role = 'author';
+    }
+    
+    // Check access
+    checkAccess($required_role);
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,6 +106,9 @@ if (isset($_SESSION['isAuth'])) {
                 </div>
             </div>
         </div>
+
+        <!-- Notifications -->
+         <?php require_once ROOT_PATH . '/config/notifications.php'; ?>
 
         <!-- Navigation -->
         <div class="flex-1 overflow-y-auto py-4">
@@ -170,7 +209,7 @@ if (isset($_SESSION['isAuth'])) {
                         </a>
                     </li>
                     <li>
-                        <a href="#logout"
+                        <a href="<?= $url ?>api/logout/logout.php"
                             class="flex items-center gap-3 px-4 py-3 hover:bg-accent text-accent hover:text-white">
                             <i class="fi fi-rr-sign-out-alt translate-y-0.5"></i>
                             <span>Logout</span>
@@ -187,8 +226,8 @@ if (isset($_SESSION['isAuth'])) {
                     <i class="fi fi-rr-user text-gray-600 translate-y-0.5"></i>
                 </div>
                 <div class="flex-1">
-                    <p class="font-medium text-gray-900">Admin User</p>
-                    <p class="text-xs text-gray-600">Administrator</p>
+                    <p class="font-medium text-gray-900 text-ellipsis"><?= $user['first_name'] . ' ' . $user['last_name'] ?></p>
+                    <p class="text-xs text-gray-600"><?= ucfirst($user['role']) ?></p>
                 </div>
             </div>
         </div>

@@ -96,6 +96,13 @@ require_once ROOT_PATH . '/config/functions.php';
         }
     </style>
 
+    <style>
+        .notyf__message {
+            color: white !important;
+            font-size: 14px !important;
+        }
+    </style>
+
 </head>
 
 <body class="bg-bg-alt">

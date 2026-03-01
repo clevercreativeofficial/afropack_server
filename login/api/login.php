@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         if (isset($attempt_data['locked_until']) && $attempt_data['locked_until'] > $current_time) {
             $remaining_time = $attempt_data['locked_until'] - $current_time;
             $minutes = ceil($remaining_time / 60);
-            $_SESSION['login'] = "Trop de tentatives. Veuillez réessayer dans $minutes minute(s).";
+            $_SESSION['login'] = "Too many failed attempts. Please try again in $minutes minute(s).";
             $_SESSION['login-data'] = $_POST;
             header('Location: ' . $url . 'login');
             exit();
@@ -35,10 +35,10 @@ if (isset($_POST['submit'])) {
 
     // Validate form
     if (!$email) {
-        $_SESSION['login'] = "Entrez votre Email";
+        $_SESSION['login'] = "Email is required!";
         trackFailedAttempt($user_ip);
     } elseif (!$password) {
-        $_SESSION['login'] = "Entrez votre mot de passe";
+        $_SESSION['login'] = "Password is required!";
         trackFailedAttempt($user_ip, $email);
     } else {
         $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
@@ -47,12 +47,12 @@ if (isset($_POST['submit'])) {
         $result = $stmt->get_result();
 
         if ($result->num_rows === 0) {
-            $_SESSION['login'] = "Email ou mot de passe incorrect!";
+            $_SESSION['login'] = "Wrong credentials!";
             trackFailedAttempt($user_ip, $email);
         } else {
             $userInfo = $result->fetch_assoc();
             if (!password_verify($password, $userInfo['password'])) {
-                $_SESSION['login'] = "Mot de passe incorrect!";
+                $_SESSION['login'] = "Password is not correct!";
                 trackFailedAttempt($user_ip, $email);
             } else {
                 // Successful login
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
                 $_SESSION['user_role'] = $userInfo['role'];
                 $_SESSION['login-success'] = "Welcome back " . htmlspecialchars($userInfo['first_name']) . '!';
                 clearFailedAttempts($user_ip, $email);
-                header('Location: ' . $url . 'admin');
+                header('Location: ' . $url . 'admin/');
                 exit();
             }
         }
@@ -103,10 +103,10 @@ function trackFailedAttempt($ip, $email = null) {
     if ($attempt_data['count'] >= $MAX_ATTEMPTS) {
         $attempt_data['locked_until'] = time() + $LOCKOUT_DURATION;
         logLockout($ip, $email, $attempt_data['count']);
-        $_SESSION['login'] = "Trop de tentatives échouées. Compte verrouillé pour " . ceil($LOCKOUT_DURATION/60) . " minute(s).";
+        $_SESSION['login'] = "Too many failed attempts. Try again in " . ceil($LOCKOUT_DURATION/60) . " minute(s).";
     } else {
         $remaining = $MAX_ATTEMPTS - $attempt_data['count'];
-        $_SESSION['login'] .= " ($remaining tentative(s) restante(s))";
+        $_SESSION['login'] .= " ($remaining remaining attempts.)";
     }
 }
 

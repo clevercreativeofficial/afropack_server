@@ -16,7 +16,7 @@ require_once ROOT_PATH . '/components/header.php';
         <div id="hero" class="dashboard-section max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
                 <h3 class="text-2xl font-bold text-accent-dark">Hero Slides Management</h3>
-                <button class="btn-primary bg-accent sm:w-auto w-full text-white px-4 py-2">
+                <button id="add_btn" class="btn-primary bg-accent sm:w-auto w-full text-white px-4 py-2">
                     Add Hero Slide
                 </button>
             </div>
@@ -63,6 +63,29 @@ require_once ROOT_PATH . '/components/header.php';
 <!-- AJAX -->
 <script src="<?= $url ?>admin/hero/api/upload.js"></script>
 <script src="<?= $url ?>admin/hero/api/fetch.js"></script>
+
+<script>
+    // Modal Toggle Logic
+    const addSlideModal = document.getElementById('addSlideModal');
+    const openAddSlideBtn = document.getElementById('add_btn');
+    const openEditBtn = document.querySelectorAll('.edit_btn');
+    const closeAddSlideBtn = document.getElementById('closeAddSlideModal');
+
+    openAddSlideBtn.addEventListener('click', () => {
+        addSlideModal.classList.remove('hidden');
+    });
+
+    openEditBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            addSlideModal.classList.remove('hidden');
+        })
+    });
+
+    closeAddSlideBtn.addEventListener('click', () => {
+        addSlideModal.classList.add('hidden');
+    });
+</script>
+
 
 <?php
 require_once ROOT_PATH . '/components/footer.php';

@@ -47,6 +47,7 @@ require_once ROOT_PATH . '/components/header.php';
                         <select name="role"
                             class="outline-none w-full py-3 px-4 border focus:border-accent duration-300 bg-white">
                             <option value="author">Author</option>
+                            <option value="editor">Editor</option>
                             <option value="admin">Admin</option>
                         </select>
                     </div>

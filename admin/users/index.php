@@ -46,6 +46,8 @@ $users  = $result->fetch_all(MYSQLI_ASSOC);
                                     <td class="p-3">
                                         <?php if ($user['role'] === 'admin'): ?>
                                             <small class="px-2 py-1 bg-purple-100 text-purple-800 text-xs">Admin</small>
+                                        <?php elseif ($user['role'] === 'editor'): ?>
+                                            <small class="px-2 py-1 bg-amber-100 text-amber-800 text-xs">Editor</small>
                                         <?php else: ?>
                                             <small class="px-2 py-1 bg-green-100 text-green-800 text-xs">Author</small>
                                         <?php endif; ?>
@@ -59,13 +61,17 @@ $users  = $result->fetch_all(MYSQLI_ASSOC);
                                             title="Edit">
                                             <i class="fi fi-rr-edit"></i>
                                         </a>
-                                        <form method="POST" action="<?= $url ?>admin/users/api/delete.php"
-                                            onsubmit="return confirm('Delete <?= htmlspecialchars($user['first_name'] . ' ' . $user['last_name']) ?>? This cannot be undone.')">
-                                            <input type="hidden" name="id" value="<?= $user['id'] ?>">
-                                            <button type="submit" class="text-red-500 hover:text-red-700" title="Delete">
-                                                <i class="fi fi-rr-trash"></i>
-                                            </button>
-                                        </form>
+                                        <?php if (!$user['id'] == $_SESSION['user_id']): ?>
+                                            <form method="POST" action="<?= $url ?>admin/users/api/delete.php"
+                                                onsubmit="return confirm('Delete <?= htmlspecialchars($user['first_name'] . ' ' . $user['last_name']) ?>? This cannot be undone.')">
+                                                <input type="hidden" name="id" value="<?= $user['id'] ?>">
+                                                <button type="submit" class="text-red-500 hover:text-red-700" title="Delete">
+                                                    <i class="fi fi-rr-trash inline-block mt-1"></i>
+                                                </button>
+                                            </form>
+                                        <?php else: ?>
+                                            <small>N/A</small>
+                                        <?php endif; ?>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

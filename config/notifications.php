@@ -3,10 +3,10 @@
 $flashMessages = [];
 $sessionKeys = [
     'login', 'login-success',
-    'subscribe', 'subscribe-success',
+    'newsletter', 'newsletter-success',
     'unsubscribe', 'unsubscribe-success',
     'contact', 'contact-success',
-    'donate', 'donate-success',
+    'access', 'access-success'
 ];
 
 foreach ($sessionKeys as $key) {

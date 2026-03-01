@@ -5,6 +5,9 @@ require_once ROOT_PATH . '/components/header_section.php';
 require_once ROOT_PATH . '/components/button.php';
 ?>
 
+<!-- Notifications -->
+<?php ROOT_PATH . '/components/notifications.php'; ?>
+
 <!-- hero section -->
 <section class="flex flex-col justify-center items-center overflow-hidden">
     <!-- carousel -->

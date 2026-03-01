@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
         <div>
             <h2 class="text-2xl font-bold text-accent-dark">Dashboard</h2>
-            <p class="text-sm text-gray-600">Welcome back, Admin</p>
+            <p class="text-sm text-gray-600">Welcome back, <?= $user['first_name'] ?></p>
         </div>
         <div class="flex items-center space-x-3">
             <button id="mobileMenuToggle"

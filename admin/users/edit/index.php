@@ -73,6 +73,7 @@ if (!$user) {
                         <select name="role"
                             class="outline-none w-full py-3 px-4 border focus:border-accent duration-300 bg-white">
                             <option value="author" <?= $user['role'] === 'author' ? 'selected' : '' ?>>Author</option>
+                            <option value="editor"  <?= $user['role'] === 'editor'  ? 'selected' : '' ?>>Editor</option>
                             <option value="admin"  <?= $user['role'] === 'admin'  ? 'selected' : '' ?>>Admin</option>
                         </select>
                     </div>
